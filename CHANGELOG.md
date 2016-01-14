@@ -1,7 +1,27 @@
 # Change Log
 
+## [v0.3.0](https://github.com/benkutil/benkutil.github.io/tree/v0.3.0) (2016-01-14)
+[Full Changelog](https://github.com/benkutil/benkutil.github.io/compare/v0.2.0...v0.3.0)
+
+### :bug: Fixed Bugs
+
+- update post extension to pass unit test [\#9](https://github.com/benkutil/benkutil.github.io/issues/9)
+
+**Closed issues:**
+
+- Posts have unit tests [\#7](https://github.com/benkutil/benkutil.github.io/issues/7)
+- update contact details [\#5](https://github.com/benkutil/benkutil.github.io/issues/5)
+- images use picture-based format [\#3](https://github.com/benkutil/benkutil.github.io/issues/3)
+
+### :twisted_rightwards_arrows: Merged Pull Requests
+
+- posts pass extension tests [\#10](https://github.com/benkutil/benkutil.github.io/pull/10) ([benkutil](https://github.com/benkutil))
+- Posts have unit tests [\#8](https://github.com/benkutil/benkutil.github.io/pull/8) ([benkutil](https://github.com/benkutil))
+- Site displays contact details in footer [\#6](https://github.com/benkutil/benkutil.github.io/pull/6) ([benkutil](https://github.com/benkutil))
+- Site supports responsive images [\#4](https://github.com/benkutil/benkutil.github.io/pull/4) ([benkutil](https://github.com/benkutil))
+
 ## [v0.2.0](https://github.com/benkutil/benkutil.github.io/tree/v0.2.0) (2016-01-14)
-### :sparkles: Implemented Enhancements
+**Closed issues:**
 
 - launch website [\#1](https://github.com/benkutil/benkutil.github.io/issues/1)
 
