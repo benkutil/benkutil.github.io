@@ -4,3 +4,8 @@
 <style type="text/css">
 {% include {{ include.inline }} %}
 </style>
+<noscript>
+  <!-- build:css {{ include.full | prepend: site.baseurl }} -->
+  <link rel="stylesheet" href="{{ include.full | prepend: site.baseurl }}">
+  <!-- endbuild -->
+</noscript>
