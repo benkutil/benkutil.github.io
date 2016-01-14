@@ -16,7 +16,7 @@ I could say the same about baking bread. I enjoy doing it, but had found excuses
 
 So I’ve started today, with a simple site, and a new starter.
 
-![Started, Day 2](/media/bread/bread-starter-new-top.jpg)
+{% picture bread/bread-starter-new-top.jpg alt="Started, Day 2" %}
 
 In the past, I’ve followed Chad Robertson’s starter process from his [Country Bread recipe](http://cooking.nytimes.com/recipes/1016277-tartines-country-bread). This time, I’ve [used a recipe](https://www.dropbox.com/sh/9qinzbju8ihqy22/AADvBda8-wy6Otxq73_nNlvNa/GET%20STARTER'ED.pdf?dl=0) from [@apieceofbread](https://instagram.com/apieceofbread). He has also put all of his [bread formulae up on Dropbox](https://www.dropbox.com/sh/9qinzbju8ihqy22/AACjVcSIkHGDAAPQTRClXsjya?dl=0).
 
@@ -24,7 +24,7 @@ In the past, I’ve followed Chad Robertson’s starter process from his [Countr
 
 I find bread so interesting because at its simplest, it consists of flour, water, time, and heat. A starter makes use of all of those ingredients. In the beginning, you “feed” or replenish a starter on a daily basis. During that day, you want to keep you starter between 86°F and 104°F. My house does not get that warm, so my starter hangs out on top of my Mac Pro. The exhaust of my computer hovers around 100°F.
 
-![Keep warm little starter](/media/bread/bread-starter-new-location.jpg)
+{% picture bread/bread-starter-new-location.jpg alt="Keep warm little starter" %}
 
 Bread recipes represent all other ingredients as percentages of the total flour weight.
 
