@@ -65,5 +65,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "picturefill": "^3.0.1"
   }
 }
