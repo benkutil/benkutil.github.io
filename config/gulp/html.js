@@ -1,5 +1,5 @@
 module.exports = ( gulp, $, config ) => {
-  gulp.task( 'html', [ 'clean', 'jekyll-build' ], () => {
+  gulp.task( 'html', [ 'jekyll-prod' ], () => {
     return gulp.src('tmp/**/*.html')
       .pipe($.useref({searchPath: ['tmp', 'source', '.']}))
       .pipe($.if('*.js', $.uglify()))

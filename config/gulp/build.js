@@ -1,3 +1,3 @@
 module.exports = ( gulp, $, config ) => {
-  gulp.task( 'build', [ 'critical' ] );
+  gulp.task( 'build', [ 'clean', 'html' ] );
 }
