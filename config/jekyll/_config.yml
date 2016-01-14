@@ -9,6 +9,9 @@ title: > #
   Ben Kutil, Baltimore designer, teacher, baker
 description: > #
   A goal for 2016, keeping a consistent website.
+email: thisis@benkutil.com
+github_username: benkutil
+twitter_username: benkutil
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 
