@@ -22,6 +22,7 @@
 import gulp from 'gulp';
 import cp from 'child_process';
 import critical from 'critical';
+import del from 'del';
 import browserSync from 'browser-sync';
 import gulpLoadPlugins from 'gulp-load-plugins';
 
@@ -39,14 +40,17 @@ import config from './package.json';
 //    mocha: true
 //  }
 //};
-const reload = browserSync.reload;
 
 // §§ Auto Load Plugins
 const $ = gulpLoadPlugins();
+$.browserSync = browserSync;
+$.cp = cp;
 $.critical = critical;
+$.del = del;
+$.reload = browserSync.reload;
 
 
 // §§ Auto Load Subtasks
 // Pulls task directory from package.json, under 'build' section
 // Passes $, which includes the loaded plugins.
-$.loadSubtasks( `${config.build.tasks}/*.js`, $, config, browserSync, reload, cp );
+$.loadSubtasks( `${config.build.tasks}/*.js`, $, config );
