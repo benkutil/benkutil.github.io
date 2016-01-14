@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Getting Started"
-date:   2016-01-14 11:03:19 -0500
+published: true
+date: 2016-01-14
 categories: update bread
+
 ---
 
 My story sounds familiar. Make some New Years resolutions with good intentions,
