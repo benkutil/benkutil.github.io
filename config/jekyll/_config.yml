@@ -1,0 +1,16 @@
+# App Settings
+source: source/
+destination: tmp/
+exclude: [
+  'source/styles'
+]
+
+title: > #
+  Ben Kutil, Baltimore designer, teacher, baker
+description: > #
+  A goal for 2016, keeping a consistent website.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+# Editing settings
+markdown: redcarpet
