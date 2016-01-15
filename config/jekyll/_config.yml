@@ -18,6 +18,17 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 # Editing settings
 markdown: redcarpet
 
+collections:
+  recipes:
+    output: true
+    permalink: /cooks/:path/
+  consumables:
+    output: true
+    permalink: /consumes/:path/
+  portfolio:
+    output: true
+    permalink: /makes/:path/
+
 gems: [jekyll-picture-tag]
 
 picture:
