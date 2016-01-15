@@ -41,7 +41,7 @@ after_success:
   - ssh-add
   - cd dist
   - git add .
-  - git commit -m ":shipit: Production Build from ${TRAVIS_COMMIT}"
+  - git commit -m "\:shipit\: Production Build from ${TRAVIS_COMMIT}"
   - git push origin HEAD:master
   - cd ../
   - bundle exec cap production deploy
