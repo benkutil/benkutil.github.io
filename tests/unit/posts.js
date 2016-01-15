@@ -6,7 +6,6 @@ var yaml = require('js-yaml');
 var assert = require('chai').assert
 var posts = fs.readdirSync("source/_posts/");
 var path = require("path");
-var path_exists = require('path-exists');
 
 posts.forEach(function(post) {
   describe(post, function() {
