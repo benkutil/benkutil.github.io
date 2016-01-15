@@ -1,4 +1,14 @@
 language: ruby
+node_js:
+  - '5.3.0'
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 sudo: false
 cache:
   bundler: true
@@ -15,6 +25,7 @@ before_install:
   -in config/travis/travis_rsa.enc -out ~/.ssh/id_rsa -d
 - git config --global user.name "${GIT_NAME}"
 - git config --global user.email "${GIT_EMAIL}"
+- npm install -g npm@'>=3.3.6'
 install:
 - bundle install
 - npm install
