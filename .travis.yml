@@ -40,7 +40,7 @@ after_success:
   - chmod 600 ~/.ssh/id_rsa
   - ssh-add
   - cd dist
-  - git add .
+  - git add -A
   - git commit -m ':shipit:'" Production Build from ${TRAVIS_COMMIT}"
   - git push origin HEAD:master
   - cd ../
