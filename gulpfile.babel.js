@@ -20,11 +20,12 @@
 
 // § Imports, Plugins
 import gulp from 'gulp';
+import browserSync from 'browser-sync';
 import cp from 'child_process';
 import critical from 'critical';
 import del from 'del';
-import browserSync from 'browser-sync';
 import gulpLoadPlugins from 'gulp-load-plugins';
+import runSequence from 'run-sequence';
 
 
 // §§ Configs
@@ -48,6 +49,7 @@ $.cp = cp;
 $.critical = critical;
 $.del = del;
 $.reload = browserSync.reload;
+$.runSequence = runSequence;
 
 
 // §§ Auto Load Subtasks

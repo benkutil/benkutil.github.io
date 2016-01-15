@@ -21,7 +21,7 @@ markdown: redcarpet
 gems: [jekyll-picture-tag]
 
 picture:
-  source: ../shared/media
+  source: media
   output: media/generated
   markup: picture
   presets:
