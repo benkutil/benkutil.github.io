@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body data-template="default.html" data-env="{{ jekyll.environment }}">
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WMPTJG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WMPTJG');
+    </script>
+    <!-- End Google Tag Manager -->
+    {% include header.html %}
+    <div class="page-content">
+        <div class="wrapper">
+            {{ content }}
+            <article class="post">
+                <header class="post-header">
+                    <h1 class="post-title">{{ page.title }}</h1>
+                </header>
+                <div class="post-content">
+                    {{ content }}
+                </div>
+            </article>
+            <div>
+                <h1 class="page-heading">Posts</h1>
+                <ul class="post-list">
+                    {% for post in site.posts %}
+                    <li>
+                        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                        <h2>
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h2>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>
