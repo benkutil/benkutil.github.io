@@ -1,0 +1,32 @@
+---
+layout: page
+# title: Designs
+permalink: /designs/
+---
+
+{% assign groups = site.portfolio | group_by: "category" | sort: "name" %}
+
+<div class="home">
+
+  <h1 class="page-heading">Recipes</h1>
+
+  <ul class="post-list">
+    {% for group in groups %}
+    <li>
+      <h2>{{ group.name }}</h2>
+      <ul>
+        {% for post in group.items %}
+        <li>
+          <h3>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h3>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

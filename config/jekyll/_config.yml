@@ -27,7 +27,7 @@ collections:
     permalink: /consumes/:path/
   portfolio:
     output: true
-    permalink: /makes/:path/
+    permalink: /designs/:path/
 
 gems: [jekyll-picture-tag]
 
