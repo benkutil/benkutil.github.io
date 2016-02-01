@@ -1,0 +1,34 @@
+---
+layout: page
+title: Consumes
+permalink: /consumes/
+---
+
+{% assign groups = site.consumables | group_by: "category" | sort: "name" %}
+
+<div class="home">
+
+    <h1 class="page-heading">Consumes</h1>
+
+    <ul class="post-list">
+        {% for group in groups %}
+        <li>
+            <h2>{{ group.name }}</h2>
+            <ul>
+                {% for post in group.items %} {% if post.published != false %}
+                <li>
+                    <h3>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h3>
+                </li>
+                {% endif %} {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+
+

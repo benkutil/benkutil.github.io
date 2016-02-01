@@ -6,7 +6,7 @@ exclude: [
 ]
 
 title: > #
-  Ben Kutil, Baltimore designer, teacher, baker
+  Ben Kutil, Product Designer, Teacher, Baker
 description: > #
   A goal for 2016, keeping a consistent website.
 email: thisis@benkutil.com
@@ -27,7 +27,7 @@ collections:
     permalink: /consumes/:path/
   portfolio:
     output: true
-    permalink: /makes/:path/
+    permalink: /designs/:path/
 
 gems: [jekyll-picture-tag]
 
