@@ -1,34 +1,18 @@
 ---
 layout: default
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+{% include header-home.html %}
 
-  <div class="post-content">
-    {{ content }}
-  </div>
 
-  <div class="home">
+<main class="site-hold m2 mt3 mb4 sm-m3 md-m4 px2 sm-px3 md-px4">
+    <section>
+        <h2 class="sans h4 caps m0 bb bd-red red">Posts</h2>
 
-    <h1 class="page-heading">Posts</h1>
-
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-  </div>
-
-</article>
+        <ul class="list-reset">
+        {% for post in site.posts %}
+        {% include list-item.html post=post %}
+        {% endfor %}
+        </ul>
+    </section>
+</main>

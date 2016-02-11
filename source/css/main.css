@@ -1,0 +1,106 @@
+---
+
+---
+* { box-sizing: border-box }
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #555;
+  background-color: #fff;
+}
+
+.serif {
+  font-family: Merriweather, serif;
+}
+
+a {
+  color: inherit;
+}
+
+h1 { font-size: 2rem }
+h2 { font-size: 1.5rem }
+h3 { font-size: 1.25rem }
+h4 { font-size: 1rem }
+h5 { font-size: .875rem }
+h6 { font-size: .75rem }
+
+.h0 { font-size: 2rem }
+
+@media screen and (min-width: 50em) {
+  .h0 { font-size: 4vw }
+}
+
+hr {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border: 0;
+  border-bottom: 3px solid;
+}
+
+.btn {
+  display: inline-block;
+  padding: .25em 1.25em;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.btn:hover {
+  box-shadow: inset 0 0 0 1px;
+}
+
+.red   { color: #d72c66 }
+
+
+.bg-red   { background-color: #d72c66 }
+
+.bd { border: 3px solid }
+.bt { border-top:    3px solid }
+.br { border-right:  3px solid }
+.bb { border-bottom: 3px solid }
+.bl { border-left:   3px solid }
+
+@media screen and (min-width: 40em) {
+  .sm-m3 { margin: 2rem }
+  .sm-p3 { padding: 2rem }
+  .sm-px3 { padding-right: 2rem; padding-left: 2rem }
+}
+@media screen and (min-width: 52em) {
+    .md-m4 {
+        margin: 4rem
+    }
+    .md-mx4 {
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .md-mxn4 {
+        margin-right: -4rem;
+        margin-left: -4rem;
+    }
+    .md-mt0 {
+        margin-top: 0;
+    }
+    .md-mt2 {
+        margin-top: 2rem;
+    }
+    .md-ml1 {
+        margin-left: .5rem;
+    }
+    .md-p4 {
+        padding: 4rem
+    }
+    .md-px4 {
+        padding-right: 4rem;
+        padding-left: 4rem
+    }
+    .md-align-right {
+      text-align: right;
+    }
+}
