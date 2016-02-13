@@ -1,37 +1,9 @@
-<footer class="site-footer">
-
-    <div class="wrapper">
-
-        <h2 class="footer-heading">{{ site.title }}</h2>
-
-        <div class="footer-col-wrapper">
-            <div class="footer-col footer-col-1">
-                <ul class="contact-list">
-                    <li>{{ site.title }}</li>
-                    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col footer-col-2">
-                <ul class="social-media-list">
-                    {% if site.github_username %}
-                    <li>
-                        {% include icon-github.html username=site.github_username %}
-                    </li>
-                    {% endif %} {% if site.twitter_username %}
-                    <li>
-                        {% include icon-twitter.html username=site.twitter_username %}
-                    </li>
-                    {% endif %}
-                </ul>
-            </div>
-
-            <div class="footer-col footer-col-3">
-                <p>I’m looking for full-time work with a remote-friendly company. If you’re interested in working togther, drop me a line: thisis@benkutil.com
-                </p>
-            </div>
-        </div>
+<footer class="site-footer p2 sm-p3 md-p4 white bg-red" data-ui="site-footer">
+    <div class="px2 sm-px3 md-px4">
+        <p class="h3 max-width-2">I’m looking for full-time work with a remote-friendly company.
+            <br class="sm-hide">If you’re interested in working togther, <a class="bold text-decoration-none" href="mailto: thisis@benkutil.com">send me an email</a>.
+        </p>
+        <p><a class="text-decoration-none" href="http://madewithloveinbaltimore.org">Made with &hearts; from Baltimore</a>.</p>
     </div>
-
 </footer>
-
+<!-- /.site-footer -->

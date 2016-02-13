@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Getting Started"
+tagline: >
+    I haven’t had a website in 6 years, and haven't baked bread in 6 months. It’s time to change that.
 published: true
 date: 2016-01-14
 categories: update bread
+
 ---
 
 {% assign starter-recipe = site.recipes | where: "id", "bread-starter-apiece" | first %}
@@ -33,8 +36,6 @@ I find bread so interesting because at its simplest, it consists of flour, water
 Bread recipes represent all other ingredients as percentages of the total flour weight.
 
 In the case of this starter, you begin with `100% Flour`, and `200% Water`. That means, if you began with `30g flour`, you would use `60g water`.
-
-## Starter Formulae
 
 {% include recipe-card.html recipe=starter-recipe %}
 

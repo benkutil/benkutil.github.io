@@ -5,15 +5,16 @@ exclude: [
   'source/styles'
 ]
 
-title: > #
-  Ben Kutil, Product Designer, Teacher, Baker
+title: Ben Kutil
 description: > #
-  A goal for 2016, keeping a consistent website.
+  A systems-obsessed product designer who codes, teaches, and bakes.
 email: thisis@benkutil.com
 github_username: benkutil
 twitter_username: benkutil
 
 baseurl: "" # the subpath of your site, e.g. /blog/
+
+excerpt_separator: ""
 
 # Editing settings
 markdown: redcarpet
@@ -40,11 +41,11 @@ picture:
     default:
       ppi: [1, 2]
       attr:
-        class: blog-full
+        class: block
         itemprop: image
       source_lrg:
         media: "(min-width: 40em)"
-        width: 700
+        width: 768
       source_med:
         media: "(min-width: 30em)"
         width: 550
