@@ -2,21 +2,17 @@
 layout: default
 ---
 
-<section>
-    <h2 class="sans h4 caps m0 bb">Posts</h2>
+{% include header-home.html %}
 
-    <ul class="list-reset">
-    {% for post in site.posts %}
-        <li>
-            <span>{{ post.date | date: "%b %-d, %Y" }}</span>
 
-            <h3 class="h2 m0">
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                    {{ post.title }}
-                </a>
-            </h3 class="h2">
+<main class="site-hold m2 mb4 sm-m3 md-m4 px2 sm-px3 md-px4">
+    <section>
+        <h2 class="sans h4 caps m0 bb bd-red red">Posts</h2>
 
-        </li>
-    {% endfor %}
-    </ul>
-</section>
+        <ul class="list-reset">
+        {% for post in site.posts %}
+        {% include list-item.html post=post %}
+        {% endfor %}
+        </ul>
+    </section>
+</main>
