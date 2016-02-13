@@ -6,8 +6,8 @@
         <p class="m0">
             <a href="{{ include.recipe.source }}">Get Recipe</a>
         </p>
-        {% if include.recipe.excerpt %}
-            {{ include.recipe.excerpt | markdownify }}
+        {% if include.recipe.tagline %}
+            {{ include.recipe.tagline | markdownify }}
         {% endif %}
 
         {{ include.recipe.content | markdownify }}</div>
