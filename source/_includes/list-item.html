@@ -1,0 +1,11 @@
+{% assign post = include.post %}
+<li class="my2">
+    <h3 class="h2 m0">
+        <a class="post-link text-decoration-none" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h3>
+    {% if post.tagline != false %}
+    <div class="m0">
+        {{ post.tagline | markdownify }}
+    </div>
+    {% endif %}
+</li>
