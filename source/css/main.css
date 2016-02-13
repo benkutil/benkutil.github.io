@@ -165,11 +165,23 @@ hr {
         margin-right: -4rem;
         margin-left: -4rem;
     }
+    .md-mt0 {
+        margin-top: 0;
+    }
+    .md-mt2 {
+        margin-top: 2rem;
+    }
+    .md-ml1 {
+        margin-left: .5rem;
+    }
     .md-p4 {
         padding: 4rem
     }
     .md-px4 {
         padding-right: 4rem;
         padding-left: 4rem
+    }
+    .md-align-right {
+      text-align: right;
     }
 }

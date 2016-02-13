@@ -7,10 +7,24 @@
     <a class="text-decoration-none" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
 </h1>
 {% endif %}
-<nav class="site-nav md-col md-col-3 right-align">
+<nav class="site-nav md-col md-col-3 md-align-right mt2 md-mt0">
     {% if include.interior == true %}
-    <a class="page-link ml1" href="{{ '/' | prepend: site.baseurl }}">Home</a>
+        <a class="page-link md-ml1" href="{{ '/' | prepend: site.baseurl }}">Home</a>
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+            <a class="page-link ml1" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% endif %}
+        {% endfor %}
+    {% else %}
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+            {% if forloop.first == true %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% else %}
+            <a class="page-link ml1" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
     {% endif %}
-    {% for my_page in site.pages %} {% if my_page.title %}
-    <a class="page-link ml1" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> {% endif %} {% endfor %}
+
 </nav>
