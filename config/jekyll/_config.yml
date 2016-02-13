@@ -1,81 +1,111 @@
-# App Settings
+# Source Settings
 source: source/
 destination: tmp/
 exclude: [
-  'source/styles'
+    'source/styles'
 ]
 
+# Site Settings
 title: Ben Kutil
-description: > #
-  A systems-obsessed product designer who codes, teaches, and bakes.
+description: >
+    A systems-obsessed product designer who codes, teaches, and bakes.
 email: thisis@benkutil.com
 github_username: benkutil
 twitter_username: benkutil
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-
+# Jekyll Configuration
+baseurl: ""
 excerpt_separator: ""
-
-# Editing settings
 markdown: redcarpet
-
-collections:
-  recipes:
-    output: true
-    permalink: /cooks/:path/
-  consumables:
-    output: true
-    permalink: /consumes/:path/
-  portfolio:
-    output: true
-    permalink: /designs/:path/
-
 gems: [jekyll-picture-tag]
 
+# Defaults
+defaults:
+    -
+        scope:
+            path: "" # an empty string here means all files in the project
+            type: "posts"
+        values:
+            layout: "posts"
+            tagline: ""
+    -
+        scope:
+            path: "" # an empty string here means all files in the project
+            type: "recipes"
+        values:
+            layout: "page"
+            tagline: ""
+    -
+        scope:
+            path: "" # an empty string here means all files in the project
+            type: "consumables"
+        values:
+            layout: "page"
+            tagline: ""
+    -
+        scope:
+            path: "" # an empty string here means all files in the project
+            type: "portfolio"
+        values:
+            layout: "page"
+            tagline: ""
+
+# Collections
+collections:
+    recipes:
+        output: true
+        permalink: /cooks/:path/
+    consumables:
+        output: true
+        permalink: /consumes/:path/
+    portfolio:
+        output: true
+        permalink: /designs/:path/
+
+# Plugin Details
+#
+# Picture
 picture:
-  source: media
-  output: media/generated
-  markup: picture
-  presets:
-    # Full width pictures
-    default:
-      ppi: [1, 2]
-      attr:
-        class: block
-        itemprop: image
-      source_lrg:
-        media: "(min-width: 40em)"
-        width: 768
-      source_med:
-        media: "(min-width: 30em)"
-        width: 550
-      source_default:
-        width: 375
-        height: 375
-    # Half width pictures
-    half:
-      ppi: [1, 2]
-      attr:
-        data-location: "{{location}}"
-        data-active: nil
-      source_lrg:
-        media: "(min-width: 40em)"
-        width: 350
-      source_med:
-        media: "(min-width: 30em)"
-        width: 275
-      source_default:
-        width: 188
-    # Self-set resolution sources. Useful if you don't want a 1:1 image size to dppx ratio.
-    gallery:
-      source_wide_hi:
-        media: "(min-width: 40em) and (min-resolution: 1.5dppx)"
-        width: 900
-        height: 600
-      source_wide:
-        media: "(min-width: 40em)"
-        width: 600
-        height: 400
-      source_default:
-        width: 250
-        height: 250
+    source: media
+    output: media/generated
+    markup: picture
+    presets:
+        default:
+            ppi: [1, 2]
+            attr:
+                class: block
+                itemprop: image
+            source_lrg:
+                media: "(min-width: 40em)"
+                width: 768
+            source_med:
+                media: "(min-width: 30em)"
+                width: 550
+            source_default:
+                width: 375
+                height: 375
+        half:
+            ppi: [1, 2]
+            attr:
+                data-location: "{{location}}"
+                data-active: nil
+            source_lrg:
+                media: "(min-width: 40em)"
+                width: 350
+            source_med:
+                media: "(min-width: 30em)"
+                width: 275
+            source_default:
+                width: 188
+        gallery:
+            source_wide_hi:
+                media: "(min-width: 40em) and (min-resolution: 1.5dppx)"
+                width: 900
+                height: 600
+            source_wide:
+                media: "(min-width: 40em)"
+                width: 600
+                height: 400
+            source_default:
+                width: 250
+                height: 250
