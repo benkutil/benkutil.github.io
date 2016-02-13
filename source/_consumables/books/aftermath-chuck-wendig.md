@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "Aftermath: Journey to The Force Awakens"
+tagline: false
 category: books
 id: aftermath-chuck-wendig
 published: true

@@ -14,6 +14,8 @@ twitter_username: benkutil
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 
+excerpt_separator: ""
+
 # Editing settings
 markdown: redcarpet
 
@@ -39,11 +41,11 @@ picture:
     default:
       ppi: [1, 2]
       attr:
-        class: blog-full
+        class: block
         itemprop: image
       source_lrg:
         media: "(min-width: 40em)"
-        width: 700
+        width: 768
       source_med:
         media: "(min-width: 30em)"
         width: 550
