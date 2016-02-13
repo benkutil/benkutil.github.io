@@ -23,7 +23,7 @@ module.exports = ( gulp, $, config ) => {
 
     // Home
     $.critical.generate({
-      base: 'tmp/',
+      base: 'dist/',
       src: 'index.html',
       dest: 'source/_includes/critical-default.css',
       minify: true,
