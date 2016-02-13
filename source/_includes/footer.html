@@ -1,11 +1,8 @@
-<footer class="site-footer m2 sm-m3 md-m4 bt red" data-ui="site-footer">
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-    {% if site.twitter_username %}
-        <p>
-            {% include icon-twitter.html username=site.twitter_username %}
+<footer class="site-footer p2 sm-p3 md-p4 white bg-red" data-ui="site-footer">
+    <div class="px2 sm-px3 md-px4">
+        <p class="h3 max-width-2">I’m looking for full-time work with a remote-friendly company.<br class="sm-hide">If you’re interested in working togther, <a class="bold text-decoration-none" href="mailto: thisis@benkutil.com">send me an email</a>.
         </p>
-    {% endif %}
-    <p>I’m looking for full-time work with a remote-friendly company. If you’re interested in working togther, drop me a line.{% if site.email %} <a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
-    </p>
+        <p>Made with &hearts; from Baltimore</p>
+    </div>
 </footer>
 <!-- /.site-footer -->
