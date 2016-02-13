@@ -6,7 +6,6 @@ module.exports = ( gulp, $, config ) => {
         [ 'build',
           '--config',
           'config/jekyll/_config.yml,config/jekyll/_config-prod.yml',
-          '--incremental'
         ],
         { stdio: 'inherit' }
       )
