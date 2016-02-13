@@ -37,7 +37,5 @@ Bread recipes represent all other ingredients as percentages of the total flour 
 
 In the case of this starter, you begin with `100% Flour`, and `200% Water`. That means, if you began with `30g flour`, you would use `60g water`.
 
-## Starter Formulae
-
 {% include recipe-card.html recipe=starter-recipe %}
 
