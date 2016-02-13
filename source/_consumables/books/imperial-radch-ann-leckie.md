@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Imperial Radch Series"
+tagline: false
 category: books
 id: imperial-radch-ann-leckie
 published: false

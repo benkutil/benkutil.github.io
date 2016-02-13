@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Getting Started"
+tagline: >
+    I haven’t had a website in 6 years, and haven't baked bread in 6 months. It’s time to change that.
 published: true
 date: 2016-01-14
 categories: update bread
+
 ---
 
 {% assign starter-recipe = site.recipes | where: "id", "bread-starter-apiece" | first %}
