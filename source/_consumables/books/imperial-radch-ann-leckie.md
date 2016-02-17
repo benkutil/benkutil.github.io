@@ -2,9 +2,10 @@
 layout: page
 title: "Imperial Radch Series"
 tagline: false
+date: 2016-01-15
 category: books
 id: imperial-radch-ann-leckie
-published: false
+published: true
 purchase_link:
   - http://amzn.to/1QbaJVa
   - http://amzn.to/20YACZT # ancillary justice

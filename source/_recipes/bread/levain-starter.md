@@ -10,7 +10,7 @@ source: https://www.dropbox.com/sh/9qinzbju8ihqy22/AADvBda8-wy6Otxq73_nNlvNa/GET
 
 
 
-1.  <h3>Refreshment 0</h3>
+1.  <h3 id="bread-starter-apiece-ref-0">Refreshment 0</h3>
 
     ```
     100% Flour (whole grain)
@@ -19,7 +19,7 @@ source: https://www.dropbox.com/sh/9qinzbju8ihqy22/AADvBda8-wy6Otxq73_nNlvNa/GET
     Time: 24h
     Goal Temp: 40°C, or 104°F
     ```
-2. <h3>Refreshment 1</h3>
+2. <h3 id="bread-starter-apiece-ref-1">Refreshment 1</h3>
 
     ```
     100% Flour (whole grain)
@@ -29,7 +29,7 @@ source: https://www.dropbox.com/sh/9qinzbju8ihqy22/AADvBda8-wy6Otxq73_nNlvNa/GET
     Goal Temp: 35°C, or 95°F
     ```
 
-3. <h3>Future Refreshments</h3>
+3. <h3 id="bread-starter-apiece-ref-future">Future Refreshments</h3>
 
     ```
     100% Flour (whole grain)

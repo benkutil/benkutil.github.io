@@ -1,0 +1,11 @@
+{% for item in site.consumables %}
+    {% if item.date | date: "%m" == include.month %}
+<aside class="card consumable-card" id="">
+<div class="max-width-2">
+<h2 class="m0 h1">
+{{ item.title }}
+</h2>
+</aside>
+    {% endif %}
+{% endfor %}
+
