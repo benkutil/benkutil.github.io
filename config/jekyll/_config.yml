@@ -17,7 +17,8 @@ twitter_username: benkutil
 baseurl: ""
 excerpt_separator: ""
 markdown: redcarpet
-gems: [jekyll-picture-tag]
+gems:
+    - jekyll-picture-tag
 
 # Defaults
 defaults:
