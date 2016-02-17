@@ -171,7 +171,13 @@ hr {
         margin-top: 0;
     }
     .md-mt2 {
-        margin-top: 2rem;
+        margin-top: 1rem;
+    }
+    .md-mt3 {
+        margin-top: 3rem;
+    }
+    .md-mt4 {
+        margin-top: 4rem;
     }
     .md-ml1 {
         margin-left: .5rem;
@@ -186,4 +192,9 @@ hr {
     .md-align-right {
         text-align: right;
     }
+}
+
+
+.post-item__content > * {
+    margin: 0;
 }
