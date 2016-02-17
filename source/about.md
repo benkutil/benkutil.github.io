@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
 **Hi, my name is Ben.** I’m a systems-obsessed product designer who codes, teaches, and bakes.
