@@ -1,0 +1,38 @@
+{% assign post = include.post %}
+<li class="post-item grid-item relative">
+    {% if post.thumbnail %}
+        {% assign square = post.thumbnail.square %}
+        {% assign rect = post.thumbnail.rect %}
+        <a class="post-link block text-decoration-none" href="{{ post.url | prepend: site.baseurl }}">
+            <figure class="post-item__attach m0 z1">
+                {% picture work-thumb {{ square }} source_med: {{ rect }} source_lrg: {{ rect }} %}
+            </figure>
+            <!-- /.post-item__attach -->
+            <div class="post-item__body absolute top-0 left-0 ml2 mt2">
+
+                <h3 class="post-item__title h1 m0 white">
+                    <a class="post-link text-decoration-none" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h3>
+                {% if post.tagline != false or post.project.year != false %}
+                <div class="post-item__content u-cms m0 h3 white">
+                    {{ post.tagline | markdownify }}
+                    <p class=" m0 h5 bold white">{{ post.project.year }}</p>
+                </div>
+                {% endif %}
+
+            </div>
+            <!-- /.post-item__body -->
+        </a>
+    {% else %}
+        <a class="post-link block text-decoration-none" href="{{ post.url | prepend: site.baseurl }}">
+            <h3 class="post-item__title h2 m0">
+                {{ post.title }}
+            </h3>
+            {% if post.tagline != false %}
+            <div class="post-item__content u-cms m0">
+                {{ post.tagline | markdownify }}
+            </div>
+            {% endif %}
+        </a>
+    {% endif %}
+</li>
