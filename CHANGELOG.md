@@ -1,7 +1,36 @@
 # Change Log
 
+## [v0.4.1](https://github.com/benkutil/benkutil.github.io/tree/v0.4.1) (2016-02-18)
+[Full Changelog](https://github.com/benkutil/benkutil.github.io/compare/v0.4.0...v0.4.1)
+
+**Closed issues:**
+
+- store recipes as a collection [\#18](https://github.com/benkutil/benkutil.github.io/issues/18)
+- automated build process [\#15](https://github.com/benkutil/benkutil.github.io/issues/15)
+
+### :twisted_rightwards_arrows: Merged Pull Requests
+
+- Site has correct image sizes [\#23](https://github.com/benkutil/benkutil.github.io/pull/23) ([benkutil](https://github.com/benkutil))
+- Site stores recipes as collections [\#22](https://github.com/benkutil/benkutil.github.io/pull/22) ([benkutil](https://github.com/benkutil))
+- CI similar environment on Ubuntu trusty or precise [\#21](https://github.com/benkutil/benkutil.github.io/pull/21) ([benkutil](https://github.com/benkutil))
+- Readme shows build status indicator [\#20](https://github.com/benkutil/benkutil.github.io/pull/20) ([benkutil](https://github.com/benkutil))
+
 ## [v0.4.0](https://github.com/benkutil/benkutil.github.io/tree/v0.4.0) (2016-01-15)
-[Full Changelog](https://github.com/benkutil/benkutil.github.io/compare/v0.2.0...v0.4.0)
+[Full Changelog](https://github.com/benkutil/benkutil.github.io/compare/v0.3.0...v0.4.0)
+
+**Closed issues:**
+
+- ssl always [\#19](https://github.com/benkutil/benkutil.github.io/issues/19)
+- track site visitors [\#13](https://github.com/benkutil/benkutil.github.io/issues/13)
+
+### :twisted_rightwards_arrows: Merged Pull Requests
+
+- Site uses continuous integration [\#16](https://github.com/benkutil/benkutil.github.io/pull/16) ([benkutil](https://github.com/benkutil))
+- Repository has details for contributing [\#14](https://github.com/benkutil/benkutil.github.io/pull/14) ([benkutil](https://github.com/benkutil))
+- Site tracks visitors [\#12](https://github.com/benkutil/benkutil.github.io/pull/12) ([benkutil](https://github.com/benkutil))
+
+## [v0.3.0](https://github.com/benkutil/benkutil.github.io/tree/v0.3.0) (2016-01-14)
+[Full Changelog](https://github.com/benkutil/benkutil.github.io/compare/v0.2.0...v0.3.0)
 
 ### :bug: Fixed Bugs
 
@@ -9,17 +38,12 @@
 
 **Closed issues:**
 
-- ssl always [\#19](https://github.com/benkutil/benkutil.github.io/issues/19)
-- track site visitors [\#13](https://github.com/benkutil/benkutil.github.io/issues/13)
 - Posts have unit tests [\#7](https://github.com/benkutil/benkutil.github.io/issues/7)
 - update contact details [\#5](https://github.com/benkutil/benkutil.github.io/issues/5)
 - images use picture-based format [\#3](https://github.com/benkutil/benkutil.github.io/issues/3)
 
 ### :twisted_rightwards_arrows: Merged Pull Requests
 
-- Site uses continuous integration [\#16](https://github.com/benkutil/benkutil.github.io/pull/16) ([benkutil](https://github.com/benkutil))
-- Repository has details for contributing [\#14](https://github.com/benkutil/benkutil.github.io/pull/14) ([benkutil](https://github.com/benkutil))
-- Site tracks visitors [\#12](https://github.com/benkutil/benkutil.github.io/pull/12) ([benkutil](https://github.com/benkutil))
 - posts pass extension tests [\#10](https://github.com/benkutil/benkutil.github.io/pull/10) ([benkutil](https://github.com/benkutil))
 - Posts have unit tests [\#8](https://github.com/benkutil/benkutil.github.io/pull/8) ([benkutil](https://github.com/benkutil))
 - Site displays contact details in footer [\#6](https://github.com/benkutil/benkutil.github.io/pull/6) ([benkutil](https://github.com/benkutil))
