@@ -4,7 +4,7 @@ module.exports = ( gulp, $, config ) => {
     return gulp.src([
       'tmp/*.*',
       '!tmp/**/*.html',
-      '!tmp/media/**'
+      'shared/**'
     ], {
       dot: true
     }).pipe(gulp.dest('dist'));
