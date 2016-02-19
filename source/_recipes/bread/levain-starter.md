@@ -1,11 +1,10 @@
 ---
-published: true
-title:  "Levain Starter Formulae"
 category: bread
 id: bread-starter-apiece
-tagline: >
-    Starter formulae from [@apieceofbread](https://instagram.com/apieceofbread) on Instagram
-source: https://www.dropbox.com/sh/9qinzbju8ihqy22/AADvBda8-wy6Otxq73_nNlvNa/GET%20STARTER'ED.pdf?dl=0
+published: true
+source: "https://www.dropbox.com/sh/9qinzbju8ihqy22/AADvBda8-wy6Otxq73_nNlvNa/GET%20STARTER'ED.pdf?dl=0"
+tagline: "Starter formulae from [@apieceofbread](https://instagram.com/apieceofbread) on Instagram"
+title: Levain Starter Formulae
 ---
 
 1.  <h3 id="bread-starter-apiece-ref-0">Refreshment 0</h3>

@@ -9,7 +9,7 @@ categories: update bread
 
 ---
 
-{% assign starter = site.recipes | where: "id", "bread-starter-apiece" | first %}
+{% assign starter = site.recipes | where: id, bread-starter-apiece | first %}
 
 
 My story sounds familiar. Make some New Years resolutions with good intentions,

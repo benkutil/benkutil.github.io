@@ -6,7 +6,7 @@
         <h2 class="sans h4 caps m0 bb bd-red red">{{ group.name }}</h2>
         <ul class="list-reset">
             {% for post in group.items %} {% if post.published != false %}
-            {% include list-item.html post=post  %}
+            {% include list-item.html post=post %}
             {% endif %} {% endfor %}
         </ul>
     </li>

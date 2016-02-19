@@ -1,18 +1,16 @@
 <aside class="card recipe-card p2 sm-p3 md-p4 mxn2 sm-mxn3 md-mxn4 bg-pink-lady" id="{{ include.recipe.id }}">
     <div class="max-width-2">
         <h2 class="m0 h1">
-        {{ include.recipe.title }}
+            {{ include.recipe.title }}
         </h2>
-
         <p class="m0">
             <a href="{{ include.recipe.source }}">Get Recipe</a>
         </p>
 
-        {% if include.recipe.tagline %}
-            {{ include.recipe.tagline | markdownify }}
-        {% endif %}
+        {{ include.recipe.tagline | markdownify }}
 
         {{ include.recipe.content | markdownify }}
 
     </div>
 </aside>
+<!-- /.card.recipe-card -->
