@@ -11,6 +11,8 @@
 {% endif %}
 {% if page.description %}
   <meta content="{{ page.description }}" property="og:description">
+{% elseif page.content %}
+  <meta content="{{ page.content | strip_html | xml_escape | truncate: 200 }}" property="og:description">
 {% else %}
   <meta content="{{ site.description }}" property="og:description">
 {% endif %}
