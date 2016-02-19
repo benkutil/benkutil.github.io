@@ -62,7 +62,7 @@
 set :stage, :production
 set :app_url, "https://benkutil.com"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-server "makethings.webfactional.com", user: "makethings", roles: %w{web app db}
-set :deploy_to, "/home/makethings/htdocs/benkutil.com/#{fetch(:stage)}/"
-set :tmp_dir, "/home/makethings/tmp"
+server "104.131.36.76", user: "root", roles: %w{web app db}
+set :deploy_to, "/srv/benkutil.com/#{fetch(:stage)}/"
+set :tmp_dir, "/tmp"
 set :keep_releases, 5
