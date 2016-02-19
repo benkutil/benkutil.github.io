@@ -3,12 +3,16 @@
         <h2 class="m0 h1">
         {{ include.recipe.title }}
         </h2>
+
         <p class="m0">
             <a href="{{ include.recipe.source }}">Get Recipe</a>
         </p>
+
         {% if include.recipe.tagline %}
             {{ include.recipe.tagline | markdownify }}
         {% endif %}
 
-        {{ include.recipe.content | markdownify }}</div>
+        {{ include.recipe.content | markdownify }}
+
+    </div>
 </aside>

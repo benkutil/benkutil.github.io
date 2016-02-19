@@ -1,5 +1,5 @@
 ---
-layout: page
+published: true
 title:  "Levain Starter Formulae"
 category: bread
 id: bread-starter-apiece
@@ -7,8 +7,6 @@ tagline: >
     Starter formulae from [@apieceofbread](https://instagram.com/apieceofbread) on Instagram
 source: https://www.dropbox.com/sh/9qinzbju8ihqy22/AADvBda8-wy6Otxq73_nNlvNa/GET%20STARTER'ED.pdf?dl=0
 ---
-
-
 
 1.  <h3 id="bread-starter-apiece-ref-0">Refreshment 0</h3>
 
@@ -35,17 +33,18 @@ source: https://www.dropbox.com/sh/9qinzbju8ihqy22/AADvBda8-wy6Otxq73_nNlvNa/GET
     100% Flour (whole grain)
     50% — 300% Water
     20% Starter
+    ```
 
     Some people like wet starters, and some people like dry starters.
     That’s why the variation in water percentages.
-    ```
+
 
     Keep track of your starter’s hydration level. If you have 100% water and 100% flour, that’s 100% hydration. When determining the amount of flour to use for refreshment, you start with the amount
     of flour in your starter, and multiply by a factor of 5-20. Lower values
     are better for cold environment, and higher values better for warmer environments.
 
 
-    <strong>For Example</strong>
+    #### For Example
 
     If your house is 66°, and you have 50g of 100% hydrated starter, you’d multiply
     25 times 5, for 125g of flour. You could then add the appropriate amount of water
