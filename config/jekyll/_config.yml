@@ -29,6 +29,7 @@ defaults:
         values:
             layout: "post"
             tagline: ""
+            published: false
     -
         scope:
             path: "" # an empty string here means all files in the project
@@ -36,6 +37,7 @@ defaults:
         values:
             layout: "page"
             tagline: ""
+            published: false
     -
         scope:
             path: "" # an empty string here means all files in the project
@@ -43,13 +45,15 @@ defaults:
         values:
             layout: "page"
             tagline: ""
+            published: false
     -
         scope:
             path: "" # an empty string here means all files in the project
             type: "portfolio"
         values:
-            layout: "page"
+            layout: "project"
             tagline: ""
+            published: false
 
 # Collections
 collections:
@@ -83,6 +87,19 @@ picture:
             source_lrg:
                 media: "(min-width: 40em)"
                 width: 768
+            source_med:
+                media: "(min-width: 30em)"
+                width: 550
+            source_default:
+                width: 375
+                height: 375
+        work-thumb:
+            ppi: [1, 2]
+            attr:
+                itemprop: image
+            source_lrg:
+                media: "(min-width: 40em)"
+                width: 992
             source_med:
                 media: "(min-width: 30em)"
                 width: 550

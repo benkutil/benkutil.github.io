@@ -12,8 +12,7 @@ body {
 
 img,
 video,
-embed,
-picture {
+embed {
     max-width: 100%;
     height: auto;
 }
@@ -85,6 +84,14 @@ hr {
     box-shadow: inset 0 0 0 1px;
 }
 
+.bonjour {
+    color: #E2DCDE;
+}
+
+.calypso {
+    color: #388697;
+}
+
 .saddle {
     color: #4e2c20;
 }
@@ -101,8 +108,16 @@ hr {
     color: #fff;
 }
 
+.bd-bonjour {
+    border-color: #E2DCDE;
+}
+
 .bd-red {
     border-color: #d72c66;
+}
+
+.bd-calypso {
+    border-color: #08415C;
 }
 
 .bd-pink-lady {

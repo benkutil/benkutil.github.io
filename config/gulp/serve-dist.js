@@ -6,9 +6,9 @@ module.exports = ( gulp, $, config ) => {
         baseDir: [
           'dist'
         ],
-        routes: {
-          '/media': 'shared/media',
-        }
+        // routes: {
+        //   '/media': 'shared/media',
+        // }
       }
     } );
   } );
