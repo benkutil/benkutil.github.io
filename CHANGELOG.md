@@ -1,6 +1,6 @@
 # Change Log
 
-## [v0.4.1](https://github.com/benkutil/benkutil.github.io/tree/v0.4.1) (2016-02-18)
+## [v0.4.1](https://github.com/benkutil/benkutil.github.io/tree/v0.4.1) (2016-02-19)
 [Full Changelog](https://github.com/benkutil/benkutil.github.io/compare/v0.4.0...v0.4.1)
 
 **Closed issues:**

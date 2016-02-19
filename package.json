@@ -1,6 +1,6 @@
 {
   "name": "benkutil-dot-com",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Personal website for Ben Kutil",
   "main": "gulpfile.babel.js",
   "private": true,
