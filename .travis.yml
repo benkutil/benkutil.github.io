@@ -31,14 +31,14 @@ install:
 - npm install
 before_script:
   - git clone https://${GH_TOKEN}@github.com/benkutil/benkutil.github.io.git --branch master --single-branch dist/
-  - jekyll build --config config/jekyll/_config.yml
+  - gulp build
+  - eval "$(ssh-agent)"
+  - chmod 600 ~/.ssh/id_rsa
+  - ssh-add
 script:
   - npm test
   - htmlproof ./dist
 after_success:
-  - eval "$(ssh-agent)"
-  - chmod 600 ~/.ssh/id_rsa
-  - ssh-add
   - cd dist
   - git add -A
   - git commit -m ':shipit:'" Production Build from ${TRAVIS_COMMIT}"
