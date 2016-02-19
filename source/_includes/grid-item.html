@@ -5,7 +5,7 @@
         {% assign rect = post.thumbnail.rect %}
         <a class="post-link block text-decoration-none" href="{{ post.url | prepend: site.baseurl }}">
             <figure class="post-item__attach m0 z1">
-                {% picture work-thumb {{ square }} source_med: {{ rect }} source_lrg: {{ rect }} %}
+                {% picture work-thumb {{ square }} source_med: {{ rect }} source_lrg: {{ rect }} alt="{{ post.title }}" %}
             </figure>
             <!-- /.post-item__attach -->
             <div class="post-item__body absolute top-0 left-0 ml2 mt2">
