@@ -8,13 +8,13 @@
                 {% picture work-thumb {{ square }} source_med: {{ rect }} source_lrg: {{ rect }} alt="{{ post.title }}" %}
             </figure>
             <!-- /.post-item__attach -->
-            <div class="post-item__body absolute top-0 left-0 ml2 mt2">
+            <div class="post-item__body sm-absolute top-0 left-0 ml2 mt2">
 
-                <h3 class="post-item__title h1 m0 white">
-                    <a class="post-link text-decoration-none" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <h3 class="post-item__title h1 m0 sm-white">
+                    {{ post.title }}
                 </h3>
                 {% if post.tagline != false or post.project.year != false %}
-                <div class="post-item__content u-cms m0 h3 white">
+                <div class="post-item__content u-cms m0 h3 sm-white">
                     {{ post.tagline | markdownify }}
                     <p class=" m0 h5 bold white">{{ post.project.year }}</p>
                 </div>

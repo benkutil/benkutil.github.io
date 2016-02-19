@@ -154,6 +154,9 @@ hr {
 }
 
 @media screen and (min-width: 40em) {
+    .sm-white {
+        color: #fff;
+    }
     .sm-m3 {
         margin: 2rem
     }
@@ -167,6 +170,9 @@ hr {
     .sm-mxn3 {
         margin-right: -2rem;
         margin-left: -2rem;
+    }
+    .sm-absolute {
+        position: absolute;
     }
 }
 
@@ -212,4 +218,9 @@ hr {
 
 .post-item__content > * {
     margin: 0;
+}
+
+.grid-item picture,
+.grid-item img {
+    display: block;
 }
