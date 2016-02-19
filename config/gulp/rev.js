@@ -3,7 +3,8 @@ module.exports = (gulp, $, config) => {
         var revAll = new $.revAll({
             dontRenameFile: [
                 /^\/favicon.ico$/g,
-                '.html'
+                '.html',
+                /^\/feed.xml$/g
             ],
             hashlength: 4
         });
