@@ -3,7 +3,8 @@ module.exports = ( gulp, $, config ) => {
 
     return gulp.src([
       'tmp/**/*.*',
-      '!tmp/**/*.html'
+      '!tmp/**/*.html',
+      '!tmp/media/**'
     ], {
       dot: true
     }).pipe(gulp.dest('dist'));
