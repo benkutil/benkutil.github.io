@@ -19,7 +19,7 @@ posts.forEach(function(post) {
     var metadata = data.metadata;
     it('posts have required YAML', function(){
       assert.equal(typeof metadata, 'object');
-      var meta_keys = ['layout', 'title','published', 'date'];
+      var meta_keys = ['title','published', 'date'];
       for (var key in meta_keys) {
         assert.ok(meta_keys[key] in metadata, 'exists')
       }
