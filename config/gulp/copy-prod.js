@@ -2,7 +2,7 @@ module.exports = ( gulp, $, config ) => {
   gulp.task( 'copy-prod', () => {
 
     return gulp.src([
-      'tmp/**/*.*',
+      'tmp/*.*',
       '!tmp/**/*.html',
       '!tmp/media/**'
     ], {

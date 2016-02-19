@@ -2,7 +2,7 @@
 source: source/
 destination: tmp/
 exclude: [
-    'source/styles'
+    'styles'
 ]
 
 # Site Settings
