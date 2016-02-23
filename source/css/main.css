@@ -153,6 +153,11 @@ hr {
     border-left: 3px solid
 }
 
+figure {
+    margin: 0;
+}
+
+
 @media screen and (min-width: 40em) {
     .sm-white {
         color: #fff;
@@ -173,6 +178,14 @@ hr {
     }
     .sm-absolute {
         position: absolute;
+    }
+    .sm-full-width {
+        display: block;
+
+    }
+    .sm-full-width img {
+        display: block;
+        width: 100%;
     }
 }
 

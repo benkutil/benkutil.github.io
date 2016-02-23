@@ -13,8 +13,27 @@ layout: default
             {% endif %}
             <p class="project-year mb0 mt3 bold">{{ page.project.year }}</p>
         </header>
-        <div class="post-content mx2 sm-mx3 md-mx4 px2 sm-px3 md-px4 h3 max-width-3" itemprop="articleBody">
-            {{ content }}
+        <div class="post-content mx2 sm-mx3 md-mx4 h3" itemprop="articleBody">
+            {% for block in page.blocks %}
+            <div class="block mt3">
+                {% if block.heading %}
+                <h2 class="max-width-3 px2 sm-px3 md-px4 ">{{ block.heading }}</h2>
+                {% endif %}
+                {% if block.body %}
+                    <div class="max-width-3 px2 sm-px3 md-px4 ">
+                        {{ block.body | markdownify }}
+                    </div>
+                {% endif %}
+                {% if block.figure %}
+                    <figure class="sm-full-width">{% picture portfolio {{ block.figure.image }} alt="{{ block.figure.alt }}" class="border bd-bonjour " %}{% if block.figure.caption %}<figcaption class="max-width-3 mt1 px2 sm-px3 md-px4 h5">{{ block.figure.caption }}</figcaption>{% endif %}</figure>
+                {% endif %}
+            </div>
+            {% endfor %}
+            {% if content.size > 1 %}
+            <div class="max-width-3">
+                {{ content }}
+            </div>
+            {% endif %}
         </div>
     </article>
 </main>

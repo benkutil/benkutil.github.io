@@ -106,6 +106,18 @@ picture:
             source_default:
                 width: 375
                 height: 375
+        portfolio:
+            ppi: [1, 2]
+            attr:
+                itemprop: image
+            source_lrg:
+                media: "(min-width: 40em)"
+                width: 992
+            source_med:
+                media: "(min-width: 30em)"
+                width: 768
+            source_default:
+                width: 375
         half:
             ppi: [1, 2]
             attr:
