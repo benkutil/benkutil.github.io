@@ -1,10 +1,14 @@
 ---
-title: "Planning Roadmap’s Future"
+published: false
+title: "Roadmap"
+tagline: >
+    Focusing a company on it’s key differentiators.
 project:
-    - roadmap
+    id: roadmap-branding
+    year: 2015
 ---
 
-- Resource forecasting and planning tool
+<!-- - Resource forecasting and planning tool
 - capital constrained company
 - re-design entire application in a month
 
@@ -16,4 +20,4 @@ project:
 - Categorized features by stakeholder
 - Structured application based on goals or "jobs" a customer needs to do
 - Mobile first explorations
-- Flexible design system
+- Flexible design system -->
