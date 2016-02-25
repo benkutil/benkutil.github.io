@@ -2,12 +2,18 @@
 <html>
     {% include head.html %}
 
-    <body data-template="{{ page.layout }}" data-env="{{ jekyll.environment }}">
+    <body class="table" data-template="{{ page.layout }}" data-env="{{ jekyll.environment }}">
         {% include gtm.html %}
 
-        {{ content }}
+        <div class="table-row" style="height: 100%; width: 100%;">
+            {{ content }}
+        </div>
+        <!-- /.table-cell -->
 
-        {% include footer.html %}
+        <div class="table-row" style="height:1px; width: 100%;">
+            {% include footer.html %}
+        </div>
+        <!-- /.table-cell -->
 
         {% include typekit.html %}
     </body>

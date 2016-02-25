@@ -1,5 +1,5 @@
 {% assign post = include.post %}
-<li class="post-item grid-item relative mb2">
+<li class="post-item grid-item relative mb4 sm-col sm-col-6 px2">
     {% if post.thumbnail %}
         {% assign square = post.thumbnail.square %}
         {% assign rect = post.thumbnail.rect %}
@@ -8,15 +8,15 @@
                 {% picture work-thumb {{ square }} source_med: {{ rect }} source_lrg: {{ rect }} alt="{{ post.title }}" %}
             </figure>
             <!-- /.post-item__attach -->
-            <div class="post-item__body sm-absolute top-0 left-0 ml3 mt2">
+            <div class="post-item__body ">
 
-                <h3 class="post-item__title h1 m0 sm-white">
+                <h3 class="post-item__title h3 m0">
                     {{ post.title }}
                 </h3>
                 {% if post.tagline != false or post.project.year != false %}
-                <div class="post-item__content u-cms m0 h3 sm-white">
+                <div class="post-item__content u-cms m0 h4">
                     {{ post.tagline | markdownify }}
-                    <p class=" m0 h5 bold white">{{ post.project.year }}</p>
+                    <p class=" m0 h5 bold">{{ post.project.year }}</p>
                 </div>
                 {% endif %}
 

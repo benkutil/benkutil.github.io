@@ -11,7 +11,7 @@ layout: default
             {% if page.intro %}
             <p class="post-excerpt serif h1 mt3 mb0 max-width-3">{{ page.intro }}</p>
             {% endif %}
-            <p class="project-year mb0 mt3 bold">{{ page.project.year }}</p>
+            <p class="project-year mb0 mt3 bold">{{ page.year }}</p>
         </header>
         <div class="post-content mx2 sm-mx3 md-mx4 h3" itemprop="articleBody">
             {% for block in page.blocks %}
@@ -26,6 +26,12 @@ layout: default
                 {% endif %}
                 {% if block.figure %}
                     <figure class="sm-full-width">{% picture portfolio {{ block.figure.image }} alt="{{ block.figure.alt }}" class="border bd-bonjour " %}{% if block.figure.caption %}<figcaption class="max-width-3 mt1 px2 sm-px3 md-px4 h5">{{ block.figure.caption }}</figcaption>{% endif %}</figure>
+                {% endif %}
+                {% if block.callout %}
+                    <div class="max-width-3 px2 sm-px3 md-px4 h1 serif">
+                        {{ block.callout | markdownify }}
+                    </div>
+                    <!-- /.max-width-3 px2 sm-px3 md-px4 h1 -->
                 {% endif %}
             </div>
             {% endfor %}

@@ -2,12 +2,23 @@
     box-sizing: border-box
 }
 
+html,
 body {
+    height: 100%;
+}
+
+body {
+    width: 100%;
     margin: 0;
     font-family: 'freight-sans-pro', sans-serif;
     line-height: 1.5;
     color: #4e2c20;
     background-color: #fff;
+}
+
+
+.table-row {
+    display: table-row;
 }
 
 img,
