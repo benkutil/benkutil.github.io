@@ -4,10 +4,10 @@
     <title>Ben Kutil</title>
     <description>A systems-obsessed product designer who codes, teaches, and bakes.
 </description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Feb 2016 21:33:06 -0500</pubDate>
-    <lastBuildDate>Mon, 22 Feb 2016 21:33:06 -0500</lastBuildDate>
+    <link>https://benkutil.com/</link>
+    <atom:link href="https://benkutil.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 25 Feb 2016 22:55:12 -0500</pubDate>
+    <lastBuildDate>Thu, 25 Feb 2016 22:55:12 -0500</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -15,13 +15,13 @@
         <description>&lt;p&gt;I’ve had my starter for about two weeks now. I’ve fed it every day, using the &lt;a href=&quot;/cooks/bread/levain-starter/#bread-starter-apiece-ref-future&quot;&gt;refreshment schedule from @apeiceofbread’s starter recipe&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-levain-1536by1028-1dcbd2.4ff2f34f.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-levain-768by514-1dcbd2.7fbdee68.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-levain-1100by736-1dcbd2.ed223d99.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-levain-550by368-1dcbd2.f62914f9.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-levain-750by750-1dcbd2.4784ec7a.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-levain-375by375-1dcbd2.160d936a.jpg&quot;&gt;
-    &lt;img src=&quot;/media/generated/bread/bread-starter-first-bake-levain-375by375-1dcbd2.160d936a.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;First Bake Levain&quot; &gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-levain-1536by1028-1dcbd2.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-levain-768by514-1dcbd2.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-levain-1100by736-1dcbd2.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-levain-550by368-1dcbd2.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-levain-750by750-1dcbd2.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-levain-375by375-1dcbd2.jpg&quot;&gt;
+    &lt;img src=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-levain-375by375-1dcbd2.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;First Bake Levain&quot; &gt;
   &lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;The starter had good activity after 5 days, but I couldn&amp;#39;t bake with it until this weekend. I decided to trey Ken Forkish’s Country Blonde recipe.&lt;/p&gt;
@@ -31,37 +31,37 @@
 &lt;p&gt;The two recipes differ in their timing of the bulk rise. Chad’s calls for a short bulk rise of 3-4 hours. Ken’s has a longer, 12-15 hour bulk rise. I let the longer bulk rise happen overnight, and had a nice rise in the morning.&lt;/p&gt;
 
 &lt;p&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-1536by1028-43335d.8f2fef79.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-768by514-43335d.d7d4d23c.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-1100by736-43335d.94c2dce9.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-550by368-43335d.500cee4b.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-750by750-43335d.eec510d9.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-375by375-43335d.6fd04486.jpg&quot;&gt;
-    &lt;img src=&quot;/media/generated/bread/bread-starter-first-bake-divide-375by375-43335d.6fd04486.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;slack, divided dough&quot; &gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-1536by1028-43335d.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-768by514-43335d.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-1100by736-43335d.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-550by368-43335d.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-750by750-43335d.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-375by375-43335d.jpg&quot;&gt;
+    &lt;img src=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-375by375-43335d.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;slack, divided dough&quot; &gt;
   &lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;Once I turned the dough out, I realized I had a problem.&lt;/p&gt;
 
 &lt;p&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-02-1536by1028-dbf730.88d862c7.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-02-768by514-dbf730.1b0db1f5.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-02-1100by736-dbf730.bb0dd6c3.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-02-550by368-dbf730.a0a67428.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-02-750by750-dbf730.2e19eee3.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-divide-02-375by375-dbf730.bcc1d6d2.jpg&quot;&gt;
-    &lt;img src=&quot;/media/generated/bread/bread-starter-first-bake-divide-02-375by375-dbf730.bcc1d6d2.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;slack, divided dough&quot; &gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-02-1536by1028-dbf730.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-02-768by514-dbf730.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-02-1100by736-dbf730.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-02-550by368-dbf730.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-02-750by750-dbf730.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-02-375by375-dbf730.jpg&quot;&gt;
+    &lt;img src=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-divide-02-375by375-dbf730.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;slack, divided dough&quot; &gt;
   &lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;The dough had over-fermented. On the counter, it felt slack and didn&amp;#39;t hold shape. I tried &lt;a href=&quot;https://www.youtube.com/watch?v=cbBO4XyL3iM&quot;&gt;slap folds&lt;/a&gt; to help build some structure, but no luck. The folding seemed to break down the gluten structure in the dough, the opposite of what I wanted to happen. Instead, I had a puddle of dough on the counter.&lt;/p&gt;
 
 &lt;p&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-slack-1536by1028-3f05e6.79ea3584.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-slack-768by514-3f05e6.7647de21.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-slack-1100by736-3f05e6.8feba68e.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-slack-550by368-3f05e6.068fcb14.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-slack-750by750-3f05e6.fba5279f.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-first-bake-slack-375by375-3f05e6.ecd7da00.jpg&quot;&gt;
-    &lt;img src=&quot;/media/generated/bread/bread-starter-first-bake-slack-375by375-3f05e6.ecd7da00.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;over fermented, slack bread dough&quot; &gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-slack-1536by1028-3f05e6.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-slack-768by514-3f05e6.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-slack-1100by736-3f05e6.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-slack-550by368-3f05e6.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-slack-750by750-3f05e6.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-slack-375by375-3f05e6.jpg&quot;&gt;
+    &lt;img src=&quot;https://benkutil.com/media/generated/bread/bread-starter-first-bake-slack-375by375-3f05e6.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;over fermented, slack bread dough&quot; &gt;
   &lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;Our house gets cold at night, and I had added more levain to the dough to compensate. I think that change, combined with the long bulk rise, led the dough to over proof.&lt;/p&gt;
@@ -71,8 +71,8 @@
 &lt;p&gt;While not a great first showing, it re-kindled my enjoyment for the process of baking, and reminded me to pay attention.&lt;/p&gt;
 </description>
         <pubDate>Sat, 30 Jan 2016 00:00:00 -0500</pubDate>
-        <link>/update/bread/2016/01/30/first-bake.html</link>
-        <guid isPermaLink="true">/update/bread/2016/01/30/first-bake.html</guid>
+        <link>https://benkutil.com/update/bread/2016/01/30/first-bake.html</link>
+        <guid isPermaLink="true">https://benkutil.com/update/bread/2016/01/30/first-bake.html</guid>
         
         
         <category>update</category>
@@ -95,13 +95,13 @@ I had no problem finding excuses not to work on it.&lt;/p&gt;
 &lt;p&gt;I’ve started today, with a simple site, and a new starter.&lt;/p&gt;
 
 &lt;p&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-top-1536by1046-86f9c8.ac4b98e3.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-top-768by523-86f9c8.36119e40.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-top-1100by749-86f9c8.41152ec7.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-top-550by375-86f9c8.c602f07a.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-top-750by750-86f9c8.8277ccf3.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-top-375by375-86f9c8.bdec4d0d.jpg&quot;&gt;
-    &lt;img src=&quot;/media/generated/bread/bread-starter-new-top-375by375-86f9c8.bdec4d0d.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;Started, Day 2&quot; &gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-top-1536by1046-86f9c8.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-top-768by523-86f9c8.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-top-1100by749-86f9c8.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-top-550by375-86f9c8.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-top-750by750-86f9c8.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-top-375by375-86f9c8.jpg&quot;&gt;
+    &lt;img src=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-top-375by375-86f9c8.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;Started, Day 2&quot; &gt;
   &lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;In the past, I’ve followed Chad Robertson’s starter process from his &lt;a href=&quot;http://cooking.nytimes.com/recipes/1016277-tartines-country-bread&quot;&gt;Country Bread recipe&lt;/a&gt;. This time, I’ve &lt;a href=&quot;https://www.dropbox.com/sh/9qinzbju8ihqy22/AADvBda8-wy6Otxq73_nNlvNa/GET%20STARTER&amp;#x27;ED.pdf?dl=0&quot;&gt;used a recipe&lt;/a&gt; from &lt;a href=&quot;https://instagram.com/apieceofbread&quot;&gt;@apieceofbread&lt;/a&gt;. He has also put his &lt;a href=&quot;https://www.dropbox.com/sh/9qinzbju8ihqy22/AACjVcSIkHGDAAPQTRClXsjya?dl=0&quot;&gt;bread formulae up on Dropbox&lt;/a&gt;.&lt;/p&gt;
@@ -111,13 +111,13 @@ I had no problem finding excuses not to work on it.&lt;/p&gt;
 &lt;p&gt;I find bread so interesting because at its simplest, it consists of flour, water, time, and heat. A starter makes use of those ingredients. In the beginning, you “feed” or replenish a starter each day. During that day, you want to keep you starter between 86°F and 104°F. My house does not get that warm, so my starter hangs out on top of my Mac Pro. The exhaust of my computer hovers around 100°F.&lt;/p&gt;
 
 &lt;p&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-location-1536by1028-37b251.66206370.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-location-768by514-37b251.db6b6f71.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-location-1100by736-37b251.d2d714c9.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-location-550by368-37b251.afb50b0f.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-location-750by750-37b251.5b253fc4.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/media/generated/bread/bread-starter-new-location-375by375-37b251.b816fc06.jpg&quot;&gt;
-    &lt;img src=&quot;/media/generated/bread/bread-starter-new-location-375by375-37b251.b816fc06.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;Keep warm little starter&quot; &gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-location-1536by1028-37b251.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-location-768by514-37b251.jpg&quot; media=&quot;(min-width: 40em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-location-1100by736-37b251.jpg&quot; media=&quot;(min-width: 30em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 30em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-location-550by368-37b251.jpg&quot; media=&quot;(min-width: 30em)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-location-750by750-37b251.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-location-375by375-37b251.jpg&quot;&gt;
+    &lt;img src=&quot;https://benkutil.com/media/generated/bread/bread-starter-new-location-375by375-37b251.jpg&quot; class=&quot;block&quot; itemprop=&quot;image&quot; alt=&quot;Keep warm little starter&quot; &gt;
   &lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;Bread recipes represent all other ingredients as percentages of the total flour weight.&lt;/p&gt;
@@ -204,8 +204,8 @@ for the hydration level you prefer.&lt;/p&gt;&lt;/li&gt;
 &lt;!-- /.card.recipe-card --&gt;
 </description>
         <pubDate>Thu, 14 Jan 2016 00:00:00 -0500</pubDate>
-        <link>/update/bread/2016/01/14/getting-started.html</link>
-        <guid isPermaLink="true">/update/bread/2016/01/14/getting-started.html</guid>
+        <link>https://benkutil.com/update/bread/2016/01/14/getting-started.html</link>
+        <guid isPermaLink="true">https://benkutil.com/update/bread/2016/01/14/getting-started.html</guid>
         
         
         <category>update</category>
