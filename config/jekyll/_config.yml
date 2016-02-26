@@ -65,7 +65,7 @@ collections:
         permalink: /consumes/:path/
     portfolio:
         output: true
-        permalink: /designs/:path/
+        permalink: /designs/:slug/
 
 # Plugin Details
 
