@@ -1,15 +1,15 @@
 ---
 published: true
 slug: roadmap-marketing
-title: Roadmap
+title: Roadmap Marketing Site
 tagline: >
-    Focusing a product on its impact, not its features.
+    Content Strategy, Design, and Development
 # TODO: Rewrite intro statement
 intro: >
     Roadmap had a confusing website focused on&nbsp;features. I&nbsp;simplified its call to action, and developed a content strategy based on impact, not&nbsp;features.
 year: 2015
 thumbnail:
-    rect: portfolio/roadmap-site/roadmap-site-thumbnail-large.png
+    rect: portfolio/roadmap-site/roadmap-site-thumbnail-tall.png
     square: portfolio/roadmap-site/roadmap-site-thumbnail-square.png
 blocks:
     -   body: |

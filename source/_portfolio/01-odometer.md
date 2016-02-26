@@ -1,15 +1,15 @@
 ---
 published: true
 slug: odometer
-title: Odometer by Roadmap
+title: Odometer - Online Time Tracking for Roadmap
 tagline: >
-    Enabling better resource forecasting through accurate time tracking.
+    Features, Design, and Front End Development
 intro: >
     Odometer gives project managers more accurate time data, and became a testbed for Roadmap’s new development platform.
 year: 2015
 thumbnail:
-    rect: portfolio/odometer/odometer-thumbnail-large.png
-    square: portfolio/odometer/odometer-thumbnail-square.png
+    rect: portfolio/odometer/roadmap-odometer-thumbnail-tall.jpg
+    square: portfolio/odometer/roadmap-odometer-thumbnail-square.jpg
 blocks:
     - body: Odometer works as a companion application for Roadmap, making it easier for individual contributors to keep track of their time. Project Managers rely on those time entries to provide an accurate look at future schedules, budgets, and resource use.
     - figure:

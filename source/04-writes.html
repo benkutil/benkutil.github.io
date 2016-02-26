@@ -5,4 +5,11 @@ permalink: /writes/
 published: true
 ---
 
-{% include list-by-category.html source=site.recipes group_by="category" sort="name"  %}
+<h2 class="sans h4 caps m0 bb bd-red red">Writing</h2>
+<ul class="list-reset">
+    {% for post in site.posts %}
+        {% include list-item.html post=post %}
+    {% endfor %}
+</ul>
+
+

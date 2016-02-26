@@ -17,6 +17,6 @@ module.exports = (gulp, $, config) => {
         });
         gulp.src('dist/**')
             .pipe(revAll.revision())
-            .pipe(gulp.dest('dist'));
+            .pipe(gulp.dest('revved'));
     });
 }

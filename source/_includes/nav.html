@@ -11,9 +11,7 @@
     {% if include.interior == true %}
         <a class="page-link md-ml1" href="{{ '/' | prepend: site.baseurl }}">Home</a>
     {% endif %}
-    {% for my_page in site.pages %}
-        {% if my_page.title == "About" %}
-            <a class="page-link ml1" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-        {% endif %}
+    {% for item in site.data.nav %}
+        <a class="page-link ml1" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
     {% endfor %}
 </nav>

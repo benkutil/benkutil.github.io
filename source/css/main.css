@@ -12,7 +12,6 @@ body {
     margin: 0;
     font-family: 'freight-sans-pro', sans-serif;
     line-height: 1.5;
-    color: #4e2c20;
     background-color: #fff;
 }
 
@@ -103,8 +102,16 @@ hr {
     color: #388697;
 }
 
+.heavy-metal {
+    color: #2A2B2A;
+}
+
 .saddle {
     color: #4e2c20;
+}
+
+.tarawera {
+    color: #08415C;
 }
 
 .red {
