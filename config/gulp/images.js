@@ -1,6 +1,6 @@
 module.exports = ( gulp, $, config ) => {
   gulp.task('images', () => {
-    return gulp.src('shared/media/**/*')
+    return gulp.src('dist/media/**/*')
         .pipe($.imageoptim.optimize({
             jpegmini: true
         }))
