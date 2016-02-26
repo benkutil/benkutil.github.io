@@ -97,15 +97,11 @@ picture:
             ppi: [1, 2]
             attr:
                 itemprop: image
-            source_lrg:
-                media: "(min-width: 40em)"
-                width: 992
             source_med:
-                media: "(min-width: 30em)"
-                width: 550
+                media: "(max-width: 40em), (min-width: 60em)"
+                width: 560
             source_default:
                 width: 375
-                height: 375
         portfolio:
             ppi: [1, 2]
             attr:
