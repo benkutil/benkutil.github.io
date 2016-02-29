@@ -1,12 +1,17 @@
 ---
-published: false
-title: "Roadmap"
+published: true
+slug: roadmap-next
+title: Roadmap Next
 tagline: >
-    Focusing a company on it’s key differentiators.
-project:
-    id: roadmap-branding
-    year: 2015
+    Product Management, Design
+intro: >
+    I spearheaded a re-platforming and re-design of Roadmap’s project forecasting and resource management tool.
+year: 2015
+thumbnail:
+    rect: portfolio/odometer/roadmap-odometer-thumbnail-tall.jpg
+    square: portfolio/odometer/roadmap-odometer-thumbnail-square.jpg
 ---
+
 
 <!-- - Resource forecasting and planning tool
 - capital constrained company
