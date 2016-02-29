@@ -4,7 +4,6 @@ slug: roadmap-marketing
 title: Roadmap Marketing Site
 tagline: >
     Content Strategy, Design, and Development
-# TODO: Rewrite intro statement
 intro: >
     Roadmap had a confusing website focused on&nbsp;features. I&nbsp;simplified its call to action, and developed a content strategy based on impact, not&nbsp;features.
 year: 2015
@@ -13,13 +12,14 @@ thumbnail:
     square: portfolio/roadmap-site/roadmap-site-thumbnail-square.png
 blocks:
     -   body: |
-            The original website was complex and confusing, lacking a defined called to action, and hid screenshots of the application within a carousel.
+            I worked with Roadmap to focus their website on customer impact, not a list of features. I took a complex and confusing site that lacked a direct call to action, and streamlined it into four concise pages.
         figure:
             image: portfolio/roadmap-site/roadmap-version-1.jpg
             alt: Screenshot of the first version of Roadmap’s website.
+            caption: The original website hid content within a carosel, which analytics showed people did not interact with.
     -   heading: Optiziming for Action.
         body: |
-            I simplified the site into four concise pages. After A/B testing, I found that having one strong call to action on the homepage worked best for conversions.
+            After A/B testing, I found that having one strong call to action on the homepage worked best for conversions.
         figure:
             image: portfolio/roadmap-site/roadmap-website-blue.jpg
             alt: Screenshot of the current Roadmap Website.
