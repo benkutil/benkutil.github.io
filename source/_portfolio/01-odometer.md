@@ -1,11 +1,11 @@
 ---
 published: true
 slug: odometer
-title: Odometer - Online Time Tracking for Roadmap
+title: Odometer
 tagline: >
-    Features, Design, and Front End Development
+    Product Management, Design, and Front End Development
 intro: >
-    Odometer gives project managers more accurate time data, and became a testbed for Roadmap’s new development platform.
+    I led the conceptualization, design, and front-end development of Roadmap’s tool for accurate time tracking.
 year: 2015
 thumbnail:
     rect: portfolio/odometer/roadmap-odometer-thumbnail-tall.jpg
