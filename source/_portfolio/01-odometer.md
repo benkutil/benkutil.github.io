@@ -1,7 +1,7 @@
 ---
 published: true
 slug: odometer
-title: Odometer - Online Time Tracking for Roadmap
+title: Odometer
 tagline: >
     Features, Design, and Front End Development
 intro: >
