@@ -8,8 +8,8 @@ intro: >
     I spearheaded the replatforming and redesign of Roadmap’s project forecasting and resource management tool.
 year: 2015
 thumbnail:
-    rect: portfolio/odometer/roadmap-odometer-thumbnail-tall.jpg
-    square: portfolio/odometer/roadmap-odometer-thumbnail-square.jpg
+    rect: portfolio/roadmap-next/roadmap-next-thumbnail-tall.png
+    square: portfolio/roadmap-next/roadmap-next-thumbnail-square.png
 blocks:
     -   body: |
             After a month of design sprints, I took apart a zombie “MVP” app, reorganizing and redesigning the application around two guiding principles.
@@ -44,9 +44,39 @@ blocks:
 
             I used these principles with the design team and in product meetings as a filter for our critiques.
         figure:
+            image: portfolio/roadmap-next/roadmap-next-sketches.jpg
+            alt: Sketches exploring the layout for a Projects page
+            caption: Sketches from a product meeting exploring the features of a Project page.
 
     -   heading: Mobile First MVP
-    -   body:
+        body: |
+            I worked with designer Jen Evans to generate visual directions for the application, designing the mobile experience first. I felt the context of mobile first would act as a filter for the features and functionality we placed on the page.
+        figure:
+            image: portfolio/roadmap-next/roadmap-mobile-sketches.jpg
+            alt: Mobile first mockups
+            caption: The smaller device format forced us to focus on the functionality that we included on screen.
+    -   body: |
+            Once we found a visual aesthetic we liked, Jen and I mocked-up user flows to test our design decisions.
+
+            Within the design, we made sure that our interface did not “hide” functionality, and limited the number of actions a customer would take on a particular page.
+        figure:
+            image: portfolio/roadmap-next/roadmap-people-page.jpg
+            alt:
+    -   figure:
+            image: portfolio/roadmap-next/roadmap-schedules.jpg
+            alt:
+    -   figure:
+            image: portfolio/roadmap-next/roadmap-search.jpg
+            alt:
+    -   body: |
+            To get customer feedback quicker, we used the styles developed for Roadmap Next and applied them to [Odometer](/designs/odometer/). That allowed us to get feedback on this new direction for Roadmap.
+        figure:
+            image: portfolio/roadmap-next/roadmap-styleguide.jpg
+            alt: Styleguide for Roadmap Next
+            caption: Jen took our initial designs and created a styleguide we could apply to all Roadmap properties.
+    -   callout: Our guiding principles made it easy to confirm our feature and design decisions. Working in a mobile context first focused our efforts on the most important features first.
+    -   body: See our work on [Odometer](/designs/odometer/), another project for Roadmap.
+
 ---
 
 <!--
