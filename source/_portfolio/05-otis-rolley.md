@@ -1,7 +1,7 @@
 ---
 published: true
-slug: odometer
-title: Odometer
+slug: otis-rolley
+title: Otis Rolley for Baltimore
 tagline: >
     Branding, Art Direction, Print & Web Design, and Front End Development
 intro: >
