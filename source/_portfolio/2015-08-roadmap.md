@@ -6,7 +6,7 @@ tagline: >
     Product Management, Design
 intro: >
     I spearheaded the replatforming and redesign of Roadmap’s project forecasting and resource management tool.
-year: 2015
+date: 2015-08-01
 thumbnail:
     rect: portfolio/roadmap-next/roadmap-next-thumbnail-tall.png
     square: portfolio/roadmap-next/roadmap-next-thumbnail-square.png

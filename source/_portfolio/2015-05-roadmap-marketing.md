@@ -6,7 +6,7 @@ tagline: >
     Content Strategy, Design, and Development
 intro: >
     Roadmap had a confusing website focused on&nbsp;features. I&nbsp;simplified its call to action, and developed a content strategy based on impact, not&nbsp;features.
-year: 2015
+date: 2015-05-01
 thumbnail:
     rect: portfolio/roadmap-site/roadmap-site-thumbnail-tall.png
     square: portfolio/roadmap-site/roadmap-site-thumbnail-square.png

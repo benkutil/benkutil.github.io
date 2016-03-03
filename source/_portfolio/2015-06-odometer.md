@@ -6,7 +6,7 @@ tagline: >
     Product Management, Design, and Front End Development
 intro: >
     I led the conceptualization, design, and front-end development of Roadmap’s tool for accurate time tracking.
-year: 2015
+date: 2015-06-01
 thumbnail:
     rect: portfolio/odometer/roadmap-odometer-thumbnail-tall.jpg
     square: portfolio/odometer/roadmap-odometer-thumbnail-square.jpg

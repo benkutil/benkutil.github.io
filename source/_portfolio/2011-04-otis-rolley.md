@@ -6,7 +6,7 @@ tagline: >
     Branding, Art Direction, Print & Web Design, and Front End Development
 intro: >
     I introduced Otis Rolley to Baltimore, positioning him as a strong candidate with the plan and skills to move Baltimore forward.
-year: 2011
+date: 2011-04-01
 thumbnail:
     rect: portfolio/otis-rolley/otis-rolley-thumbnail-tall.png
     square: portfolio/otis-rolley/otis-rolley-thumbnail-square.png
