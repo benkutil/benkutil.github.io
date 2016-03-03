@@ -1,5 +1,85 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Writes</title><meta name="description" content="A systems-obsessed product designer who codes, teaches, and bakes.
-"><script id="loadcss">(function(u,s){!function(e){"use strict";var n=function(n,t,o){var l,r=e.document,i=r.createElement("link");if(t)l=t;else{var a=(r.body||r.getElementsByTagName("head")[0]).childNodes;l=a[a.length-1]}var d=r.styleSheets;i.rel="stylesheet",i.href=n,i.media="only x",l.parentNode.insertBefore(i,t?l:l.nextSibling);var f=function(e){for(var n=i.href,t=d.length;t--;)if(d[t].href===n)return e();setTimeout(function(){f(e)})};return i.onloadcssdefined=f,f(function(){i.media=o||"all"}),i};"undefined"!=typeof module?module.exports=n:e.loadCSS=n}("undefined"!=typeof global?global:this);for(var i in u){loadCSS(u[i],s);}}(['/css/main.0092637c.css'],document.getElementById("loadcss")));</script><style type="text/css">.h1{font-size:2rem}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.h5{font-size:.875rem}.text-decoration-none{text-decoration:none}.bold{font-weight:700}.caps{text-transform:uppercase;letter-spacing:.2em}.list-reset{list-style:none;padding-left:0}.block{display:block}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.max-width-2{max-width:32rem}.m0{margin:0}.mt2,.my2{margin-top:1rem}.mb0{margin-bottom:0}.ml1{margin-left:.5rem}.m2{margin:1rem}.my2{margin-bottom:1rem}.mt3{margin-top:2rem}.ml3{margin-left:2rem}.mb4{margin-bottom:4rem}.p2{padding:1rem}.px2{padding-left:1rem;padding-right:1rem}@media (min-width:52em){.md-col{float:left;box-sizing:border-box}.md-col-3{width:25%}.md-col-9{width:75%}}.relative{position:relative}.top-0{top:0}.left-0{left:0}.z1{z-index:1}@media (min-width:40em) and (max-width:52em){.sm-hide{display:none!important}}*{box-sizing:border-box}body{margin:0;font-family:freight-sans-pro,sans-serif;line-height:1.5;color:#4e2c20;background-color:#fff}img{max-width:100%;height:auto}.serif{font-family:freight-text-pro,serif}a{text-decoration:underline;color:inherit}.h0,h1{font-size:2rem}h2{font-size:1.5rem}h3{font-size:1.25rem}@media screen and (min-width:50em){.h0{font-size:4vw}}.red{color:#d72c66}.white{color:#fff}.bd-red{border-color:#d72c66}.bg-red{background-color:#d72c66}.bd{border-width:3px;border-style:solid}.bb{border-bottom:3px solid}@media screen and (min-width:40em){.sm-white{color:#fff}.sm-m3{margin:2rem}.sm-p3{padding:2rem}.sm-px3{padding-right:2rem;padding-left:2rem}.sm-absolute{position:absolute}}@media screen and (min-width:52em){.md-m4{margin:4rem}.md-mt0{margin-top:0}.md-mt3{margin-top:3rem}.md-mt4{margin-top:4rem}.md-p4{padding:4rem}.md-px4{padding-right:4rem;padding-left:4rem}.md-align-right{text-align:right}}.post-item__content>*{margin:0}.grid-item img,.grid-item picture{display:block}</style><noscript><link rel="stylesheet" href="/css/main.0092637c.css"></noscript><link rel="canonical" href="/writes/"><link rel="alternate" type="application/rss+xml" title="Ben Kutil" href="/feed.xml"><script type="text/javascript">document.createElement("picture");</script><script src="/scripts/picturefill.35fd351f.js" async></script><meta content="Ben Kutil" property="og:site_name"><meta content="Writes" property="og:title"><meta content="article" property="og:type"><meta content="A systems-obsessed product designer who codes, teaches, and bakes.
+"><script id="loadcss">/*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+    (function(w){
+        "use strict";
+        /* exported loadCSS */
+        var loadCSS = function( href, before, media ){
+            // Arguments explained:
+            // `href` [REQUIRED] is the URL for your CSS file.
+            // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+                // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+            // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+            var doc = w.document;
+            var ss = doc.createElement( "link" );
+            var newMedia = media || "all";
+            var ref;
+            if( before ){
+                ref = before;
+            }
+            else {
+                var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+                ref = refs[ refs.length - 1];
+            }
+
+            var sheets = doc.styleSheets;
+            ss.rel = "stylesheet";
+            ss.href = href;
+            // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+            ss.media = "only x";
+
+            // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+            function ready( cb ){
+                if( doc.body ){
+                    return cb();
+                }
+                setTimeout(function(){
+                    ready( cb );
+                });
+            }
+            // Inject link
+                // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+                // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+            ready( function(){
+                ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+            });
+            // A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+            var onloadcssdefined = function( cb ){
+                var resolvedHref = ss.href;
+                var i = sheets.length;
+                while( i-- ){
+                    if( sheets[ i ].href === resolvedHref ){
+                        return cb();
+                    }
+                }
+                setTimeout(function() {
+                    onloadcssdefined( cb );
+                });
+            };
+
+            // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+            if( ss.addEventListener ){
+                ss.addEventListener( "load", function(){
+                    this.media = newMedia;
+                });
+            }
+            ss.onloadcssdefined = onloadcssdefined;
+            onloadcssdefined(function() {
+                if( ss.media !== newMedia ){
+                    ss.media = newMedia;
+                }
+            });
+            return ss;
+        };
+        // commonjs
+        if( typeof exports !== "undefined" ){
+            exports.loadCSS = loadCSS;
+        }
+        else {
+            w.loadCSS = loadCSS;
+        }
+    }( typeof global !== "undefined" ? global : this ));
+    // Load CSS
+    loadCSS( "/css/main.0092637c.css" );</script><style type="text/css">.h1{font-size:2rem}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.h5{font-size:.875rem}.text-decoration-none{text-decoration:none}.bold{font-weight:700}.caps{text-transform:uppercase;letter-spacing:.2em}.list-reset{list-style:none;padding-left:0}.block{display:block}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.max-width-2{max-width:32rem}.m0{margin:0}.mt2,.my2{margin-top:1rem}.mb0{margin-bottom:0}.ml1{margin-left:.5rem}.m2{margin:1rem}.my2{margin-bottom:1rem}.mt3{margin-top:2rem}.ml3{margin-left:2rem}.mb4{margin-bottom:4rem}.p2{padding:1rem}.px2{padding-left:1rem;padding-right:1rem}@media (min-width:52em){.md-col{float:left;box-sizing:border-box}.md-col-3{width:25%}.md-col-9{width:75%}}.relative{position:relative}.top-0{top:0}.left-0{left:0}.z1{z-index:1}@media (min-width:40em) and (max-width:52em){.sm-hide{display:none!important}}*{box-sizing:border-box}body{margin:0;font-family:freight-sans-pro,sans-serif;line-height:1.5;color:#4e2c20;background-color:#fff}img{max-width:100%;height:auto}.serif{font-family:freight-text-pro,serif}a{text-decoration:underline;color:inherit}.h0,h1{font-size:2rem}h2{font-size:1.5rem}h3{font-size:1.25rem}@media screen and (min-width:50em){.h0{font-size:4vw}}.red{color:#d72c66}.white{color:#fff}.bd-red{border-color:#d72c66}.bg-red{background-color:#d72c66}.bd{border-width:3px;border-style:solid}.bb{border-bottom:3px solid}@media screen and (min-width:40em){.sm-white{color:#fff}.sm-m3{margin:2rem}.sm-p3{padding:2rem}.sm-px3{padding-right:2rem;padding-left:2rem}.sm-absolute{position:absolute}}@media screen and (min-width:52em){.md-m4{margin:4rem}.md-mt0{margin-top:0}.md-mt3{margin-top:3rem}.md-mt4{margin-top:4rem}.md-p4{padding:4rem}.md-px4{padding-right:4rem;padding-left:4rem}.md-align-right{text-align:right}}.post-item__content>*{margin:0}.grid-item img,.grid-item picture{display:block}</style><noscript><link rel="stylesheet" href="/css/main.0092637c.css"></noscript><link rel="canonical" href="/writes/"><link rel="alternate" type="application/rss+xml" title="Ben Kutil" href="/feed.xml"><script type="text/javascript">document.createElement("picture");</script><script src="/scripts/picturefill.35fd351f.js" async></script><meta content="Ben Kutil" property="og:site_name"><meta content="Writes" property="og:title"><meta content="article" property="og:type"><meta content="A systems-obsessed product designer who codes, teaches, and bakes.
 " property="og:description"><meta content="/writes/" property="og:url"><meta content="/media/favicons/apple-touch-icon-180x180.6ad411b8.png" property="og:image"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@site_username"><meta name="twitter:creator" content="@creator_username"><meta name="twitter:title" content="Writes"><meta name="twitter:url" content="/writes/"><meta name="twitter:description" content="A systems-obsessed product designer who codes, teaches, and bakes.
 "><meta name="twitter:image:src" content="/path/to/image/logo.png"><link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-touch-icon-57x57.2dd214ec.png"><link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-touch-icon-60x60.2c3252c0.png"><link rel="apple-touch-icon" sizes="72x72" href="/media/favicons/apple-touch-icon-72x72.ced3187a.png"><link rel="apple-touch-icon" sizes="76x76" href="/media/favicons/apple-touch-icon-76x76.aec58b10.png"><link rel="apple-touch-icon" sizes="114x114" href="/media/favicons/apple-touch-icon-114x114.4a2ee41b.png"><link rel="apple-touch-icon" sizes="120x120" href="/media/favicons/apple-touch-icon-120x120.5526ee91.png"><link rel="apple-touch-icon" sizes="144x144" href="/media/favicons/apple-touch-icon-144x144.2118f448.png"><link rel="apple-touch-icon" sizes="152x152" href="/media/favicons/apple-touch-icon-152x152.13bbc708.png"><link rel="apple-touch-icon" sizes="180x180" href="/media/favicons/apple-touch-icon-180x180.6ad411b8.png"><link rel="icon" type="image/png" href="/media/favicons/favicon-32x32.338644e5.png" sizes="32x32"><link rel="icon" type="image/png" href="/media/favicons/android-chrome-192x192.7578fc09.png" sizes="192x192"><link rel="icon" type="image/png" href="/media/favicons/favicon-96x96.1b0a483b.png" sizes="96x96"><link rel="icon" type="image/png" href="/media/favicons/favicon-16x16.db76ebe4.png" sizes="16x16"><link rel="manifest" href="/media/favicons/manifest.b4886691.json"><link rel="mask-icon" href="/media/favicons/safari-pinned-tab.425bdab0.svg" color="#d72c66"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-TileImage" content="/media/favicons/mstile-144x144.2118f448.png"><meta name="msapplication-config" content="/media/favicons/browserconfig.xml"><meta name="theme-color" content="#d72c66"><link rel="shortcut icon" href="/favicon.ico"></head><body class="table heavy-metal" data-template="page" data-env="development"><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WMPTJG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
