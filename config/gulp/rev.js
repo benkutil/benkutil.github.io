@@ -4,6 +4,7 @@ module.exports = (gulp, $, config) => {
             dontRenameFile: [
                 '.html',
                 '.xml',
+                /^\/media\/(.*)/g,
                 /^\/manifest.json$/g,
                 /^\/favicon.ico$/g,
             ],
