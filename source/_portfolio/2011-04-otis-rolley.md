@@ -8,8 +8,8 @@ intro: >
     I introduced Otis Rolley to Baltimore, positioning him as a strong candidate with the plan and skills to move Baltimore forward.
 date: 2011-04-01
 thumbnail:
-    rect: portfolio/otis-rolley/otis-rolley-thumbnail-tall.png
-    square: portfolio/otis-rolley/otis-rolley-thumbnail-square.png
+    rect: portfolio/otis-rolley/otis-rolley-thumbnail-tall.jpg
+    square: portfolio/otis-rolley/otis-rolley-thumbnail-square.jpg
 blocks:
     -   body: |
             Otis Rolley represented a new type politician for Baltimore, an official without political baggage. He saw the way design and digital strategy won the 2008 election, and wanted to make sure his campaign also utilized those tools effectively.
