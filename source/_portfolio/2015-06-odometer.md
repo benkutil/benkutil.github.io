@@ -3,7 +3,7 @@ published: true
 slug: odometer
 title: Odometer
 tagline: >
-    Product Management, Design, and Front End Development
+    Product Management, Product Design, and Front End Development
 intro: >
     I led the conceptualization, design, and front-end development of Roadmap’s tool for accurate time tracking.
 date: 2015-06-01
