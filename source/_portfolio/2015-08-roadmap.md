@@ -42,7 +42,7 @@ blocks:
 
             I used these principles with the design team and in product meetings as a filter for our critiques.
         figure:
-            image: portfolio/roadmap-next--sketches.jpg
+            image: portfolio/roadmap-next-sketches.jpg
             alt: Sketches exploring the layout for a Projects page
             caption: Sketches from a product meeting exploring the features of a Project page.
 
@@ -72,8 +72,8 @@ blocks:
             image: portfolio/roadmap-next-styleguide.jpg
             alt: Styleguide for Roadmap Next
             caption: Jen took our initial designs and created a styleguide we could apply to all Roadmap properties.
-    -   callout: Our guiding principles made it easy to confirm our feature and design decisions. Working in a mobile context first focused our efforts on the most important features first.
-    -   body: See our work on [Odometer](/designs/odometer/), another project for Roadmap.
+    -   callout: Guiding principles made it easy to confirm feature and design decisions. Working in a mobile context first focused efforts on the most important features first.
+    -   body: See my work on [Odometer](/designs/odometer/), another project for Roadmap.
 
 ---
 
