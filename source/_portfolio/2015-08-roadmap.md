@@ -57,17 +57,20 @@ blocks:
             Once we found a visual aesthetic we liked, Jen and I mocked-up user flows to test our design decisions.
 
             Within the design, we made sure that our interface did not “hide” functionality, and limited the number of actions a customer would take on a particular page.
+
+            We applied our design system to [Odometer](/designs/odometer/), a stand alone time tracking tool for Roadmap. This gave us quick access to feedback to use in our design process.
         figure:
             image: portfolio/roadmap-next-people-page.jpg
-            alt:
+            alt: Person detail page
+            caption: Each person has a detail page highlighting their utilization level, activity, schedule, and skills.
     -   figure:
             image: portfolio/roadmap-next-schedules.jpg
-            alt:
+            alt: Schedules
+            caption: I put an emphasis on scheduling time separate from outlining and estimating a project. Those two tasks need different contexts and inputs, and would have cluttered the page together.
     -   figure:
             image: portfolio/roadmap-next-search.jpg
-            alt:
-    -   body: |
-            To get customer feedback quicker, we used the styles developed for Roadmap Next and applied them to [Odometer](/designs/odometer/). That allowed us to get feedback on this new direction for Roadmap.
+            alt: Searching
+            caption: The new search tool allows customers to find and act on data. They can create reports, change assignments, or reschedule projects with search results.
         figure:
             image: portfolio/roadmap-next-styleguide.jpg
             alt: Styleguide for Roadmap Next
