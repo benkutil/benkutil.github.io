@@ -11,6 +11,7 @@ module.exports = (gulp, $, config) => {
             dontUpdateReference: [
                 '.html',
                 '.xml',
+                /^\/media\/(.*)/g,
                 /^\/manifest.json$/g,
                 /^\/favicon.ico$/g,
             ],
