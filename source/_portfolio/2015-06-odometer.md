@@ -7,44 +7,49 @@ tagline: >
 intro: >
     I led the conceptualization, design, and front-end development of Roadmap’s tool for accurate time tracking.
 date: 2015-06-01
-thumbnail:
-    rect: portfolio/odometer/roadmap-odometer-thumbnail-tall.jpg
-    square: portfolio/odometer/roadmap-odometer-thumbnail-square.jpg
+thumbnail: portfolio/odometer-thumbnail-square.jpg
 blocks:
-    - body: Odometer works as a companion application for Roadmap, making it easier for individual contributors to keep track of their time. Project Managers rely on those time entries to provide an accurate look at future schedules, budgets, and resource use.
-    - figure:
-        image: portfolio/odometer/odometer-time-posted.png
-        alt: Screen contributors see after they’ve submitted time
-        caption: >
-            Odometer became the test bed for the new design system, development technologies, and writing style.
-      wide?: true
-    - heading: Building Roadmap’s Future Today
-      body: |-
-        At the time, Roadmap’s development debt acted as a major roadblock for quick delivery of features to customers, and designers could not touch the codebase.
+    -   body: |
+            Roadmap’s development debt acted as a major roadblock for quick delivery of features to customers, and designers could not touch the codebase.
 
-        We chose to build a companion application to Roadmap. This would allow us to leave Roadmap’s legacy code by the wayside, work iteratively, and define processes that we could when redeveloping the primary application.
-      figure:
-        image: portfolio/odometer/odometer-original-sketch.jpg
-        alt: The initial user-flow and sketches for Odometer.
-        caption: >
-            The initial user-flow and sketches for Odometer.
-    -   heading: Product Everything
-        body: |-
-            I acted as Product Manager and Designer, allowing me to guide features from conception to implemention in Ember, our chosen front-end framework.
+            Working with Roadmap, we built a companion time tracking app in Ember. This allowed Roadmap to leave its legacy codebase behind and enabled quick collaboration and iteration. I developed reusable processes for Roadmap to use on future projects.
 
-            I configured servers and setup a continuous integration process.
+            I acted as Product Manager, Designer, and Front End Developer, allowing me to guide features from conception to implemention in Ember, our chosen front-end framework. I wrote tests, configured servers, setup a continuous integration process.
 
             As we released features, I organized our beta testing program to work with existing customers to incorporate their feedback into the next iteration.
     -   figure:
-            image: portfolio/odometer/odometer-2-log-time.png
+            image: portfolio/odometer-time-posted.jpg
+            alt: Screen contributors see after they’ve submitted time
+            caption: >
+                Odometer became the test bed for the new design system, development technologies, and writing style.
+    -   body: |
+            Odometer makes it easier for individual contributors to keep track of their time. Project Managers rely on those time entries to provide an accurate look at future schedules, budgets, and resource use.
+    -   figure:
+            image: portfolio/odometer/odometer-original-sketch.jpg
+            alt: The initial user-flow and sketches for Odometer.
+            caption: >
+                The initial user-flow and sketches for Odometer.
+    -   figure:
+            image: portfolio/odometer-task-list.jpg
             alt: Choosing a Task to Log Time.
             caption: >
                 The current iteration of the application organizes your tasks by due date, putting important tasks front and center.
     -   figure:
-            image: portfolio/odometer/odometer-2-filter-tasks.png
+            image: portfolio/odometer-filtered-tasks.jpg
             alt: Filtering a Task to Log Time
             caption: >
                 We prioritized clarity over convenience in the new design language. Even the hover state placeholder text had different placeholder text to inform customers what action they could expect.
+    -   figure:
+            image: portfolio/odometer-log-time.jpg
+            alt: Entering Time Log Information
+            caption: >
+                As you logged time, the interface encourages customers to complete the four data fields needed for logging time.
+    -   callout: Short feedback loops between myself, customers, and the lead developer made it easy to test the new design system and development process. Roadmap has applied the processes I defined on Odometer to all their development projects.
+    -   body: |
+            Read about Odometer on Roadmap’s Blog
+
+            - [It’s Time To Talk](https://ppmroadmap.com/updates/odometer-introduction.html)
+            - [Time Flies](https://ppmroadmap.com/updates/time-flies.html)
 ---
 
 <!-- - Development platform made it difficult to release new features

@@ -20,6 +20,10 @@ body {
     display: table-row;
 }
 
+.max-width-5 {
+    max-width: 90rem;
+}
+
 img,
 video,
 embed {
@@ -64,9 +68,9 @@ h6 {
     font-size: 2rem;
 }
 
-@media screen and (min-width: 60em) {
+@media (min-width: 52em) {
     .h0 {
-        font-size: 4vw
+        font-size: 4rem;
     }
 }
 
@@ -254,4 +258,20 @@ figure {
 .grid-item picture,
 .grid-item img {
     display: block;
+}
+
+
+.u-cms ul {
+    padding-left: 0;
+    margin-left: -1rem;
+    list-style: none;
+}
+
+.u-cms ul li {
+    padding-left: 1rem;
+    border-left: 4px solid #d72c66
+}
+
+.u-cms li + li {
+    margin-top: 4px;
 }

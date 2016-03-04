@@ -84,64 +84,23 @@ picture:
             attr:
                 class: block
                 itemprop: image
-            source_lrg:
-                media: "(min-width: 40em)"
-                width: 768
-            source_med:
-                media: "(min-width: 30em)"
-                width: 550
+            source_large:
+                media: "(min-width: 52em)"
+                width: 1312
+            source_medium:
+                media: "(min-width: 52em)"
+                width: 1024
+            source_small:
+                media: "(min-width: 25em)"
+                width: 640
             source_default:
                 width: 375
-                height: 375
         work-thumb:
             ppi: [1, 2]
             attr:
                 itemprop: image
-            source_lrg:
-                media: "(min-width: 60em)"
-                width: 565
-            source_tall:
+            source_small:
                 media: "(min-width: 40em)"
-                width: 565
-            source_square:
-                media: "(min-width: 24em)"
-                width: 565
+                width: 576
             source_default:
                 width: 375
-        portfolio:
-            ppi: [1, 2]
-            attr:
-                itemprop: image
-            source_lrg:
-                media: "(min-width: 40em)"
-                width: 992
-            source_med:
-                media: "(min-width: 30em)"
-                width: 768
-            source_default:
-                width: 375
-        half:
-            ppi: [1, 2]
-            attr:
-                data-location: "{{location}}"
-                data-active: nil
-            source_lrg:
-                media: "(min-width: 40em)"
-                width: 350
-            source_med:
-                media: "(min-width: 30em)"
-                width: 275
-            source_default:
-                width: 188
-        gallery:
-            source_wide_hi:
-                media: "(min-width: 40em) and (min-resolution: 1.5dppx)"
-                width: 900
-                height: 600
-            source_wide:
-                media: "(min-width: 40em)"
-                width: 600
-                height: 400
-            source_default:
-                width: 250
-                height: 250
