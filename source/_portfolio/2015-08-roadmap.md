@@ -19,7 +19,7 @@ blocks:
         body: |
             I consulted with Roadmap off and on since 2010. As the application grew more and more complex, I knew it needed a comprehensive redesign of the application.
         figure:
-            image: portfolio/roadmap-next-.jpg
+            image: portfolio/roadmap-next.jpg
             alt: One direction I explored for a redesign of Roadmap.
             caption: One exploration from 2010 for the redesign of Roadmap.
     -   body: |

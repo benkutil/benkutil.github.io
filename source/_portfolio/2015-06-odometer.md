@@ -25,7 +25,7 @@ blocks:
     -   body: |
             Odometer makes it easier for individual contributors to keep track of their time. Project Managers rely on those time entries to provide an accurate look at future schedules, budgets, and resource use.
     -   figure:
-            image: portfolio/odometer/odometer-original-sketch.jpg
+            image: portfolio/odometer-original-sketch.jpg
             alt: The initial user-flow and sketches for Odometer.
             caption: >
                 The initial user-flow and sketches for Odometer.
