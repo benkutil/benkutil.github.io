@@ -9,7 +9,7 @@ layout: default
     <section class="mt3 md-mt4">
         <h2 class="sans h4 caps m0 bb bd-red red">Work</h2>
         <ul class="grid-list list-reset clearfix mxn2">
-        {% for post in site.portfolio %}
+        {% for post in site.portfolio reversed %}
             {% include grid-item.html post=post %}
         {% endfor %}
         </ul>
