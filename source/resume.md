@@ -56,7 +56,7 @@ published: true
 
     <ul>
         <li>
-            <h5 class="m0"><a href="/designs/odometer/" class="red">Maryland SPCA</a></h5>
+            <h5 class="m0"><a href="/designs/odometer/" class="red">Odometer</a></h5>
             <p class="m0">Developed product roadmap for Ember based time tracking application. Designed &amp; implemented visual styles, continuous integration, and deployment.</p>
         </li>
         <li>
