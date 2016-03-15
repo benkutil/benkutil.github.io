@@ -14,7 +14,7 @@ blocks:
 
             Working with Roadmap, we built a companion time tracking app in Ember. This allowed Roadmap to leave its legacy codebase behind and enabled quick collaboration and iteration. I developed reusable processes for Roadmap to use on future projects.
 
-            I acted as Product Manager, Designer, and Front End Developer, allowing me to guide features from conception to implemention in Ember, our chosen front-end framework. I wrote tests, configured servers, setup a continuous integration process.
+            I acted as product manager, designer, and front-end developer, allowing me to guide features from conception to implemention in Ember, our chosen front-end framework. I sequenced releases, wrote tests, configured servers, and setup a continuous integration process.
 
             As we released features, I organized our beta testing program to work with existing customers to incorporate their feedback into the next iteration.
     -   figure:
@@ -22,8 +22,6 @@ blocks:
             alt: Screen contributors see after they’ve submitted time
             caption: >
                 Odometer became the test bed for the new design system, development technologies, and writing style.
-    -   body: |
-            Odometer makes it easier for individual contributors to keep track of their time. Project Managers rely on those time entries to provide an accurate look at future schedules, budgets, and resource use.
     -   figure:
             image: portfolio/odometer-original-sketch.jpg
             alt: The initial user-flow and sketches for Odometer.

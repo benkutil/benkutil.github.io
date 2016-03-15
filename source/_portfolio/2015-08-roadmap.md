@@ -48,7 +48,7 @@ blocks:
 
     -   heading: Mobile First MVP
         body: |
-            I worked with designer Jen Evans to generate visual directions for the application, designing the mobile experience first. I felt the context of mobile first would act as a filter for the features and functionality we placed on the page.
+            I worked with design intern Jen Evans to generate visual directions for the application, focusing on the mobile experience first. I felt designing mobile first would help constrain the features and functionality we placed on the page.
         figure:
             image: portfolio/roadmap-next-mobile-sketches.jpg
             alt: Mobile first mockups
