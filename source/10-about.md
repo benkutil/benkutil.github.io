@@ -7,9 +7,9 @@ published: true
 
 **Hi, my name is Ben.** I’m a systems-obsessed product designer who codes, teaches, and bakes.
 
-I operate [Make Things Studio](http://make-things.com), an interactive consultancy working with
-businesses, non-profits, and schools to define & realize business
-goals on the web.
+I operate [Make Things Studio](http://make-things.com), an interactive consultancy working with businesses, non-profits, and schools to define & realize business goals on the web.
+
+You can [read the rest of my resumé](/about/resume/), or [connect with me on LinkedIn](https://www.linkedin.com/in/benkutil).
 
 My teaching emphasizes a people-centered design process, the importance of business in design, and the wide breadth of knowledge needed as a product designer.
 
