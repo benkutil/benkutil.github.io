@@ -91,7 +91,7 @@ redcarpet:
 #
 # Picture
 picture:
-    source: media
+    source: media/source
     output: media/generated
     markup: picture
     presets:
