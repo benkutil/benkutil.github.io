@@ -1,19 +1,6 @@
-
 <!--[if lt IE 9]>
 	<html id="ng-app" ng-app="InVision" ng-controller="AppController" inv-key-combos class="lt-ie9 ng-app:InVision" lang="en">
-<![endif]-->
-<!--[if gt IE 8]><!-->
-<html ng-app="InVision" ng-controller="AppController" inv-key-combos lang="en">
-<!--<![endif]-->
-<head>
-	<meta charset="utf-8" />
-	<title ng-bind="windowTitle">
-		InVision
-	</title>
-
-	<!-- Custom webfonts -->
-	<style>
-	@font-face {
+<![endif]--><!--[if gt IE 8]><!--><html ng-app="InVision" ng-controller="AppController" inv-key-combos lang="en"><!--<![endif]--><head><meta charset="utf-8"><title ng-bind="windowTitle">InVision</title><!-- Custom webfonts --><style>@font-face {
 		font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: 300;
@@ -36,131 +23,15 @@
 		font-style: normal;
 		font-weight: 700;
 		src: local('Open Sans Bold'), local('OpenSans-Bold'), url(assets/fonts/open_sans/OpenSans-bold.woff) format('woff');
-	}
-	</style>
-	<!-- Interface styles -->
-	<link type="text/css" rel="stylesheet" href="assets/jquery-ui-1.9.2.custom/css/no-theme/jquery-ui-1.9.2.custom.min.css">
-	<link type="text/css" rel="stylesheet" href="assets/apps/share/css/uniform.default.css">
-	<link type="text/css" rel="stylesheet" href="assets/apps/share/css/bootstrap.css">
-	<link type="text/css" rel="stylesheet" href="assets/apps/share/css/intlTelInput.css">
-	<link type="text/css" rel="stylesheet" href="assets/apps/share/css/share-offline.css">
-
-	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
+	}</style><!-- Interface styles --><link type="text/css" rel="stylesheet" href="assets/jquery-ui-1.9.2.custom/css/no-theme/jquery-ui-1.9.2.custom.min.css"><link type="text/css" rel="stylesheet" href="assets/apps/share/css/uniform.default.css"><link type="text/css" rel="stylesheet" href="assets/apps/share/css/bootstrap.css"><link type="text/css" rel="stylesheet" href="assets/apps/share/css/intlTelInput.css"><link type="text/css" rel="stylesheet" href="assets/apps/share/css/share-offline.css"><!-- Le HTML5 shim, for IE6-8 support of HTML5 elements --><!--[if lt IE 9]>
 		<script src="/assets/html5shim/html5.js"></script>
-	<![endif]-->
-	<!--[if lt IE 8]>
+	<![endif]--><!--[if lt IE 8]>
 		<script src="/assets/json2/json2.js"></script>
-	<![endif]-->
-</head>
-<body
-	class="branding-invision"
-	ng-class="bodyClass"
-	ng-style="bodyStyle">
-
-
-	<!--
+	<![endif]--></head><body class="branding-invision" ng-class="bodyClass" ng-style="bodyStyle"><!--
 		This is the initial loading sequence. We need to be able to display this BEFORE the AngularJS
 		framework loads in order to give the user some sence of activity. But, when the framework kicks
 		in, it will be able to use the bound ng-controller.
-	-->
-	<!-- BEGIN: Loading Sequence. -->
-	<div ng-if="isLoadingOpen" ng-controller="loading.LoadingController" inv-loading-sequence class="m-loading">
-
-		<!-- BEGIN: Loading Indicator. -->
-		
-
-			<div class="loading-backdrop">
-
-				<div class="loading-container">
-
-					<div class="status-container">
-
-						<div class="status"></div>
-						<div class="logo"></div>
-
-					</div> <!-- status-container -->
-
-					<h2>Loading Experience</h2>
-
-					<p>
-						Powered by <a href="http://www.InVisionApp.com/" target="_blank">InVision</a>
-
-						
-							, the best way to share and collaborate on design.
-						
-
-					</p>
-
-				</div> <!-- loading-container -->
-
-				<div class="loading-footer">
-
-					<div class="logo"></div>
-
-					<h3><a href="http://www.InVisionApp.com/" target="_blank">Powered by InVision</a></h3>
-
-					
-						<p><em>Prototyping, Collaboration &amp; Workflow for Designers</em></p>
-					
-
-				</div> <!-- loading-footer -->
-
-			</div> <!-- loading-backdrop -->
-
-		
-		<!-- END: Loading Indicator. -->
-
-	</div>
-	<!-- END: Loading Sequence. -->
-
-	<div ng-include=" '/assets/apps/share/views/partials/preload.htm' "></div>
-	<div ng-include=" '/assets/apps/share/views/layouts/modal.htm' "></div>
-	<div ng-include=" '/assets/apps/share/views/toolbar/toolbar.htm' "></div>
-	<div ng-include=" '/assets/apps/share/views/powered-by/powered-by.htm' "></div>
-
-	<div
-		ng-if="isBrowseOpen"
-		ng-include=" '/assets/apps/share/views/browse/browse.htm' "></div>
-
-	<!-- In order to be able to disable horizontal scrolling for some screens, we need to wrap the view in order to be able to maintain screen alignment -->
-
-	<div class="desktop-wrapper">
-
-		<!-- Tour Points -->
-		<div
-			ng-if=" subview == 'preview' "
-			ng-include=" '/assets/apps/share/views/preview/preview-tour-comments.htm' "></div>
-
-		<div
-			ng-if="subview == 'comments'"
-			ng-include=" '/assets/apps/share/views/comments/comments.htm' "></div>
-
-		<div
-			ng-if="subview == 'preview'"
-			is-share-loaded="{{!isLoadingOpen}}"
-			inv-preview-auto-redirect-listener
-			ng-include=" '/assets/apps/share/views/preview/preview.htm' "></div>
-
-		<!-- Screens for comment mode -->
-		<div
-			ng-show="subview == 'comments'"
-			ng-include=" '/assets/apps/share/views/screens/screens.htm' "c></div>
-
-	</div>
-
-	<div
-		ng-if="browserCompatibility.isNotCompatible"
-		class="m-browser-compatibility ng-cloak"></div>
-
-	
-	
-		<script type="text/javascript" src="assets/scripts.js"></script>
-	
-
-		<script type="text/javascript">
-
-			(function( ng, app ){
+	--><!-- BEGIN: Loading Sequence. --><div ng-if="isLoadingOpen" ng-controller="loading.LoadingController" inv-loading-sequence class="m-loading"><!-- BEGIN: Loading Indicator. --><div class="loading-backdrop"><div class="loading-container"><div class="status-container"><div class="status"></div><div class="logo"></div></div><!-- status-container --><h2>Loading Experience</h2><p>Powered by <a href="http://www.InVisionApp.com/" target="_blank">InVision</a> , the best way to share and collaborate on design.</p></div><!-- loading-container --><div class="loading-footer"><div class="logo"></div><h3><a href="http://www.InVisionApp.com/" target="_blank">Powered by InVision</a></h3><p><em>Prototyping, Collaboration &amp; Workflow for Designers</em></p></div><!-- loading-footer --></div><!-- loading-backdrop --><!-- END: Loading Indicator. --></div><!-- END: Loading Sequence. --><div ng-include=" '/assets/apps/share/views/partials/preload.htm' "></div><div ng-include=" '/assets/apps/share/views/layouts/modal.htm' "></div><div ng-include=" '/assets/apps/share/views/toolbar/toolbar.htm' "></div><div ng-include=" '/assets/apps/share/views/powered-by/powered-by.htm' "></div><div ng-if="isBrowseOpen" ng-include=" '/assets/apps/share/views/browse/browse.htm' "></div><!-- In order to be able to disable horizontal scrolling for some screens, we need to wrap the view in order to be able to maintain screen alignment --><div class="desktop-wrapper"><!-- Tour Points --><div ng-if=" subview == 'preview' " ng-include=" '/assets/apps/share/views/preview/preview-tour-comments.htm' "></div><div ng-if="subview == 'comments'" ng-include=" '/assets/apps/share/views/comments/comments.htm' "></div><div ng-if="subview == 'preview'" is-share-loaded="{{!isLoadingOpen}}" inv-preview-auto-redirect-listener ng-include=" '/assets/apps/share/views/preview/preview.htm' "></div><!-- Screens for comment mode --><div ng-show="subview == 'comments'" ng-include=" '/assets/apps/share/views/screens/screens.htm' " c></div></div><div ng-if="browserCompatibility.isNotCompatible" class="m-browser-compatibility ng-cloak"></div><script type="text/javascript" src="assets/scripts.js"></script><script type="text/javascript">(function( ng, app ){
 
 				"use strict";
 
@@ -191,11 +62,7 @@
 					}
 				);
 
-			})( angular, InVision );
-
-		</script>
-
-	<script type="text/ng-template" id="/assets/apps/share/views/screens/screens.htm"><div ng-if="!isLiveShare && project.isSnap">
+			})( angular, InVision );</script><script type="text/ng-template" id="/assets/apps/share/views/screens/screens.htm"><div ng-if="!isLiveShare && project.isSnap">
 <div 
 ng-if="subview == 'comments'" 
 ng-include=" '/assets/apps/share/views/share-lite/comment-bar.htm' "></div>
@@ -241,9 +108,7 @@ class="screen mobile {{ screen.alignment }}"
 ng-class="{ visible: (screen.id == selectedScreen.id) }">
 <img inv-screen ng-src="{{ screen.imageUrl }}" />
 </div>
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/browse/browse.htm">
-<div
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/browse/browse.htm"><div
 ng-controller="browse.BrowseController"
 inv-browse-key-combos
 class="m-browse"
@@ -269,9 +134,7 @@ tablet: isTabletPortrait
 <div ng-include=" '/assets/apps/share/views/browse/thumbnails.htm' "></div>
 </div>
 <!-- END: Screens. -->
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/browse/thumbnails.htm">
-<div class="thumbnail-list" ng-class="{ 'without-comments': excludeComments }">
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/browse/thumbnails.htm"><div class="thumbnail-list" ng-class="{ 'without-comments': excludeComments }">
 <div ng-repeat="displayItem in displayObjects" 
 class="{{displayItem.type}}" 
 ng-class="{ 'invisible-group': displayItem.type == 'divider' && displayItem.sort == 0}" >
@@ -294,9 +157,7 @@ ng-class="{ selected: ( displayItem == selectedScreen ) }">
 <span class="hasComments" ng-if=" displayItem.unreadCommentCount ">&bull;</span>
 </a>
 </div>
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/browse/list.htm">
-<div class="name-list" ng-class="{ 'without-comments': excludeComments }">
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/browse/list.htm"><div class="name-list" ng-class="{ 'without-comments': excludeComments }">
 <!-- BEGIN: Header Row. -->
 <div class="header-row">
 <span class="col name-col">
@@ -366,8 +227,7 @@ ng-class="{ selected: ( displayItem == selectedScreen ) }">
 </a>
 </div>
 <!-- END: Data Rows. -->
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/directives/share-sketch-viewer.htm"><div id="shareSketchViewer"  ng-show=" isShowingSketchViewer ">
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/directives/share-sketch-viewer.htm"><div id="shareSketchViewer"  ng-show=" isShowingSketchViewer ">
 <div class="modalOverlay">
 <div  class="sketchViewer">
 <div class="closeViewer" ng-click=" closeSketchViewer() "></div>
@@ -459,9 +319,7 @@ class="sketch_image"
 <div id="whiteboard_overlay" ng-class="whiteboardSelected"></div>
 </div> <!-- scroll-wrap -->
 </div> <!-- end builderWindow -->
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/directives/toggle.htm">
-<div class="m-toggle off">	
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/directives/toggle.htm"><div class="m-toggle off">	
 <!-- BEGIN: Labels Track. -->
 <div class="toggle-labels-track">
 <div class="toggle-labels">
@@ -896,8 +754,7 @@ delay="0">Reply</button>
 </div>
 </section>
 </div> <!-- comment-thread-container -->
-</form>
-</script><script type="text/ng-template" id="/assets/apps/share/views/preview/preview-tour-comments.htm"><div ng-if=" ! isLiveShare " ng-controller="preview.TourCommentsController">
+</form></script><script type="text/ng-template" id="/assets/apps/share/views/preview/preview-tour-comments.htm"><div ng-if=" ! isLiveShare " ng-controller="preview.TourCommentsController">
 <div ng-if=" tourPoints.length > 0 " ng-controller="comments.CommentsController">
 <div
 inv-comments-markers
@@ -939,8 +796,7 @@ ng-if=" isShowingSketchBuilder " >
 ng-if=" isShowingSketchViewer ">
 </div>
 </div>
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/preview/tour-point-form-mentions.htm"><form
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/preview/tour-point-form-mentions.htm"><form
 ng-controller="comments.FormController"
 ng-submit="submitForm()"
 inv-comments-tour-form-key-combos
@@ -1222,8 +1078,7 @@ ng-show="tempSketches.length == 0 && isCommentInputVisible && ( ! conversation.i
 </div>
 </section>
 </div> <!-- comment-thread-container -->
-</form>
-</script><script type="text/ng-template" id="/assets/apps/share/views/preview/browser-compatibility.htm"><a ng-click="closeBrowserCompatibilityAlert()" class="browser-overlay">
+</form></script><script type="text/ng-template" id="/assets/apps/share/views/preview/browser-compatibility.htm"><a ng-click="closeBrowserCompatibilityAlert()" class="browser-overlay">
 <br />
 </a>
 <div class="browser-alert">
@@ -1265,8 +1120,7 @@ class="{{ deviceTemplate.className }} {{ chromeClass }}"></div>
 <div class="slideshow-nav">
 <div class="slideshow-status" ng-show=" ! project.isMobile " >{{ currentScreenIndex }} of {{ screenCount }}</div>
 </div>
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/comments/context.htm"><!-- BEGIN: Context. -->
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/comments/context.htm"><!-- BEGIN: Context. -->
 <div class="context">
 <a ng-href="#/screens/{{ screenID }}">
 <span ng-show=" !isLiveShare ">Comment Mode</span>
@@ -1331,8 +1185,7 @@ Show Resolved ({{ filters.showCompleted.count }})
 </div>
 </div>
 <!-- END: Filters. -->
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/comments/form-mentions.htm"><form
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/comments/form-mentions.htm"><form
 ng-controller="comments.FormController"
 inv-comments-form-key-combos
 inv-comments-form
@@ -1698,8 +1551,7 @@ Cancel
 </div> <!-- form -->
 </div> <!-- identification -->
 </div> <!-- comment-thread-container -->
-</form>
-</script><script type="text/ng-template" id="/assets/apps/share/views/comments/markers.htm"><div
+</form></script><script type="text/ng-template" id="/assets/apps/share/views/comments/markers.htm"><div
 ng-controller="comments.MarkersController"
 inv-comments-markers
 class="markers" >
@@ -1770,8 +1622,7 @@ class="comments-mentions"
 ng-if="( ( selectedConversation || newConversation ) && settings.features.mentions )"
 ng-include=" '/assets/apps/share/views/comments/form-mentions.htm' "></div>
 </div>
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/comments/form.htm"><form
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/comments/form.htm"><form
 ng-controller="comments.FormController"
 inv-comments-form-key-combos
 inv-comments-form
@@ -2245,7 +2096,7 @@ ng-show="isHoveringViewport && !( isHoveringHotspot || isShowingConversationMenu
 >
 Click to leave a comment
 </div>
-</div></script><script type="text/ng-template" id="/assets/apps/share/views/partials/preload.htm">	<!--
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/partials/preload.htm"><!--
 BEGIN: HACKY CSS PRELOAD. 
 Until we have better sprite technology, let's at least pre-load the images this way so that 
 the parallel loading of Screen images is less likely to conflict. 
@@ -2270,7 +2121,7 @@ the parallel loading of Screen images is less likely to conflict.
 <img src="assets/apps/share/img/share-loading-sprites.png" />
 <img src="assets/apps/share/img/share-loading-sprites@2x.png" />
 </div>
-<!-- END: Hacky CSS Preload. </script><script type="text/ng-template" id="/assets/apps/share/views/presentations/slides.htm"><div ng-switch on="subview">
+<!-- END: Hacky CSS Preload.</script><script type="text/ng-template" id="/assets/apps/share/views/presentations/slides.htm"><div ng-switch on="subview">
 <div ng-switch-when="comments">
 <div 
 id="comments_bar" 
@@ -2313,8 +2164,7 @@ class="m-screens" >
 <div class="screen mobile visible {{ screen.alignment }}">
 <img ng-src="{{ getScreenUrl() }}" />
 </div> <!-- screen mobile visible -->
-</div> <!-- m-screens -->
-</script><script type="text/ng-template" id="/assets/apps/share/views/powered-by/powered-by.htm"><!-- Hide this object for all Shopify Enterprise project shares. ( companyID 71 ).  Everyone else should see it. -->
+</div> <!-- m-screens --></script><script type="text/ng-template" id="/assets/apps/share/views/powered-by/powered-by.htm"><!-- Hide this object for all Shopify Enterprise project shares. ( companyID 71 ).  Everyone else should see it. -->
 <div ng-hide="project.companyID == 71">
 <a
 ng-if=" !project.isMobile || share.isEmbed "
@@ -2330,8 +2180,7 @@ href="http://www.invisionapp.com/?utm_medium=virality&utm_source=Share%20CTA"
 target="_blank">
 made with InVision
 </a>
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/powered-by/powered-by-mobile.htm"><div
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/powered-by/powered-by-mobile.htm"><div
 ng-controller="poweredBy.poweredByController"
 ng-mouseenter="announceActivityChange(true)"
 ng-mouseleave="announceActivityChange(false)">
@@ -2344,8 +2193,7 @@ target="_blank">
 made with InVision
 </a>
 <!-- END: Powered By Tag -->
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/notification-bar/notification-bar.htm"><div ng-if="!isLiveShare && !share.isEmbed"
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/notification-bar/notification-bar.htm"><div ng-if="!isLiveShare && !share.isEmbed"
 ng-controller="notificationsBar.notificationsBarController"
 ng-class="{ in: isChangingNotifications, out: !isChangingNotifications, reverse: !isChangingNotifications }"
 class="email-notifications">
@@ -2383,9 +2231,7 @@ video-height="394">
 <div class="modal-footer">
 <h2>Get Started in 30 Seconds</h2>
 </div>
-</div>
-</script><script type="text/ng-template" id="/assets/apps/share/views/toolbar/toolbar.htm">
-<div
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/toolbar/toolbar.htm"><div
 ng-controller="toolbar.ToolbarController"
 ng-show="( includeBrowseTool || includeCommentsTool )"
 ng-mouseenter="updateIsUserOverToolbar( true )"
@@ -2477,8 +2323,7 @@ Comments
 </div>
 </div>
 <!-- END: Toolbar. -->
-</div>
-</script><script type="text/ng-template" id="/assets/apps/common/views/directives/mobile-transition-layer.htm"><div class="inner">
+</div></script><script type="text/ng-template" id="/assets/apps/common/views/directives/mobile-transition-layer.htm"><div class="inner">
 <div class="inner2">
 <div
 id="current-screen"
@@ -2584,8 +2429,7 @@ width="{{ Math.round(picture.width * (picture.displayScale || screen.displayScal
 </div> <!-- fixed-footer -->
 </div> <!-- current-picture -->
 </div><!-- inner2 -->
-</div> <!-- inner -->
-</script><script type="text/ng-template" id="/assets/apps/common/views/directives/emoji-add.htm"><div class="emoji-wrapper">
+</div> <!-- inner --></script><script type="text/ng-template" id="/assets/apps/common/views/directives/emoji-add.htm"><div class="emoji-wrapper">
 <div
 class="emoji-popover"
 ng-class="{ 'hover-emoji': hoverEmoji, 'top': isTop, 'left': alignLeft }"
@@ -2623,8 +2467,7 @@ data-emoji="{{ emoji }}">
 <div class="add-emoji">
 <a ng-click="togglePopover( $event )"></a>
 </div>
-</div>
-</script><script type="text/ng-template" id="/assets/apps/common/views/directives/emoji-typeahead.htm"><div class="emoji-typeahead-wrapper">
+</div></script><script type="text/ng-template" id="/assets/apps/common/views/directives/emoji-typeahead.htm"><div class="emoji-typeahead-wrapper">
 <div 
 ng-show="items.length > 0"
 ng-class="{'emoji-typeahead-big' : items.length > 15, 'emoji-typeahead-narrow' : isNarrow }"
@@ -2652,8 +2495,4 @@ data-idx="{{ $index }}"
 </li>
 </ul>
 </div>
-</div></script> 
-
-
-</body>
-</html>
+</div></script></body></html>
