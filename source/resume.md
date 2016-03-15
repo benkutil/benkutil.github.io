@@ -9,7 +9,7 @@ published: true
 ## Experience
 
 <div class="bb bd-red pb2">
-    <h3 class="m0">Make Things Studio</h3>
+    <h3 class="m0"><a href="http://make-things.com" title="Make Things Studio">Make Things Studio</a></h3>
 
     <p class="mt0"><strong>Owner</strong>, March 2008&thinsp;&ndash;&thinsp;Present</p>
 
@@ -46,7 +46,7 @@ published: true
 </div>
 
 <div class="bb bd-red py2 my2">
-    <h3 class="m0">Roadmap</h3>
+    <h3 class="m0"><a href="https://ppmroadmap.com" title="Roadmap Project Management and Forecasting">Roadmap</a></h3>
 
     <p class="mt0"><strong>Co-founder & Chief Design Officer</strong>, April 2013&thinsp;&ndash;&thinsp;November 2015</p>
 
