@@ -3,7 +3,8 @@ source: source/
 destination: tmp/
 exclude: [
     'styles',
-    'media/source'
+    'media/source',
+    'media/favicons'
 ]
 
 # Site Settings
