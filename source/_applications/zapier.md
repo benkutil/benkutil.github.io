@@ -47,7 +47,7 @@ blocks:
     -   body: |
             For the past 7 years, I’ve taught in the [Graphic Design department](http://micagraphicdesign.org) of my alma mater, [Maryland Institute College of Art](https://www.mica.edu). I focus on the foundations of interactive design, typography for screens, and modern front-end development techniques. My students have gone on to work at Atlassian, Dropbox, Facebook, Mapbox, and The New York Times.
     -   callout: >
-            Having a positive impact on a student, whether helping them get a job, launch their own website, or seeing understanding blossom onto their face, gives me great satisfaction.
+            Having a positive impact on a student, helping them get a job, launch their own website, and seeing understanding blossom onto their face gives me great satisfaction.
     -   body: |
             I enjoy cooking, baking, and biking. In the past years, I’ve focused on perfecting my bread baking process. After working all day at a screen, using my hands to create something has meditative qualities. I’ve toyed with starting a bread delivery service, called bk_ry, but right now I use it as a [hashtag to keep track of my baking](https://www.instagram.com/explore/tags/bk_ry/). A couple weeks ago I made Old Fashioned doughnuts.
     -   embed: >
