@@ -9,7 +9,7 @@ module.exports = (gulp, $, config) => {
                 searchPath: ['tmp', './']
             }))
             .pipe($.if('*.js', $.uglify()))
-            // .pipe( $.if( '*.html', $.htmlmin( htmlminConfig ) ) )
+            .pipe( $.if( '*.html', $.htmlmin( htmlminConfig ) ) )
             .pipe(gulp.dest('dist'));
     });
 }
