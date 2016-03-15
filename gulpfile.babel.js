@@ -26,6 +26,7 @@ import critical from 'critical';
 import del from 'del';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import runSequence from 'run-sequence';
+import cssSorting from 'postcss-sorting';
 
 
 // §§ Configs
@@ -50,6 +51,7 @@ $.critical = critical;
 $.del = del;
 $.reload = browserSync.reload;
 $.runSequence = runSequence;
+$.cssSort = cssSorting;
 
 
 // §§ Auto Load Subtasks
