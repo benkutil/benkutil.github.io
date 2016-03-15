@@ -36,6 +36,20 @@ layout: default
                         </div>
                         <!-- /.max-width-4 px2 sm-px3 md-px4 h1 -->
                     {% endif %}
+                    {% if block.quote %}
+                        <blockquote class="max-width-4 mx0 px2 sm-px3 md-px4 h1 serif red bl" id="{{ page.slug | append:"-" | append: forloop.index }}">
+                            {{ block.quote | markdownify }}
+                        </blockquote>
+                        <!-- /.max-width-4 px2 sm-px3 md-px4 h1 -->
+                    {% endif %}
+
+                    {% if block.embed %}
+                        <div class="p2" style="background-color: #f4f3f6">
+                            <div class="mx-auto" style="width: 80%; max-width: 500px;">
+                                {{ block.embed }}
+                            </div>
+                        </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
                 {% if content.size > 1 %}
