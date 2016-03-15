@@ -24,4 +24,10 @@
     <!-- endbuild -->
     {% include open-graph.html %}
     {% include favicons.html %}
+    {% for meta in page.meta %}
+        {% if meta == 'noindex' %}
+        <meta name="robots" content="noindex">
+        {% endif %}
+    {% endfor %}
+
 </head>

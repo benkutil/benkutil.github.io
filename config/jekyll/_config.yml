@@ -30,6 +30,7 @@ defaults:
             layout: "post"
             tagline: ""
             published: false
+            meta: false
     -
         scope:
             path: "" # an empty string here means all files in the project
@@ -38,6 +39,7 @@ defaults:
             layout: "page"
             tagline: ""
             published: false
+            meta: false
     -
         scope:
             path: "" # an empty string here means all files in the project
@@ -46,6 +48,7 @@ defaults:
             layout: "page"
             tagline: ""
             published: false
+            meta: false
     -
         scope:
             path: "" # an empty string here means all files in the project
