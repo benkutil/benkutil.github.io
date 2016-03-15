@@ -1,10 +1,13 @@
 ---
-layout: page
 title: Resume
-intro: Experience, Skills, and Education.
 permalink: /about/resume/
+layout: page
 published: true
+intro: >
+    I untangle difficult problems, explore constraints & opportunities, and execute solutions. I look forward to doing that with you.
 ---
+
+[Download as PDF](/media/ben_kutil-resume.pdf)
 
 ## Experience
 
