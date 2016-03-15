@@ -54,6 +54,16 @@ defaults:
             layout: "project"
             tagline: ""
             published: false
+            meta: false
+    -
+        scope:
+            path: "" # an empty string here means all files in the project
+            type: "applications"
+        values:
+            layout: "project"
+            tagline: ""
+            published: false
+            meta: false
 
 # Collections
 collections:
@@ -66,6 +76,9 @@ collections:
     portfolio:
         output: true
         permalink: /designs/:slug/
+    applications:
+        output: true
+        permalink: /applies/to/:path/
 
 # Plugin Details
 
