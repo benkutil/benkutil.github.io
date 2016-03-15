@@ -15,24 +15,11 @@ body {
     background-color: #fff;
 }
 
-
-.table-row {
-    display: table-row;
-}
-
-.max-width-5 {
-    max-width: 90rem;
-}
-
 img,
 video,
 embed {
     max-width: 100%;
     height: auto;
-}
-
-.serif {
-    font-family: 'freight-text-pro', serif;
 }
 
 a {
@@ -64,6 +51,17 @@ h6 {
     font-size: .75rem;
 }
 
+hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: 0;
+    border-bottom: 3px solid;
+}
+
+figure {
+    margin: 0;
+}
+
 .h0 {
     font-size: 2rem;
 }
@@ -72,13 +70,6 @@ h6 {
     .h0 {
         font-size: 4rem;
     }
-}
-
-hr {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    border: 0;
-    border-bottom: 3px solid;
 }
 
 .btn {
@@ -160,23 +151,71 @@ hr {
 }
 
 .bt {
-    border-top: 3px solid
+    border-top-width: 3px;
+    border-top-style: solid;
 }
 
 .br {
-    border-right: 3px solid
+    border-right-width: 3px;
+    border-right-style: solid;
 }
 
 .bb {
-    border-bottom: 3px solid
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
 }
 
 .bl {
-    border-left: 3px solid
+    border-left-width: 3px;
+    border-left-style: solid;
 }
 
-figure {
+.bl2 {
+    border-left-width: 6px;
+    border-left-style: solid;
+}
+
+.bl2 {
+    border-left-width: 9px;
+    border-left-style: solid;
+}
+
+.post-item__content > * {
     margin: 0;
+}
+
+.grid-item picture,
+.grid-item img {
+    display: block;
+}
+
+
+.u-cms ul {
+    padding-left: 0;
+    margin-left: -1rem;
+    list-style: none;
+}
+
+.u-cms ul li {
+    padding-left: 1rem;
+    border-left: 4px solid #53C9E2
+}
+
+.u-cms li + li {
+    margin-top: 4px;
+}
+
+
+.table-row {
+    display: table-row;
+}
+
+.max-width-5 {
+    max-width: 90rem;
+}
+
+.serif {
+    font-family: 'freight-text-pro', serif;
 }
 
 
@@ -248,30 +287,4 @@ figure {
     .md-align-right {
         text-align: right;
     }
-}
-
-
-.post-item__content > * {
-    margin: 0;
-}
-
-.grid-item picture,
-.grid-item img {
-    display: block;
-}
-
-
-.u-cms ul {
-    padding-left: 0;
-    margin-left: -1rem;
-    list-style: none;
-}
-
-.u-cms ul li {
-    padding-left: 1rem;
-    border-left: 4px solid #d72c66
-}
-
-.u-cms li + li {
-    margin-top: 4px;
 }
