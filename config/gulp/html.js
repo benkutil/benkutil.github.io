@@ -6,10 +6,10 @@ module.exports = (gulp, $, config) => {
 
         return gulp.src('tmp/**/*.html')
             .pipe($.useref({
-                searchPath: ['tmp', 'source', './']
+                searchPath: ['tmp', './']
             }))
             .pipe($.if('*.js', $.uglify()))
-            .pipe( $.if( '*.html', $.htmlmin( htmlminConfig ) ) )
+            // .pipe( $.if( '*.html', $.htmlmin( htmlminConfig ) ) )
             .pipe(gulp.dest('dist'));
     });
 }
