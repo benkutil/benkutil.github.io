@@ -45,8 +45,15 @@ layout: default
 
                     {% if block.embed %}
                         <div class="p2" style="background-color: #f4f3f6">
-                            <div class="mx-auto" style="width: 80%; max-width: 500px;">
-                                {{ block.embed }}
+                            <div class="mx-auto" style="width: 80%; max-width: 32em;">
+                                <div class="xs-hide">
+                                    {{ block.embed }}
+                                </div>
+                                {% if block.embed.link %}
+                                <div class="xs-show">
+                                    <a href="{{ block.embed.link }}">{{ block.embed.link }}</a>
+                                </div>
+                                {% endif %}
                             </div>
                         </div>
                     {% endif %}

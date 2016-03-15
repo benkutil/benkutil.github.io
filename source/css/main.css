@@ -17,9 +17,14 @@ body {
 
 img,
 video,
-embed {
+embed,
+iframe {
     max-width: 100%;
     height: auto;
+}
+
+figure {
+    margin: 0;
 }
 
 a {
@@ -51,15 +56,15 @@ h6 {
     font-size: .75rem;
 }
 
+blockquote {
+    margin: 0;
+}
+
 hr {
     margin-top: 3em;
     margin-bottom: 3em;
     border: 0;
     border-bottom: 3px solid;
-}
-
-figure {
-    margin: 0;
 }
 
 .h0 {
