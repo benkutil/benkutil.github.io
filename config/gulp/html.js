@@ -1,8 +1,5 @@
 module.exports = (gulp, $, config) => {
     gulp.task('html', () => {
-        const uncssConfig = {
-            html: [ 'tmp/**/*.html' ]
-        }
         const htmlminConfig = {
             collapseWhitespace: true
         };
