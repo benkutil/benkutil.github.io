@@ -12,7 +12,6 @@ module.exports = (gulp, $, config) => {
                 searchPath: ['tmp', 'source', './']
             }))
             .pipe($.if('*.js', $.uglify()))
-            .pipe( $.if( '*.css', $.uncss( uncssConfig ), $.cssnano() ) )
             .pipe( $.if( '*.html', $.htmlmin( htmlminConfig ) ) )
             .pipe(gulp.dest('dist'));
     });
