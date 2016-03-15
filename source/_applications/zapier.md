@@ -33,11 +33,8 @@ blocks:
             alt: Tippett looking up at the camera
             caption: >
                 The happiest, funniest baby I know.
-    -   body: My wife Katie and I also have two dogs, Cole and Dillon, both rescue dogs from the [local shelter](/designs/mdspca). We think Cole has a mix of Pitbull, Chow, and Newfoundland. Dillon mixes Shepherd with Rottweiler. He lets Afton and Tippett crawl all over him, and I feel lucky they have Cole and Dillon in their life.
-        figure:
-            image: applications/zapier/family-page.jpg
-            alt: Our family
-            caption: Afton made a collage of our family for her school’s directory.
+    -   body: |
+            My wife Katie and I also have two dogs, Cole and Dillon, both rescue dogs from the [local shelter](/designs/mdspca). We think Cole has a mix of Pitbull, Chow, and Newfoundland. Dillon mixes Shepherd with Rottweiler. He lets Afton and Tippett crawl all over him, and I feel lucky they have Cole and Dillon in their life.
     -   body: |
             I’ve [worked independently](http://make-things.com) for the past 8 years, helping clients achieve their goals through websites and applications. I’ve enjoyed the variety of projects self employment has given me. I feel thankful to work from home, having as much time with my family as possible. If I had to work from an office, I’d miss so much of my children’s life.
     -   body: |
