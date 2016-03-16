@@ -56,6 +56,7 @@ blocks:
     -   quote: Include links to your _____. Include at least one live-on-the-internet product you've helped ship.
     -   body: |
             - **[Portfolio](https://benkutil.com)**, and it’s [Github Repository](https://github.com/benkutil/benkutil.github.io)
+            - **[Resumé](/about/resume/)**, as [PDF](/media/assets/ben_kutil-resume.pdf)
             - **[Make Things Studio](http://make-things.com)**, my design company of 1.
             - **[Github](https://github.com/benkutil)**
             - **[Twitter](https://twitter.com/benkutil)**

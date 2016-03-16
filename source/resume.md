@@ -7,7 +7,7 @@ intro: >
     I untangle difficult problems, explore constraints & opportunities, and execute solutions. I look forward to doing that with you.
 ---
 
-[Download as PDF](/media/ben_kutil-resume.pdf)
+[Download as PDF](/media/assets/ben_kutil-resume.pdf)
 
 ## Experience
 
