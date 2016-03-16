@@ -56,7 +56,7 @@
   <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
 {% if page.image %}
-  <meta name="twitter:image:src" content="{{ page.image | prepend: 'media/assets/pages' | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="twitter:image:src" content="{{ page.image | prepend: 'media/assets/social' | prepend: site.baseurl | prepend: site.url }}">
 {% else %}
-  <meta name="twitter:image:src" content="/apple-touch-icon-180x180.png">
+  <meta name="twitter:image:src" content="{{ 'logo.png' | prepend: 'media/assets/social/' | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}

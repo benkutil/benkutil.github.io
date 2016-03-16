@@ -4,7 +4,7 @@ module.exports = (gulp, $, config) => {
             collapseWhitespace: true
         };
 
-        return gulp.src('tmp/**/*.html')
+        return gulp.src(['tmp/**/*.html', '!tmp/media/**/*.html'])
             .pipe($.useref({
                 searchPath: ['tmp', './']
             }))

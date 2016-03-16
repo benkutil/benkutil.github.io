@@ -1,7 +1,7 @@
 module.exports = (gulp, $, config) => {
     gulp.task('uncss', () => {
         const uncssConfig = {
-            html: [ 'dist/**/*.html', '!dist/media/**/*.html' ]
+            html: [ 'dist/**/*.html' ],
         }
 
         const cssSortingConfig = {
