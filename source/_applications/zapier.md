@@ -10,7 +10,7 @@ intro: >
 date: 2016-03-15
 blocks:
     -   body: |
-            Mike, I’m applying for the [Product Manager](https://zapier.com/jobs/product-manager-spring-2016/) position with Zapier. I thought an email was a little limiting and I wouldn’t want you to go over your data plan downloading attachments! I’ve included answers to your prompts below.
+            I’m applying for the [Product Manager](https://zapier.com/jobs/product-manager-spring-2016/) position with Zapier. I thought an email was a little limiting and I wouldn’t want you to go over your data plan downloading attachments! I’ve included answers to your prompts below.
 
             **You can use these links to jump to a specific response.**
 
@@ -114,5 +114,5 @@ blocks:
             code: <script src="https://gist.github.com/benkutil/0f9c27d0b7d0feb3fd43.js"></script>
             link: https://gist.github.com/benkutil/0f9c27d0b7d0feb3fd43
     -   callout: |
-            Mike, thanks for the opportunity to share my experiences, and I look forward to discussing the position and how I can help shape Zapier’s future.  I believe I exceed the qualifications you’re looking for in the position. I’ve managed product development, help others to succeed, prefer remote work, and believe in pragmatic design.
+            Thanks for the opportunity to share my experiences, and I look forward to discussing the position and how I can help shape Zapier’s future. I believe I exceed the qualifications you’re looking for in the position. I’ve managed product development, help others to succeed, prefer remote work, and believe in pragmatic design.
 ---
