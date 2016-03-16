@@ -67,7 +67,7 @@ intro: >
             <p class="m0">Redesigned Roadmap’s weakest link to drive trial conversions. Focused on small steps that explain how Roadmap works. </p>
         </li>
         <li>
-            <h5 class="m0"><a href="/designs/roadmap/" class="red">Roadmap Redesign</a></h5>
+            <h5 class="m0"><a href="/designs/roadmap-next/" class="red">Roadmap Redesign</a></h5>
             <p class="m0">Led redesign of primary application, focusing on interface clarity, mobile usage, and performance.</p>
         </li>
     </ul>
