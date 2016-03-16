@@ -91,7 +91,7 @@ blocks:
             image: applications/zapier/home-depot-mockups.jpg
             alt: Mockups of the project template creation process.
             caption: >
-                I mocked up the interfaces using Sketch. These screens represent the userflow for creating and editing a new project template. [Click through the prototype](/media/portfolio/roadmap-project-templates) I shared with Home Depot and customers.
+                I mocked up the interfaces using Sketch. These screens represent the userflow for creating and editing a new project template. [Click through the prototype](/media/assets/portfolio/roadmap-project-templates/) I shared with Home Depot and customers.
     -   body: |
             After I reviewed the mockups with Home Depot, I had a series of Hangouts with our development team, based in Ukraine. From those hangouts, we refined our requirements using Confluence.
         figure:
