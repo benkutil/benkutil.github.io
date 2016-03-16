@@ -1,8 +1,8 @@
-<meta content="{{ site.title }}" property="og:site_name">
+<meta content="{{ site.title | strip_html | strip_newlines | }}" property="og:site_name">
 {% if page.title %}
   <meta content="{{ page.title }}" property="og:title">
 {% else %}
-  <meta content="{{ site.title }}" property="og:title">
+  <meta content="{{ site.title | strip_html | strip_newlines | }}" property="og:title">
 {% endif %}
 {% if page.title %}
   <meta content="article" property="og:type">
@@ -15,7 +15,7 @@
   <meta content="{{ site.description }}" property="og:description">
 {% endif %}
 {% if page.url %}
-  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  <meta content="{{ page.url| prepend: site.baseurl | prepend: site.url }}" property="og:url">
 {% endif %}
 {% if page.date %}
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
@@ -40,15 +40,15 @@
 
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@site_username">
-<meta name="twitter:creator" content="@creator_username">
+<meta name="twitter:site" content="{{ site.twitter_username | prepend: '@'}}">
+<meta name="twitter:creator" content="{{ site.twitter_username | prepend: '@'}}">
 {% if page.title %}
   <meta name="twitter:title" content="{{ page.title }}">
 {% else %}
-  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:title" content="{{ site.title | strip_html | strip_newlines |}}">
 {% endif %}
 {% if page.url %}
-  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
 {% if page.description %}
   <meta name="twitter:description" content="{{ page.description }}">
@@ -56,7 +56,7 @@
   <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
 {% if page.image %}
-  <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+  <meta name="twitter:image:src" content="{{ page.image | prepend: 'media/assets/pages' | prepend: site.baseurl | prepend: site.url }}">
 {% else %}
-  <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/logo.png">
+  <meta name="twitter:image:src" content="/apple-touch-icon-180x180.png">
 {% endif %}
