@@ -14,7 +14,7 @@ blocks:
         figure:
             image: portfolio/roadmap-site-version-1.jpg
             alt: Screenshot of the first version of Roadmap’s website.
-            caption: The original website hid content within a carosel, which analytics showed people did not interact with.
+            caption: The original website hid content within a carousel, which analytics showed people did not interact with.
     -   figure:
             image: portfolio/roadmap-site-website-blue.jpg
             alt: Screenshot of the current Roadmap Website.

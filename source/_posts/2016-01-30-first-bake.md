@@ -11,7 +11,7 @@ I’ve had my starter for about two weeks now. I’ve fed it every day, using th
 
 {% picture bread/bread-starter-first-bake-levain.jpg alt="First Bake Levain" %}
 
-The starter had good activity after 5 days, but I couldn't bake with it until this weekend. I decided to trey Ken Forkish’s Country Blonde recipe.
+The starter had good activity after 5 days, but I couldn't bake with it until this weekend. I decided to try Ken Forkish’s Country Blonde recipe.
 
 I find Ken’s recipes interesting because he explicitly breaks down the amount of flour and water used in the starter as part of the flour and water used in the final mix. This felt new to me. In the past, I had used Chad Robertson’s formula from Tartine, which uses nice round numbers ;).
 

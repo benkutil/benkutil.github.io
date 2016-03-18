@@ -14,7 +14,7 @@ blocks:
 
             Working with Roadmap, we built a companion time tracking app in Ember. This allowed Roadmap to leave its legacy codebase behind and enabled quick collaboration and iteration. I developed reusable processes for Roadmap to use on future projects.
 
-            I acted as product manager, designer, and front-end developer, allowing me to guide features from conception to implemention in Ember, our chosen front-end framework. I sequenced releases, wrote tests, configured servers, and setup a continuous integration process.
+            I acted as product manager, designer, and front-end developer, allowing me to guide features from conception to implementation in Ember, our chosen front-end framework. I sequenced releases, wrote tests, configured servers, and setup a continuous integration process.
 
             As we released features, I organized our beta testing program to work with existing customers to incorporate their feedback into the next iteration.
     -   figure:

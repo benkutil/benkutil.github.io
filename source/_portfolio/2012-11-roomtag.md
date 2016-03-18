@@ -14,7 +14,7 @@ blocks:
     -   figure:
             image: portfolio/roomtag-buildings.jpg
             alt: Floorplan selection and search tool.
-            caption: An interface concept for navigating floorplans across a company’s different buildings. Here, the navigation still mirrored their original flat & wide architecture.
+            caption: I created an interface concept for navigating floorplans across a company’s different buildings. Here, the navigation still mirrored their original flat & wide architecture.
     -   figure:
             image: portfolio/roomtag-search.jpg
             alt: Searching for a person’s locations within a company
@@ -30,7 +30,7 @@ blocks:
     -   figure:
             image: portfolio/roomtag-sandbox.jpg
             alt: Finding who occupies offices within the building
-            caption: Customers made it clear that having an audit log and roll backs helped them feel confident in their work, and provided the oversight needed in some corporate envi
+            caption: Customers made it clear that having an audit log and roll backs helped them feel confident in their work, and provided the oversight needed in some corporate environments.
     -   body: |
             I found customers either had space planning, or asset tracking tasks, but they did not do both those tasks at the same time. I worked with Roomtag to move their asset tracking functionality into a separate service.
         figure:
