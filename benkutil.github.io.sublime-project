@@ -4,8 +4,14 @@
 		{
 			"path": "source"
 		},
-        {
-            "path": "config"
-        }
-	]
+		{
+			"path": "config"
+		}
+	],
+	"settings":
+	{
+		"FuzzyFilePath":
+		{
+		}
+	}
 }
