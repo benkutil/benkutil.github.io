@@ -4,7 +4,7 @@ tagline: >
     Getting to use my starter for the first time this year didn’t work out the way I hoped.
 published: true
 date: 2016-01-30
-categories: update bread
+categories: bread
 ---
 
 I’ve had my starter for about two weeks now. I’ve fed it every day, using the [refreshment schedule from @apeiceofbread’s starter recipe](/cooks/bread/levain-starter/#bread-starter-apiece-ref-future).
