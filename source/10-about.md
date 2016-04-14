@@ -5,7 +5,7 @@ permalink: /about/
 published: true
 ---
 
-**Hi, my name is Ben.** I’m a systems-obsessed product designer who codes, teaches, and bakes.
+**Hi, my name is Ben.** I’m a systems-focused product designer who codes, teaches, and bakes.
 
 I operate [Make Things Studio](http://make-things.com), an interactive consultancy working with businesses, non-profits, and schools to define & realize business goals on the web.
 
