@@ -18,8 +18,8 @@ In the past, I would have answered those questions during an interview, while ta
 I feel conflicted about the widespread adoption of a design test. How do they relate or fit into the continuum of spec work. How does a design test differ from a portfolio piece if no discussion takes place for either? What role does payment play in a design test? Do applicants have any other option?
 
 This job application process still feels new to me, and it seems everyone has a slightly different “test” process. I put together a few other’s experiences as well.
-
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><div class='storify'><iframe src='//storify.com/benkutil/design-tests/embed?header=false&border=false' frameborder='no' allowtransparency='true'></iframe><script src='//storify.com/benkutil/design-tests.js?header=false&border=false'></script><noscript>[<a href='//storify.com/benkutil/design-tests' target='_blank'>View the story 'Design Tests' on Storify</a>]</noscript></div></div>
+<style>.embed-container { position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
+<iframe src='//storify.com/benkutil/design-tests/embed?header=false&border=false' frameborder='no' allowtransparency='true' style="width: 100%; "></iframe></div>
 
 Some good reading on design tests.
 
