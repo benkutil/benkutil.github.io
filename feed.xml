@@ -2,13 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ben Kutil&lt;span class=&quot;hide&quot;&gt; - Designer, Educator, Baker&lt;/span&gt;</title>
-    <description>A systems-obsessed product designer who codes, teaches, and bakes.
+    <description>A systems-focused product designer who codes, teaches, and bakes.
 </description>
     <link>https://benkutil.com/</link>
     <atom:link href="https://benkutil.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Mar 2016 13:32:11 -0400</pubDate>
-    <lastBuildDate>Fri, 18 Mar 2016 13:32:11 -0400</lastBuildDate>
+    <pubDate>Thu, 14 Apr 2016 10:25:39 -0400</pubDate>
+    <lastBuildDate>Thu, 14 Apr 2016 10:25:39 -0400</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Design Tests</title>
+        <description>&lt;p&gt;I haven’t applied for a job since 2004. A lot has changed since then, and working to reenter the fulltime workforce has had ups and downs.&lt;/p&gt;
+
+&lt;p&gt;I’ve seen &lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=hiring+test&quot;&gt;engineering tests&lt;/a&gt;, but haven’t seen design tests as publicly available. Often, these engineering tests seem to focus on high level concepts, process, and problem solving. These qualities seem as important when hiring a designer.&lt;/p&gt;
+
+&lt;p&gt;In the past, I would have answered those questions during an interview, while talking through a portfolio. When applying for internships and my first jobs out of college, we talked about the concepts, process, and problems behind a project.&lt;/p&gt;
+
+&lt;p&gt;I feel conflicted about the widespread adoption of a design test. How do they relate or fit into the continuum of spec work. How does a design test differ from a portfolio piece if no discussion takes place for either? What role does payment play in a design test? Do applicants have any other option?&lt;/p&gt;
+
+&lt;p&gt;This job application process still feels new to me, and it seems everyone has a slightly different “test” process. I put together a few other’s experiences as well.
+&lt;style&gt;.embed-container { position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;&lt;div class=&#39;embed-container&#39;&gt;
+&lt;iframe src=&#39;//storify.com/benkutil/design-tests/embed?header=false&amp;border=false&#39; frameborder=&#39;no&#39; allowtransparency=&#39;true&#39; style=&quot;width: 100%; &quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Some good reading on design tests.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/@wtrsld/the-flaw-of-design-tests-b286ac357ca6#.u0qf2vdis&quot;&gt;The Flaws of Design Tests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://library.gv.com/how-to-interview-a-designer-with-the-perfect-design-exercise-2c99e6646612#.mofjrjoa4&quot;&gt;How to interview a designer with the perfect design exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ux.stackexchange.com/a/1977&quot;&gt;UX Stack Overflow Response&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/@dburka/dont-fool-yourself-testing-job-applicants-on-your-own-product-is-unethical-and-ineffective-8ac6affd73a7#.1ksuc2xon&quot;&gt;Stop asking design candidates to redesign your product. It’s unfair and (even worse) it’s ineffective.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/design-playbooks/designing-the-hiring-process-e0b59f3ee53#.v9ptcdnsi&quot;&gt;Designing the Hiring Process&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks to people like &lt;a href=&quot;https://medium.com/@joulee&quot;&gt;Julie Zhou&lt;/a&gt;, &lt;a href=&quot;https://library.gv.com&quot;&gt;Google Ventures&lt;/a&gt;, and others, a large body of writing exists around product design management and process. How can we standardize the hiring process like we’ve tried to standardize product product process. Can we create a service like &lt;a href=&quot;http://joblint.org&quot;&gt;joblint.org&lt;/a&gt; to help employers create useful design tests, and give applicants more information about the structure and process around a particular test.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 13 Apr 2016 00:00:00 -0400</pubDate>
+        <link>https://benkutil.com/job-search/2016/04/13/design-test.html</link>
+        <guid isPermaLink="true">https://benkutil.com/job-search/2016/04/13/design-test.html</guid>
+        
+        
+        <category>job-search</category>
+        
+      </item>
     
       <item>
         <title>First Bake</title>
@@ -79,11 +114,9 @@
 &lt;p&gt;While not a great first showing, it re-kindled my enjoyment for the process of baking, and reminded me to pay attention.&lt;/p&gt;
 </description>
         <pubDate>Sat, 30 Jan 2016 00:00:00 -0500</pubDate>
-        <link>https://benkutil.com/update/bread/2016/01/30/first-bake.html</link>
-        <guid isPermaLink="true">https://benkutil.com/update/bread/2016/01/30/first-bake.html</guid>
+        <link>https://benkutil.com/bread/2016/01/30/first-bake.html</link>
+        <guid isPermaLink="true">https://benkutil.com/bread/2016/01/30/first-bake.html</guid>
         
-        
-        <category>update</category>
         
         <category>bread</category>
         
@@ -216,11 +249,9 @@ for the hydration level you prefer.&lt;/p&gt;&lt;/li&gt;
 &lt;!-- /.card.recipe-card --&gt;
 </description>
         <pubDate>Thu, 14 Jan 2016 00:00:00 -0500</pubDate>
-        <link>https://benkutil.com/update/bread/2016/01/14/getting-started.html</link>
-        <guid isPermaLink="true">https://benkutil.com/update/bread/2016/01/14/getting-started.html</guid>
+        <link>https://benkutil.com/bread/2016/01/14/getting-started.html</link>
+        <guid isPermaLink="true">https://benkutil.com/bread/2016/01/14/getting-started.html</guid>
         
-        
-        <category>update</category>
         
         <category>bread</category>
         
