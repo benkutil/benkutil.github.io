@@ -8,6 +8,7 @@ intro: >
     I led the conceptualization, design, and front-end development of Roadmap’s tool for accurate time tracking.
 date: 2015-06-01
 thumbnail: portfolio/odometer-thumbnail-square.jpg
+featured: true
 blocks:
     -   body: |
             Roadmap’s development debt acted as a major roadblock for quick delivery of features to customers, and designers could not touch the codebase.

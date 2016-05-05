@@ -8,6 +8,7 @@ intro: >
     Roadmap had a confusing website focused on&nbsp;features. I&nbsp;simplified its call to action, and developed a content strategy based on impact, not&nbsp;features.
 date: 2015-05-01
 thumbnail: portfolio/roadmap-site-thumbnail-square.jpg
+featured: true
 blocks:
     -   body: |
             I worked with Roadmap to focus their website on customer impact, not a list of features. I took a complex and confusing site that lacked a direct call to action, and streamlined it into four concise pages.

@@ -8,6 +8,7 @@ intro: >
     I modernized the user flow and interface of Roomtag’s online space management tool.
 date: 2012-12-01
 thumbnail: portfolio/roomtag-thumbnail-square.jpg
+featured: true
 blocks:
     -   body: |
             Roomtag’s space management software had a robust feature set with poor usability and a spreadsheet interface. I took stock of the powerful features, talked with power users and prospective users, and re-organized the application around a simplified set of actions customers needed most.

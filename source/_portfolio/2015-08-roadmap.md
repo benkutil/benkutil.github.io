@@ -8,6 +8,7 @@ intro: >
     I spearheaded the replatforming and redesign of Roadmap’s project forecasting and resource management tool.
 date: 2015-08-01
 thumbnail: portfolio/roadmap-next-thumbnail-square.jpg
+featured: true
 blocks:
     -   body: |
             After a month of design sprints, I took apart a zombie “MVP” app, reorganizing and redesigning the application around two guiding principles.
