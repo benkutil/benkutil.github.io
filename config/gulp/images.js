@@ -1,9 +1,9 @@
 module.exports = ( gulp, $, config ) => {
   gulp.task('images', () => {
-    return gulp.src('dist/media/**/*')
+    return gulp.src('revved/media/**/*')
         .pipe($.imageoptim.optimize({
             jpegmini: true
         }))
-        .pipe(gulp.dest('shared/media'))
+        .pipe(gulp.dest('revved/media'))
   });
 }
