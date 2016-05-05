@@ -18,7 +18,7 @@ layout: default
             </header>
             <div class="post-content mx2 sm-mx3 md-mx4 h3" itemprop="articleBody" id="js-post-content" >
                 {% for block in page.blocks %}
-                <div class="block mt3">
+                <div class="block mt3" id="{{ page.slug | append:"-" | append: forloop.index }}">
                     {% if block.heading %}
                     <h2 class="max-width-4 px2 sm-px3 md-px4 ">{{ block.heading }}</h2>
                     {% endif %}
@@ -37,8 +37,17 @@ layout: default
                         <!-- /.max-width-4 px2 sm-px3 md-px4 h1 -->
                     {% endif %}
                     {% if block.quote %}
-                        <blockquote class="max-width-4 mx0 px2 sm-px3 md-px4 h1 serif red bl" id="{{ page.slug | append:"-" | append: forloop.index }}">
-                            {{ block.quote | markdownify }}
+                        {% if block.quote.size %}
+                            {% assign size = block.quote.size %}
+                        {% else %}
+                            {% assign size = 'h1' %}
+                        {% endif %}
+                        <blockquote class="max-width-4 mx0 px2 sm-px3 md-px4 {{ size }} serif red bl">
+                            {% if block.quote.text %}
+                                {{ block.quote.text | markdownify }}
+                            {% else %}
+                                {{ block.quote | markdownify }}
+                            {% endif %}
                         </blockquote>
                         <!-- /.max-width-4 px2 sm-px3 md-px4 h1 -->
                     {% endif %}
