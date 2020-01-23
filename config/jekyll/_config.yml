@@ -19,7 +19,7 @@ twitter_username: benkutil
 baseurl: ""
 excerpt_separator: ""
 markdown: redcarpet
-gems:
+plugins:
     - jekyll-picture-tag
 
 # Defaults
@@ -93,9 +93,10 @@ redcarpet:
 #
 # Picture
 picture:
-    source: media/source
-    output: media/generated
+    source: "source/media/source"
+    output: "media/generated"
     markup: picture
+    suppress_warnings: false
     presets:
         default:
             ppi: [1, 2]
