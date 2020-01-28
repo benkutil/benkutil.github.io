@@ -1,0 +1,20 @@
+media_presets:
+    source_large: "min-width: 52em"
+    source_medium: "min-width: 52em"
+    source_small: "min-width: 25em"
+
+markup_presets:
+    default:
+        markup: auto
+        formats: [original]
+        attributes:
+            img: 'class="block"'
+        widths: [375]
+        media_widths:
+            source_large: [1312]
+            source_medium: [1024]
+            source_small: [640]
+        size: 375px
+        fallback_width: 375
+        fallback_format: original
+

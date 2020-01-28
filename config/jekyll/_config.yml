@@ -93,33 +93,6 @@ redcarpet:
 #
 # Picture
 picture:
-    source: "source/media/source"
+    source: "media/source"
     output: "media/generated"
-    markup: picture
     suppress_warnings: false
-    presets:
-        default:
-            ppi: [1, 2]
-            attr:
-                class: block
-                itemprop: image
-            source_large:
-                media: "(min-width: 52em)"
-                width: 1312
-            source_medium:
-                media: "(min-width: 52em)"
-                width: 1024
-            source_small:
-                media: "(min-width: 25em)"
-                width: 640
-            source_default:
-                width: 375
-        work-thumb:
-            ppi: [1, 2]
-            attr:
-                itemprop: image
-            source_small:
-                media: "(min-width: 40em)"
-                width: 576
-            source_default:
-                width: 375

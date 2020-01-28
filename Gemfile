@@ -9,5 +9,5 @@ gem 'github_changelog_generator'
 
 
 group :jekyll_plugins do
-  gem 'jekyll-picture-tag'
+  gem 'jekyll_picture_tag'
 end
