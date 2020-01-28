@@ -18,9 +18,12 @@ twitter_username: benkutil
 # Jekyll Configuration
 baseurl: ""
 excerpt_separator: ""
-markdown: redcarpet
+markdown: kramdown
 plugins:
     - jekyll-picture-tag
+
+
+lsi: false
 
 # Defaults
 defaults:

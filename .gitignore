@@ -5,3 +5,4 @@ shared/
 tmp/
 node_modules/
 revved
+.jekyll-cache
