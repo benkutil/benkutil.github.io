@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "capistrano"
-gem "html-proofer"
+gem 'html-proofer', '~> 3.15', '>= 3.15.1'
 gem "jekyll"
 gem "redcarpet"
 gem "travis"
