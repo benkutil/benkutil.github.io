@@ -1,7 +1,0 @@
-_site/
-.sass-cache/
-dist/
-shared/
-tmp/
-node_modules/
-revved
