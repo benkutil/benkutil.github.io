@@ -1,7 +1,5 @@
-_site/
-.sass-cache/
-dist/
-shared/
-tmp/
-node_modules/
-revved
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
