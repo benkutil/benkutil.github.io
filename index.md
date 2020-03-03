@@ -5,5 +5,7 @@ list_title: Writing
 layout: home
 ---
 
-# Ben Kutil - Product Manager and Designer
-I develop product strategy, organize teams, and coach people. Working with [Ad Hoc](https://adhoc.team) on [HealthCare.gov](https://healthcare.gov).
+# Ben Kutil
+I develop product strategy, organize teams, and coach people. 
+
+Working with [Ad Hoc](https://adhoc.team) on [HealthCare.gov](https://healthcare.gov).
