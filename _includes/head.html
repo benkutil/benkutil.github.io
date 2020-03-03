@@ -7,4 +7,32 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+  <style type="text/css">
+  	html { margin: 0; padding: 0; text-align: center; }
+  	body {
+  		max-width: 45em;
+  		margin: 0 auto;
+  		font: 16px/1.2 Georgia, serif;
+  		text-align: left;
+  		color: #24140F;
+		-webkit-text-size-adjust: 100%;
+		-webkit-font-feature-settings: "kern" 1;
+		-moz-font-feature-settings: "kern" 1;
+		-o-font-feature-settings: "kern" 1;
+		font-feature-settings: "kern" 1;
+		font-kerning: normal;
+  	}
+  	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+  	a {
+  		transition: color .5s ease-in;
+  	}
+  	a:link, 
+  	a:visited {
+  		color: #D72C66;
+  	}
+  	a:hover, a:active {
+  		color: #882C62;
+  		transition: color .15s ease-out;
+  	}
+  </style>
 </head>
