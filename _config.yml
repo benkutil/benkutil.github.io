@@ -27,6 +27,18 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: benkutil
 github_username:  benkutil
 
+# Content settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      tagline: ""
+      published: false
+      meta: false
+
 # Build settings
 plugins:
   - jekyll-feed
