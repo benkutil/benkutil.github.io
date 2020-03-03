@@ -7,6 +7,10 @@ end_of_line = LF
 indent_style = space
 indent_size = 4
 
+;YAML
+[**.yaml]
+indent_size = 2
+
 ;HTML
 ;[**.html]
 ;indent_style = space
