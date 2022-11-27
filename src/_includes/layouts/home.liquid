@@ -3,6 +3,16 @@ layout: layouts/base.liquid
 templateClass: tmpl-home
 ---
 {{ content }}
+<h2>Posts</h2>
+<ul>
+  {%- for item in collections.posts -%}
+    <li>
+      <a href="{{item.url}}">
+        {{item.data.title}}
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>
 <h2>Past websites</h2>
 <ul>
   {%- for item in pastSites reversed -%}

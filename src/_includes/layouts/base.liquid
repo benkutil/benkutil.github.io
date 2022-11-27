@@ -39,6 +39,15 @@
   </head>
 
   <body>
+    {% if templateClass=="tmpl-home" %}
+      <h1>
+        <a href="/" title="Home">{{title}}</a>
+      </h1>
+    {%- else -%}
+      <p>
+        <a href="/" title="Home">Ben Kutil</a>
+      </p>
+    {% endif %}
     {{ content }}
   </body>
 </html>
