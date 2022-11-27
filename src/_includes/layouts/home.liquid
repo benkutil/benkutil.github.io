@@ -3,3 +3,9 @@ layout: layouts/base.liquid
 templateClass: tmpl-home
 ---
 {{ content }}
+<h2>Past years websites</h2>
+<ul>
+  {%- for item in pastSites -%}
+    {{item.title}}
+  {%- endfor -%}
+</ul>
