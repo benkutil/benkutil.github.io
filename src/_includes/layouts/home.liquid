@@ -3,3 +3,11 @@ layout: layouts/base.liquid
 templateClass: tmpl-home
 ---
 {{ content }}
+<h2>Past websites</h2>
+<ul>
+  {%- for item in pastSites reversed -%}
+    <li>
+      <a href="{{item.url}}" title="Open the {{item.title}} version of this website">{{item.title}}</a>
+    </li>
+  {%- endfor -%}
+</ul>
