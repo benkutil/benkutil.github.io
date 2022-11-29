@@ -4,10 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      {{title}}
-    </title>
-    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <title>{% if title %}{{title}} &ndash; {% endif %}{{ siteData.title }}</title>
+    <meta name="description" content="{{ siteData.description | strip_html | strip_newlines | truncate: 160 }}">
+
+    <style type="text/css">
+  	html { margin: 0; padding: 0; text-align: center; }
+  	body {
+  		max-width: 45em;
+  		margin: 0 auto;
+  		font: 16px/1.2 Georgia, serif;
+  		text-align: left;
+  		color: #24140F;
+		  -webkit-text-size-adjust: 100%;
+		  -webkit-font-feature-settings: "kern" 1;
+		  -moz-font-feature-settings: "kern" 1;
+		  -o-font-feature-settings: "kern" 1;
+		  font-feature-settings: "kern" 1;
+		  font-kerning: normal;
+  	}
+  	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+  	a {
+  		transition: color .5s ease-in;
+  	}
+  	a:link, 
+  	a:visited {
+  		color: #D72C66;
+  	}
+  	a:hover, a:active {
+  		color: #882C62;
+  		transition: color .15s ease-out;
+  	}
+    .hide {
+      display: none;
+    }
+  </style>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-touch-icon-60x60.png">
