@@ -4,10 +4,45 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      {{title}}
-    </title>
-    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <title>{% if title %}{{title}} &ndash; {% endif %}{{ siteData.title }}</title>
+    {%- if description -%}
+    <meta name="description" content="{{ description | strip_html | strip_newlines | truncate: 160 }}">
+    {%- else -%}
+    <meta name="description" content="{{ siteData.description | strip_html | strip_newlines | truncate: 160 }}">  
+    {%- endif -%}
+    
+
+    <style type="text/css">
+  	html { margin: 0; padding: 0; text-align: center; }
+  	body {
+  		max-width: 45em;
+  		margin: 0 auto;
+  		font: 16px/1.2 Georgia, serif;
+  		text-align: left;
+  		color: #24140F;
+		  -webkit-text-size-adjust: 100%;
+		  -webkit-font-feature-settings: "kern" 1;
+		  -moz-font-feature-settings: "kern" 1;
+		  -o-font-feature-settings: "kern" 1;
+		  font-feature-settings: "kern" 1;
+		  font-kerning: normal;
+  	}
+  	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+  	a {
+  		transition: color .5s ease-in;
+  	}
+  	a:link, 
+  	a:visited {
+  		color: #D72C66;
+  	}
+  	a:hover, a:active {
+  		color: #882C62;
+  		transition: color .15s ease-out;
+  	}
+    .hide {
+      display: none;
+    }
+  </style>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-touch-icon-60x60.png">
@@ -39,15 +74,26 @@
   </head>
 
   <body>
-    {% if templateClass=="tmpl-home" %}
-      <h1>
-        <a href="/" title="Home">{{title}}</a>
-      </h1>
-    {%- else -%}
-      <p>
-        <a href="/" title="Home">Ben Kutil</a>
-      </p>
-    {% endif %}
+    <div>
+      <header data-ui="site-mast">
+        {%- if templateClass=="tmpl-home" -%}
+          <h1>
+            <a href="/" title="Home">Ben Kutil<span class="hide">- Product and Growth leader</span></a>
+          </h1>
+          <p>
+              {{ siteData.description }}
+          </p>
+        {%- else -%}
+          <p>
+            <a href="/" title="Home">Ben Kutil</a>
+          </p>
+          <h1>{{title}}</h1>
+          {%- if description -%}
+            <p>{{description}}</p>
+          {%- endif -%}
+        {%- endif -%}
+      </header>
+    </div>
     {{ content }}
   </body>
 </html>

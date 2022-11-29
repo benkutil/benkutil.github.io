@@ -1,11 +1,11 @@
 ---
 title: "Hello Again"
+description: "Starting this website over again. Again. Using 11ty, Cloudflare Pages, and CodeSpaces."
 layout: layouts/content.liquid
 tags: 
     - posts
     - meta
 ---
-# Starting over, again, again.
 My new years resolution for 2020 was to publish more to my website. I started on [January 20th, 2020](https://github.com/benkutil/benkutil.github.io/pull/45/files), and made it to [March 2nd, 2020](https://github.com/benkutil/benkutil.github.io/pull/50/files). One Year later, I [tried again](https://2020.benkutil.com/meta/website/2021/03/02/day-1). It's now 2022. A lot has happened. And for better or worse, or because third time's the charm, I've dusted off the old website.
 
 ## Development challenges
