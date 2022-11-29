@@ -69,15 +69,25 @@
   </head>
 
   <body>
-    {% if templateClass=="tmpl-home" %}
-      <h1>
-        <a href="/" title="Home">{{title}}</a>
-      </h1>
-    {%- else -%}
-      <p>
-        <a href="/" title="Home">Ben Kutil</a>
-      </p>
-    {% endif %}
+    <div class="max-width-5 mx-auto">
+      <header class="site-mast m2 p2 sm-m3 sm-p3 md-m4 md-p4 bd bd-red" data-ui="site-mast">
+          <div class="clearfix">
+               {% if templateClass=="tmpl-home" %}
+                <h1>
+                  <a href="/" title="Home">Ben Kutil<span class="hide">- Product and Growth leader</span></a>
+                </h1>
+              {%- else -%}
+                <p>
+                  <a href="/" title="Home">Ben Kutil</a>
+                </p>
+              {% endif %}
+          </div>
+          <!-- /.clearfix -->
+          <p class="serif h0 mt2 md-mt3 mb0">
+              {{ siteData.description }}
+          </p>
+      </header>
+    </div>
     {{ content }}
   </body>
 </html>
