@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if title %}{{title}} &ndash; {% endif %}{{ siteData.title }}</title>
-    <meta name="description" content="{{ siteData.description | strip_html | strip_newlines | truncate: 160 }}">
+    {%- if description -%}
+    <meta name="description" content="{{ description | strip_html | strip_newlines | truncate: 160 }}">
+    {%- else -%}
+    <meta name="description" content="{{ siteData.description | strip_html | strip_newlines | truncate: 160 }}">  
+    {%- endif -%}
+    
 
     <style type="text/css">
   	html { margin: 0; padding: 0; text-align: center; }
