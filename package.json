@@ -20,5 +20,8 @@
   "homepage": "https://github.com/benkutil/benkutil.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "eleventy-xml-plugin": "^0.1.0"
   }
 }
