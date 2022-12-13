@@ -1,4 +1,7 @@
+const xmlFiltersPlugin = require('eleventy-xml-plugin')
+
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPlugin(xmlFiltersPlugin);
     // Directory changes
     return {
         dir: {
