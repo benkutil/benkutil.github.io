@@ -1,0 +1,23 @@
+---
+permalink: sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for item in collections.all %}
+    <url>
+      <loc>{{ item.url | prepend: siteData.url }}</loc>
+      <lastmod>{{ item.date | date_to_rfc822 }}</lastmod>
+      {% if item.data.changeFreq %}
+      <changefreq>{{ item.data.changeFreq  }}</changefreq>  
+      {% else %}
+      <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if item.data.priority %}
+      <priority>{{ item.data.priority  }}</priority>  
+      {% else %}
+      <priority>0.5</priority>  
+      {% endif %}   
+    </url>
+  {% endfor %}
+</urlset>
