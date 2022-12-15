@@ -5,6 +5,7 @@ templateClass: tmpl-home
 <main>
   {{ content }}
 </main>
+{% if collections.posts.size > 0 %}
 <nav>
   <h2>Posts</h2>
   <ul>
@@ -17,6 +18,21 @@ templateClass: tmpl-home
     {%- endfor -%}
   </ul>
 </nav>
+{% endif %}
+{% if collections.notes.size > 0 %}
+<nav>
+  <h2>Notes</h2>
+  <ul>
+    {%- for item in collections.notes -%}
+      <li>
+        <a href="{{item.url}}">
+          {{item.data.title}}
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</nav>
+{% endif %}
 <nav>
   <h2>Past websites</h2>
   <ul>
