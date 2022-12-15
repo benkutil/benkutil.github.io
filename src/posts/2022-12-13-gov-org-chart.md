@@ -1,4 +1,6 @@
 ---
+title: Shipping the org chart
+layout: layouts/content.liquid
 tags: notes
 ---
 # We're still shipping the org chart
