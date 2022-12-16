@@ -1,18 +1,18 @@
 ---
-permalink: feed.xml
+permalink: feeds/notes.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ siteData.title | xml_escape }}</title>
-    <description>Posts and Notes from Ben Kutil</description>
+    <title>Notes from {{ siteData.title | xml_escape }}</title>
+    <description>Small thoughts from the day</description>
     <link>{{ siteData.url | append: '/' }}</link>
     <atom:link href="{{ "/feed.xml" | prepend: siteData.url }}" rel="self" type="application/rss+xml"/>
     <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ page.date | date_to_rfc822 }}</lastBuildDate>
     <generator>Eleventy {{ eleventy.version }}</generator>
-    {%- for item in collections.all -%}
+    {%- for item in collections.notes -%}
       <item>
         <title>{{ item.data.title | xml_escape }}</title>
         <description>{{ item.content | xml_escape }}</description>
