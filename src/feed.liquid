@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
     <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ page.date | date_to_rfc822 }}</lastBuildDate>
     <generator>Eleventy {{ eleventy.version }}</generator>
-    {%- for item in collections.all | reverse -%}
+    {%- for item in collections.all reversed -%}
       <item>
         <title>{{ item.data.title | xml_escape }}</title>
         <description>{{ item.templateContent | xml_escape }}</description>
