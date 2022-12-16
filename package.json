@@ -22,6 +22,6 @@
     "@11ty/eleventy": "^1.0.2"
   },
   "dependencies": {
-    "eleventy-xml-plugin": "github:sentience/eleventy-xml-plugin#dist"
+    "eleventy-xml-plugin": "git+ssh://git@github.com/sentience/eleventy-xml-plugin#dist"
   }
 }
