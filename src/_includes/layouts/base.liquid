@@ -97,7 +97,10 @@
     </div>
     {{ content }}
     <footer>
-      <p>subscribe via <a href="{{ "/feed.xml" | prepend: siteData.url }}">RSS</a></p>
+      <p>Subscribe via RSS to <a href="{{ "/feed.xml" | prepend: siteData.url }}">all content</a>, 
+        <a href="{{ "feeds/posts.xml" | prepend: siteData.url }}">posts</a>, or
+        <a href="{{ "feeds/notes.xml" | prepend: siteData.url }}">notes</a>.
+      </p>
     </footer>
   </body>
 </html>
