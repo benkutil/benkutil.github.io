@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if title %}{{title}} &ndash; {% endif %}{{ siteData.title }}</title>
     {%- if description -%}
-    <meta name="description" content="{{ description | strip_html | strip_newlines | truncate: 160 }}">
+    <meta name="description" content="{{ description }}">
     {%- else -%}
-    <meta name="description" content="{{ siteData.description | strip_html | strip_newlines | truncate: 160 }}">  
+    <meta name="description" content="{{ siteData.description }}">  
     {%- endif -%}
     
-    <link rel="canonical" href="{{ page.url | prepend: siteData.url  }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ siteData.title | strip_html | strip_newlines }}" href="{{ '/feed.xml' | prepend: siteData.url }}">
+    <link rel="canonical" href="{{ page.url | absoluteUrl(siteData.url) }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ siteData.title }}" href="{{ '/feed.xml' | absoluteUrl(siteData.url) }}">
     <style type="text/css">
   	html { margin: 0; padding: 0; text-align: center; }
   	body {
@@ -97,9 +97,9 @@
     </div>
     {{ content }}
     <footer>
-      <p>Subscribe via RSS to <a href="{{ "/feed.xml" | prepend: siteData.url }}">all content</a>, 
-        <a href="{{ "feeds/posts.xml" | prepend: siteData.url }}">posts</a>, or
-        <a href="{{ "feeds/notes.xml" | prepend: siteData.url }}">notes</a>.
+      <p>Subscribe via RSS to <a href="{{ "/feed.xml" | absoluteUrl(siteData.url) }}">all content</a>, 
+        <a href="{{ "feeds/posts.xml" | absoluteUrl(siteData.url) }}">posts</a>, or
+        <a href="{{ "feeds/notes.xml" | absoluteUrl(siteData.url) }}">notes</a>.
       </p>
     </footer>
   </body>

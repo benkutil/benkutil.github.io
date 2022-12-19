@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 <main>
@@ -9,7 +9,7 @@ templateClass: tmpl-home
 <nav>
   <h2>Posts</h2>
   <ul>
-    {%- for item in collections.posts reversed -%}
+    {%- for item in collections.posts | reverse -%}
       <li>
         <a href="{{item.url}}">
           {{item.data.title}}
@@ -23,7 +23,7 @@ templateClass: tmpl-home
 <nav>
   <h2>Notes</h2>
   <ul>
-    {%- for item in collections.notes reversed -%}
+    {%- for item in collections.notes | reverse -%}
       <li>
         <a href="{{item.url}}">
           {{item.data.title}}
@@ -36,7 +36,7 @@ templateClass: tmpl-home
 <nav>
   <h2>Past websites</h2>
   <ul>
-    {%- for item in pastSites reversed -%}
+    {%- for item in pastSites | reverse -%}
       <li>
         <a href="{{item.url}}" title="Open the {{item.title}} version of this website">{{item.title}}</a>
       </li>
