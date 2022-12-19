@@ -95,7 +95,7 @@
         {%- endif -%}
       </header>
     </div>
-    {{ content }}
+    {{ content | safe }}
     <footer>
       <p>Subscribe via RSS to <a href="{{ "/feed.xml" | absoluteUrl(siteData.url) }}">all content</a>, 
         <a href="{{ "feeds/posts.xml" | absoluteUrl(siteData.url) }}">posts</a>, or

@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 <main>
-  {{ content }}
+  {{ content | safe }}
 </main>
 {% if collections.posts.size > 0 %}
 <nav>
