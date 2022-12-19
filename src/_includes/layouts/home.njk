@@ -5,7 +5,7 @@ templateClass: tmpl-home
 <main>
   {{ content | safe }}
 </main>
-{% if collections.posts.size > 0 %}
+{% if collections.posts.length > 0 %}
 <nav>
   <h2>Posts</h2>
   <ul>
@@ -19,7 +19,7 @@ templateClass: tmpl-home
   </ul>
 </nav>
 {% endif %}
-{% if collections.notes.size > 0 %}
+{% if collections.notes.length > 0 %}
 <nav>
   <h2>Notes</h2>
   <ul>
