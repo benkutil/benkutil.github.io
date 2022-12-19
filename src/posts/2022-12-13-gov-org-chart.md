@@ -1,6 +1,6 @@
 ---
 title: Shipping the org chart
-layout: layouts/content.liquid
+layout: layouts/content.njk
 tags: notes
 ---
 From a person’s point of view, we're still “shipping the org chart” of government agencies. 

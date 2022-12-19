@@ -1,7 +1,7 @@
 ---
 title: "Hello Again"
 description: "Starting this website over again. Again. Using 11ty, Cloudflare Pages, and CodeSpaces."
-layout: layouts/content.liquid
+layout: layouts/content.njk
 tags: 
     - posts
     - meta

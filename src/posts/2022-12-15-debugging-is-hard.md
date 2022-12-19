@@ -1,6 +1,6 @@
 ---
 title: Debugging is hard
-layout: layouts/content.liquid
+layout: layouts/content.njk
 tags: notes
 ---
 **Update:** It took me another hour to debug Cloudflare Page build problems. Cloudflare stalled when referencing the package using the github short code format in `package.json`. After trial an error, it seems using the full `https` based git url works well enough.
