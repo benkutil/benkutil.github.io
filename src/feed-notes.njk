@@ -1,0 +1,26 @@
+---
+permalink: feeds/notes.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes from {{ siteData.title }}</title>
+    <description>Small thoughts from the day</description>
+    <link>{{ siteData.url }}</link>
+    <atom:link href="{{ permalink | absoluteUrl(siteData.url) }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ page.date | dateToRfc3339 }}</pubDate>
+    <lastBuildDate>{{ page.date | dateToRfc3339 }}</lastBuildDate>
+    <generator>Eleventy {{ eleventy.version }}</generator>
+    {%- for item in collections.notes -%}
+    {%- set absolutePostUrl = item.url | absoluteUrl(siteData.url) %}
+      <item>
+        <title>{{ item.data.title | htmlToAbsoluteUrls(absolutePostUrl) }}</title>
+        <description>{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+        <pubDate>{{ item.date | dateToRfc3339 }}</pubDate>
+        <link>{{ absolutePostUrl }}</link>
+        <guid isPermaLink="true">{{ item.url }}</guid>
+      </item>
+    {%- endfor -%}
+  </channel>
+</rss>

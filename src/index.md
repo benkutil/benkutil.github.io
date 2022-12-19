@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.liquid
+layout: layouts/home.njk
 changeFreq: weekly
 priority: 1.0
 eleventyExcludeFromCollections: true
