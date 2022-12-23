@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx @11ty/eleventy --serve"
+    "start": "npx @11ty/eleventy --serve",
+    "build:prod": "ELEVENTY_ENV=production npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,7 @@
   "homepage": "https://github.com/benkutil/benkutil.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "@11ty/eleventy-plugin-rss": "^1.2.0"
-  },
-  "dependencies": {
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "html-minifier": "^4.0.0"
   }
 }
