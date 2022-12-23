@@ -10,5 +10,11 @@
             "request": "launch",
             "type": "node-terminal"
         },
+        {
+            "command": "npm run build:prod",
+            "name": "Run build:prod",
+            "request": "launch",
+            "type": "node-terminal"
+        },
     ]
 }
