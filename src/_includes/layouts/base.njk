@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if title %}{{title}} &ndash; {% endif %}{{ siteData.title }}</title>
+    <title>{% if title %}{{title | safe}} &ndash; {% endif %}{{ siteData.title | safe }}</title>
     {%- if description -%}
     <meta name="description" content="{{ description }}">
     {%- else -%}
@@ -12,7 +12,7 @@
     {%- endif -%}
     
     <link rel="canonical" href="{{ page.url | absoluteUrl(siteData.url) }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ siteData.title }}" href="{{ '/feed.xml' | absoluteUrl(siteData.url) }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ siteData.title | safe }}" href="{{ '/feed.xml' | absoluteUrl(siteData.url) }}">
     <style type="text/css">
   	html { margin: 0; padding: 0; text-align: center; }
   	body {
