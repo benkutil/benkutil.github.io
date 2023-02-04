@@ -24,7 +24,8 @@
     "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "eleventy-plugin-webmentions": "^2.0.0",
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "outdent": "^0.8.0"
   },
   "dependencies": {
     "@11ty/eleventy-upgrade-help": "^2.0.5",
