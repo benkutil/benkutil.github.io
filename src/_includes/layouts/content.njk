@@ -3,3 +3,4 @@ layout: layouts/base.njk
 templateClass: tmpl-content
 ---
 {{ content | safe }}
+{%- set currentPostMentions = webmentions | webmentionsForPage -%}
