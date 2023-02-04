@@ -2,6 +2,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
+    // 11ty plugins
     eleventyConfig.addPlugin(pluginRss);
     
     // run these configs in production only
