@@ -1,3 +1,4 @@
+require('dotenv').config();
 const Webmentions = require("eleventy-plugin-webmentions");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const htmlmin = require("html-minifier");
@@ -7,7 +8,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(Webmentions, {
         domain: "benkutil.com",
-        token: process.env.WEBMENTIONS_TOKEN,
+        token: process.env.WEBMENTIONS_TOKEN
       });
     
     // run these configs in production only
