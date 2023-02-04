@@ -22,9 +22,11 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0-beta.3",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "eleventy-plugin-webmentions": "^2.0.0",
     "html-minifier": "^4.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy-upgrade-help": "^2.0.5"
+    "@11ty/eleventy-upgrade-help": "^2.0.5",
+    "dotenv": "^16.0.3"
   }
 }
