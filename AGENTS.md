@@ -75,6 +75,22 @@ Examples: `feat: add dark mode`, `docs: update README`
 3. No broken links/assets
 4. Conventional commit format followed
 
+## Compound Engineering
+
+**Session Evaluation:**
+
+At the end of each session, agents should evaluate their work and propose improvements:
+
+1. **AGENTS.md Improvements:** Review if new patterns or conventions emerged that should be documented
+2. **New Agent Needs:** Identify if specialized agents in `.github/agents/` would improve efficiency (e.g., testing-agent, docs-agent, security-agent)
+3. **Skill Gaps:** Suggest specific skills for `.github/skills/` that would benefit future work (e.g., 11ty-optimization, markdown-linting, accessibility-checks)
+
+**Evaluation Questions:**
+- What repetitive tasks could be automated by a specialized agent?
+- What knowledge would benefit future agents working on this codebase?
+- What conventions or patterns should be added to AGENTS.md?
+- What tools or workflows could be standardized in skills files?
+
 ---
 
 *Keep this document updated as the project evolves.*
