@@ -26,7 +26,7 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/) format: `<ty
 
 **Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 
-Examples: `feat: add dark mode`, `docs: update README`
+Examples: `feat: add dark mode`, `docs: update Readme.md`
 
 ### Atomic Commits
 
