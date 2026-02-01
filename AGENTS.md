@@ -1,0 +1,80 @@
+# AGENTS.md
+
+Guidance for AI agents and human contributors working on this 11ty-based personal website.
+
+## Project Structure
+
+- `src/` - Content (markdown, templates, posts)
+- `_config/` - Modular Eleventy configuration
+- `_site/` - Build output (not committed)
+- `.eleventy.js` - Main config
+
+## Development
+
+```bash
+npm start              # Local dev server with live reload
+npm run build:prod     # Production build
+```
+
+**Environment:** Node 20 (`.nvmrc`), optional `ELEVENTY_ENV` and `WEBMENTIONS_TOKEN`
+
+## Git Workflow
+
+### Conventional Commits
+
+Follow [Conventional Commits](https://www.conventionalcommits.org/) format: `<type>: <description>`
+
+**Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+
+Examples: `feat: add dark mode`, `docs: update README`
+
+### Atomic Commits
+
+- One logical change per commit
+- Independently revertible
+- Avoid mixing unrelated changes
+
+## Coding Standards
+
+**Do:**
+- Use modular config (`_config/` pattern)
+- Leverage existing 11ty plugins
+- Maintain semantic HTML
+- Follow established patterns
+
+**Don't:**
+- Commit build artifacts (`_site/`)
+- Hardcode environment values
+- Break existing content
+- Add unjustified dependencies
+
+## Collaboration
+
+**Quality Over Quantity:**
+- Prefer thorough, well-tested changes over rapid iterations
+- Self-review before committing
+- Align with project goals
+
+**Communication:**
+- Explain **why**, not just **what** in commit messages
+- Document non-obvious decisions
+- Update docs when behavior changes
+
+## Agentic Development
+
+**For AI Agents:**
+- Understand context first - review existing files
+- Make minimal, necessary changes only
+- Test locally with `npm start`
+- Respect established conventions
+- Validate builds succeed
+
+**Pre-Commit Checklist:**
+1. Site builds without errors
+2. Content renders correctly
+3. No broken links/assets
+4. Conventional commit format followed
+
+---
+
+*Keep this document updated as the project evolves.*
