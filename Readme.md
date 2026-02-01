@@ -4,4 +4,4 @@ Personal website using [11ty](https://11ty.dev) and [Cloudflare Pages](https://p
 ## Setup
 ### Environment variables
 - `ELEVENTY_ENV` is either `production` or `preview`. Defaults to not set.
-- In Cloudflare Pages, set `NODE_VERSION` to desired nodejs version. Currently set to `16.18` to match GitHub Codespace version.
+- Node version is set to `20` via `.nvmrc` file for compatibility with 11ty and dependencies.
