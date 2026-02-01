@@ -4,6 +4,13 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
 const htmlmin = require("html-minifier");
 const outdent = require("outdent");
+const pluginNavigation = require("@11ty/eleventy-navigation");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const markdownItAnchor = require("markdown-it-anchor");
+const markdownItAttrs = require("markdown-it-attrs");
+const pluginTOC = require("eleventy-plugin-toc");
+const pluginFilters = require("./_config/filters.js");
+const pluginShortCodes = require("./_config/shortcode.js");
 
 /** Maps a config of attribute-value pairs to an HTML string
  * representing those same attribute-value pairs.
@@ -83,13 +90,60 @@ const imageShortcode = async (
 module.exports = function (eleventyConfig) {
     // 11ty plugins
     eleventyConfig.addPlugin(pluginRss);
-    eleventyConfig.addPlugin(Webmentions, {
-        domain: "benkutil.com",
-        token: process.env.WEBMENTIONS_TOKEN
+    
+    // Only add Webmentions if token is provided
+    if (process.env.WEBMENTIONS_TOKEN) {
+        eleventyConfig.addPlugin(Webmentions, {
+            domain: "benkutil.com",
+            token: process.env.WEBMENTIONS_TOKEN
+        });
+    }
+    
+    eleventyConfig.addPlugin(pluginNavigation);
+    eleventyConfig.addPlugin(pluginSyntaxHighlight, {
+        preAttributes: { tabindex: 0 }
     });
+    eleventyConfig.addPlugin(pluginTOC, {
+        tags: ['h2', 'h3', 'h4', 'h5'],
+        ul: true,
+        flat: false,
+        wrapper: 'div'
+    });
+
+    // Add Tufte filters and shortcodes
+    eleventyConfig.addPlugin(pluginFilters);
+    eleventyConfig.addPlugin(pluginShortCodes);
 
     // 11ty shortcodes
     eleventyConfig.addShortcode('image', imageShortcode);
+
+    // Configure markdown-it
+    const markdownIt = require("markdown-it");
+    let options = {
+        html: true,
+        breaks: true,
+        linkify: true,
+        typographer: true,
+    };
+    let markdownLib = markdownIt(options).use(markdownItAttrs);
+    eleventyConfig.setLibrary("md", markdownLib);
+
+    eleventyConfig.amendLibrary("md", mdLib => {
+        mdLib.use(markdownItAnchor, {
+            permalink: markdownItAnchor.permalink.ariaHidden({
+                placement: "after",
+                class: "header-anchor",
+                symbol: "",
+                ariaHidden: false,
+            }),
+            level: [1,2,3,4],
+            slugify: eleventyConfig.getFilter("slugify")
+        });
+    });
+
+    // Pass through Tufte CSS and fonts
+    eleventyConfig.addPassthroughCopy("src/css");
+    eleventyConfig.addPassthroughCopy("src/et-book");
 
     // run these configs in production only
     if (process.env.ELEVENTY_ENV === 'production') {
