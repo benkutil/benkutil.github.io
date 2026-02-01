@@ -190,43 +190,6 @@ Add RSS feed for blog posts
 - Update one dependency at a time when possible
 - Check for breaking changes in release notes
 
-## Additional GitHub Conventions
-
-### Recommended Settings
-
-#### Branch Protection
-Consider enabling these protections on the `main` branch:
-- Require pull request reviews before merging
-- Require status checks to pass
-- Require branches to be up to date before merging
-
-#### GitHub Actions
-Consider adding:
-- Automated build checks on PRs
-- Automated deployment to GitHub Pages or Cloudflare Pages
-- Dependency security scanning (Dependabot)
-
-#### Issue Labels
-Suggested labels to create:
-- `bug` - Something isn't working
-- `enhancement` - New feature or request
-- `documentation` - Improvements to documentation
-- `dependencies` - Dependency updates
-- `good first issue` - Good for newcomers
-- `help wanted` - Extra attention needed
-
-#### GitHub Apps
-Consider enabling:
-- **Dependabot** - Automated dependency updates
-- **CodeQL** - Security vulnerability scanning
-- **Lighthouse CI** - Performance monitoring
-
-### Project Board (Optional)
-For tracking multiple issues/PRs:
-- Create a simple Kanban board
-- Columns: To Do, In Progress, Done
-- Link issues and PRs to the board
-
 ## Questions or Issues?
 
 If you have questions or run into problems:
