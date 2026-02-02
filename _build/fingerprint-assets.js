@@ -22,7 +22,13 @@ async function fingerprintAssets(outputDir = '_site/css') {
   
   try {
     const files = await fs.readdir(cssDir);
-    const cssFiles = files.filter(file => file.endsWith('.css') && !file.includes('.css.'));
+    // Only fingerprint original CSS files (not already hashed ones or manifest)
+    const cssFiles = files.filter(file => 
+      file.endsWith('.css') && 
+      !file.includes('.css.') &&
+      !/\.[a-f0-9]{8}\.css$/.test(file) &&
+      file !== 'asset-manifest.json'
+    );
     
     for (const file of cssFiles) {
       const filePath = path.join(cssDir, file);
