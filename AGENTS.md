@@ -37,12 +37,14 @@ Examples: `feat: add dark mode`, `docs: update Readme.md`
 ## Coding Standards
 
 **Do:**
+
 - Use modular config (`_config/` pattern)
 - Leverage existing 11ty plugins
 - Maintain semantic HTML
 - Follow established patterns
 
 **Don't:**
+
 - Commit build artifacts (`_site/`)
 - Hardcode environment values
 - Break existing content
@@ -51,11 +53,13 @@ Examples: `feat: add dark mode`, `docs: update Readme.md`
 ## Collaboration
 
 **Quality Over Quantity:**
+
 - Prefer thorough, well-tested changes over rapid iterations
 - Self-review before committing
 - Align with project goals
 
 **Communication:**
+
 - Explain **why**, not just **what** in commit messages
 - Document non-obvious decisions
 - Update docs when behavior changes
@@ -63,6 +67,7 @@ Examples: `feat: add dark mode`, `docs: update Readme.md`
 ## Agentic Development
 
 **For AI Agents:**
+
 - Understand context first - review existing files
 - Make minimal, necessary changes only
 - Test locally with `npm start`
@@ -70,6 +75,7 @@ Examples: `feat: add dark mode`, `docs: update Readme.md`
 - Validate builds succeed
 
 **Pre-Commit Checklist:**
+
 1. Site builds without errors
 2. Content renders correctly
 3. No broken links/assets
@@ -86,6 +92,7 @@ At the end of each session, agents should evaluate their work and propose improv
 3. **Skill Gaps:** Suggest specific skills for `.github/skills/` that would benefit future work (e.g., 11ty-optimization, markdown-linting, accessibility-checks)
 
 **Evaluation Questions:**
+
 - What repetitive tasks could be automated by a specialized agent?
 - What knowledge would benefit future agents working on this codebase?
 - What conventions or patterns should be added to AGENTS.md?
@@ -93,4 +100,4 @@ At the end of each session, agents should evaluate their work and propose improv
 
 ---
 
-*Keep this document updated as the project evolves.*
+_Keep this document updated as the project evolves._

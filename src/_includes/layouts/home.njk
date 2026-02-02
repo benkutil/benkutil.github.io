@@ -2,33 +2,27 @@
 layout: layouts/base.njk
 templateClass: tmpl-home
 ---
-<main>
-  {{ content | safe }}
-</main>
+
+<main>{{ content | safe }}</main>
 {% if collections.posts.length > 0 %}
 <nav>
   <h2>Posts</h2>
   <ul>
     {%- for item in collections.posts | reverse -%}
-      <li>
-        <a href="{{item.url}}">
-          {{item.data.title}}
-        </a>
-      </li>
+    <li>
+      <a href="{{item.url}}"> {{item.data.title}} </a>
+    </li>
     {%- endfor -%}
   </ul>
 </nav>
-{% endif %}
-{% if collections.notes.length > 0 %}
+{% endif %} {% if collections.notes.length > 0 %}
 <nav>
   <h2>Notes</h2>
   <ul>
     {%- for item in collections.notes | reverse -%}
-      <li>
-        <a href="{{item.url}}">
-          {{item.data.title}}
-        </a>
-      </li>
+    <li>
+      <a href="{{item.url}}"> {{item.data.title}} </a>
+    </li>
     {%- endfor -%}
   </ul>
 </nav>
@@ -37,9 +31,11 @@ templateClass: tmpl-home
   <h2>Past websites</h2>
   <ul>
     {%- for item in pastSites | reverse -%}
-      <li>
-        <a href="{{item.url}}" title="Open the {{item.title}} version of this website">{{item.title}}</a>
-      </li>
+    <li>
+      <a href="{{item.url}}" title="Open the {{item.title}} version of this website"
+        >{{item.title}}</a
+      >
+    </li>
     {%- endfor -%}
   </ul>
 </nav>

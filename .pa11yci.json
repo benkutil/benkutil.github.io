@@ -1,0 +1,7 @@
+{
+  "defaults": {
+    "timeout": 30000,
+    "wait": 1000
+  },
+  "urls": ["http://localhost:8080/"]
+}

@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 const Webmentions = require("eleventy-plugin-webmentions");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
@@ -16,161 +16,160 @@ const pluginShortCodes = require("./_config/shortcode.js");
  * representing those same attribute-value pairs.
  */
 const stringifyAttributes = (attributeMap) => {
-    return Object.entries(attributeMap)
-        .map(([attribute, value]) => {
-            if (typeof value === 'undefined') return '';
-            return `${attribute}="${value}"`;
-        })
-        .join(' ');
+  return Object.entries(attributeMap)
+    .map(([attribute, value]) => {
+      if (typeof value === "undefined") return "";
+      return `${attribute}="${value}"`;
+    })
+    .join(" ");
 };
 
 // shortcode for using 11ty's Image plugin
 // from https://www.aleksandrhovhannisyan.com/blog/eleventy-image-plugin/
 const imageShortcode = async (
-    src,
-    alt,
-    className = undefined,
-    widths = [400, 800, 1280],
-    formats = ['webp', 'jpeg'],
-    sizes = '100vw'
+  src,
+  alt,
+  className = undefined,
+  widths = [400, 800, 1280],
+  formats = ["webp", "jpeg"],
+  sizes = "100vw"
 ) => {
-    const imageMetadata = await Image(src, {
-        widths: [...widths, null],
-        formats: [...formats, null],
-        outputDir: '_site/media/images',
-        urlPath: '/media/images',
-    });
-    const sourceHtmlString = Object.values(imageMetadata)
-        // Map each format to the source HTML markup
-        .map((images) => {
-            // The first entry is representative of all the others
-            // since they each have the same shape
-            const { sourceType } = images[0];
+  const imageMetadata = await Image(src, {
+    widths: [...widths, null],
+    formats: [...formats, null],
+    outputDir: "_site/media/images",
+    urlPath: "/media/images",
+  });
+  const sourceHtmlString = Object.values(imageMetadata)
+    // Map each format to the source HTML markup
+    .map((images) => {
+      // The first entry is representative of all the others
+      // since they each have the same shape
+      const { sourceType } = images[0];
 
-            // Use our util from earlier to make our lives easier
-            const sourceAttributes = stringifyAttributes({
-                type: sourceType,
-                // srcset needs to be a comma-separated attribute
-                srcset: images.map((image) => image.srcset).join(', '),
-                sizes,
-            });
+      // Use our util from earlier to make our lives easier
+      const sourceAttributes = stringifyAttributes({
+        type: sourceType,
+        // srcset needs to be a comma-separated attribute
+        srcset: images.map((image) => image.srcset).join(", "),
+        sizes,
+      });
 
-            // Return one <source> per format
-            return `<source ${sourceAttributes}>`;
-        })
-        .join('\n');
+      // Return one <source> per format
+      return `<source ${sourceAttributes}>`;
+    })
+    .join("\n");
 
-    const getLargestImage = (format) => {
-        const images = imageMetadata[format];
-        return images[images.length - 1];
-    }
+  const getLargestImage = (format) => {
+    const images = imageMetadata[format];
+    return images[images.length - 1];
+  };
 
-    const largestUnoptimizedImg = getLargestImage(formats[0]);
-    const imgAttributes = stringifyAttributes({
-        src: largestUnoptimizedImg.url,
-        width: largestUnoptimizedImg.width,
-        height: largestUnoptimizedImg.height,
-        alt,
-        loading: 'lazy',
-        decoding: 'async',
-    });
-    const imgHtmlString = `<img ${imgAttributes}>`;
+  const largestUnoptimizedImg = getLargestImage(formats[0]);
+  const imgAttributes = stringifyAttributes({
+    src: largestUnoptimizedImg.url,
+    width: largestUnoptimizedImg.width,
+    height: largestUnoptimizedImg.height,
+    alt,
+    loading: "lazy",
+    decoding: "async",
+  });
+  const imgHtmlString = `<img ${imgAttributes}>`;
 
-    const pictureAttributes = stringifyAttributes({
-        class: className,
-    });
-    const picture = `<picture ${pictureAttributes}>
+  const pictureAttributes = stringifyAttributes({
+    class: className,
+  });
+  const picture = `<picture ${pictureAttributes}>
     ${sourceHtmlString}
     ${imgHtmlString}
   </picture>`;
 
-    return outdent`${picture}`;
+  return outdent`${picture}`;
 };
 
 module.exports = function (eleventyConfig) {
-    // 11ty plugins
-    eleventyConfig.addPlugin(pluginRss);
-    
-    // Only add Webmentions if token is provided
-    if (process.env.WEBMENTIONS_TOKEN) {
-        eleventyConfig.addPlugin(Webmentions, {
-            domain: "benkutil.com",
-            token: process.env.WEBMENTIONS_TOKEN
-        });
-    }
-    
-    eleventyConfig.addPlugin(pluginNavigation);
-    eleventyConfig.addPlugin(pluginSyntaxHighlight, {
-        preAttributes: { tabindex: 0 }
+  // 11ty plugins
+  eleventyConfig.addPlugin(pluginRss);
+
+  // Only add Webmentions if token is provided
+  if (process.env.WEBMENTIONS_TOKEN) {
+    eleventyConfig.addPlugin(Webmentions, {
+      domain: "benkutil.com",
+      token: process.env.WEBMENTIONS_TOKEN,
     });
-    eleventyConfig.addPlugin(pluginTOC, {
-        tags: ['h2', 'h3', 'h4', 'h5'],
-        ul: true,
-        flat: false,
-        wrapper: 'div'
+  }
+
+  eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight, {
+    preAttributes: { tabindex: 0 },
+  });
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ["h2", "h3", "h4", "h5"],
+    ul: true,
+    flat: false,
+    wrapper: "div",
+  });
+
+  // Add Tufte filters and shortcodes
+  eleventyConfig.addPlugin(pluginFilters);
+  eleventyConfig.addPlugin(pluginShortCodes);
+
+  // 11ty shortcodes
+  eleventyConfig.addShortcode("image", imageShortcode);
+
+  // Configure markdown-it
+  const markdownIt = require("markdown-it");
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true,
+  };
+  let markdownLib = markdownIt(options).use(markdownItAttrs);
+  eleventyConfig.setLibrary("md", markdownLib);
+
+  eleventyConfig.amendLibrary("md", (mdLib) => {
+    mdLib.use(markdownItAnchor, {
+      permalink: markdownItAnchor.permalink.ariaHidden({
+        placement: "after",
+        class: "header-anchor",
+        symbol: "",
+        ariaHidden: false,
+      }),
+      level: [1, 2, 3, 4],
+      slugify: eleventyConfig.getFilter("slugify"),
     });
+  });
 
-    // Add Tufte filters and shortcodes
-    eleventyConfig.addPlugin(pluginFilters);
-    eleventyConfig.addPlugin(pluginShortCodes);
+  // Pass through Tufte CSS and fonts
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/et-book");
 
-    // 11ty shortcodes
-    eleventyConfig.addShortcode('image', imageShortcode);
-
-    // Configure markdown-it
-    const markdownIt = require("markdown-it");
-    let options = {
-        html: true,
-        breaks: true,
-        linkify: true,
-        typographer: true,
-    };
-    let markdownLib = markdownIt(options).use(markdownItAttrs);
-    eleventyConfig.setLibrary("md", markdownLib);
-
-    eleventyConfig.amendLibrary("md", mdLib => {
-        mdLib.use(markdownItAnchor, {
-            permalink: markdownItAnchor.permalink.ariaHidden({
-                placement: "after",
-                class: "header-anchor",
-                symbol: "",
-                ariaHidden: false,
-            }),
-            level: [1,2,3,4],
-            slugify: eleventyConfig.getFilter("slugify")
+  // run these configs in production only
+  if (process.env.ELEVENTY_ENV === "production") {
+    eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+      // find html files
+      if (outputPath && outputPath.endsWith(".html")) {
+        // configure html-minify
+        let minified = htmlmin.minify(content, {
+          useShortDoctype: true,
+          removeComments: true,
+          minifyCSS: true,
+          collapseWhitespace: true,
         });
+        return minified;
+      }
+
+      return content;
     });
+  }
 
-    // Pass through Tufte CSS and fonts
-    eleventyConfig.addPassthroughCopy("src/css");
-    eleventyConfig.addPassthroughCopy("src/et-book");
-
-    // run these configs in production only
-    if (process.env.ELEVENTY_ENV === 'production') {
-        eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-            // find html files
-            if (outputPath && outputPath.endsWith(".html")) {
-                // configure html-minify
-                let minified = htmlmin.minify(content, {
-                    useShortDoctype: true,
-                    removeComments: true,
-                    minifyCSS: true,
-                    collapseWhitespace: true
-                });
-                return minified;
-            }
-
-            return content;
-        });
-
-    }
-
-    // Directory changes
-    return {
-        dir: {
-            input: 'src',
-            includes: '_includes',
-            data: '_data'
-        }
-    }
+  // Directory changes
+  return {
+    dir: {
+      input: "src",
+      includes: "_includes",
+      data: "_data",
+    },
+  };
 };

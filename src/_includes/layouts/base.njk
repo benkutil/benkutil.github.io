@@ -1,114 +1,157 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{% if title %}{{title | safe}} &ndash; {% endif %}{{ siteData.title | safe }}</title>
     {%- if description -%}
-    <meta name="description" content="{{ description }}">
+    <meta name="description" content="{{ description }}" />
     {%- else -%}
-    <meta name="description" content="{{ siteData.description }}">  
+    <meta name="description" content="{{ siteData.description }}" />
     {%- endif -%}
-    
-    <link rel="canonical" href="{{ page.url | absoluteUrl(siteData.url) }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ siteData.title | safe }}" href="{{ '/feed.xml' | absoluteUrl(siteData.url) }}">
-    
+
+    <link rel="canonical" href="{{ page.url | absoluteUrl(siteData.url) }}" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ siteData.title | safe }}"
+      href="{{ '/feed.xml' | absoluteUrl(siteData.url) }}"
+    />
+
     <link rel="webmention" href="https://webmention.io/benkutil.com/webmention" />
     <link rel="pingback" href="https://webmention.io/benkutil.com/xmlrpc" />
 
     <!-- Tufte CSS -->
-    <link rel="stylesheet" href="/css/tufte.css">
+    <link rel="stylesheet" href="/css/tufte.css" />
 
     <style type="text/css">
-  	html { margin: 0; padding: 0; text-align: center; }
-  	body {
-  		max-width: 45em;
-  		margin: 0 auto;
-  		font: 16px/1.2 Georgia, serif;
-  		text-align: left;
-  		color: #24140F;
-		  -webkit-text-size-adjust: 100%;
-		  -webkit-font-feature-settings: "kern" 1;
-		  -moz-font-feature-settings: "kern" 1;
-		  -o-font-feature-settings: "kern" 1;
-		  font-feature-settings: "kern" 1;
-		  font-kerning: normal;
-  	}
-  	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
-  	a {
-  		transition: color .5s ease-in;
-  	}
-  	a:link, 
-  	a:visited {
-  		color: #D72C66;
-  	}
-  	a:hover, a:active {
-  		color: #882C62;
-  		transition: color .15s ease-out;
-  	}
-    .hide {
-      display: none;
-    }
-  </style>
+      html {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      body {
+        max-width: 45em;
+        margin: 0 auto;
+        font:
+          16px/1.2 Georgia,
+          serif;
+        text-align: left;
+        color: #24140f;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-feature-settings: "kern" 1;
+        -moz-font-feature-settings: "kern" 1;
+        -o-font-feature-settings: "kern" 1;
+        font-feature-settings: "kern" 1;
+        font-kerning: normal;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: normal;
+      }
+      a {
+        transition: color 0.5s ease-in;
+      }
+      a:link,
+      a:visited {
+        color: #d72c66;
+      }
+      a:hover,
+      a:active {
+        color: #882c62;
+        transition: color 0.15s ease-out;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/media/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/media/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/media/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/media/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/media/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/media/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/media/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/media/favicons/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/media/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/media/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/media/favicons/manifest.json">
-    <link rel="mask-icon" href="/media/favicons/safari-pinned-tab.svg" color="#d72c66">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="/media/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="/media/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#d72c66">
+    <link rel="apple-touch-icon" sizes="57x57" href="/media/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/media/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/media/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/media/favicons/apple-touch-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/media/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/media/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/media/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/media/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/media/favicons/apple-touch-icon-180x180.png"
+    />
+    <link rel="icon" type="image/png" href="/media/favicons/favicon-32x32.png" sizes="32x32" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/media/favicons/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link rel="icon" type="image/png" href="/media/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/media/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="/media/favicons/manifest.json" />
+    <link rel="mask-icon" href="/media/favicons/safari-pinned-tab.svg" color="#d72c66" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-TileImage" content="/media/favicons/mstile-144x144.png" />
+    <meta name="msapplication-config" content="/media/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#d72c66" />
 
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" />
 
-    {% for meta in page.meta %}
-      {% if meta == 'noindex' %}
-        <meta name="robots" content="noindex">
-      {% endif %}
-    {% endfor %}
+    {% for meta in page.meta %} {% if meta == 'noindex' %}
+    <meta name="robots" content="noindex" />
+    {% endif %} {% endfor %}
   </head>
 
   <body>
     <div>
       <header data-ui="site-mast">
         {%- if templateClass=="tmpl-home" -%}
-          <h1>
-            <a href="/" title="Home">Ben Kutil<span class="hide">- Product and Growth leader</span></a>
-          </h1>
-          <p>
-              {{ siteData.description }}
-          </p>
+        <h1>
+          <a href="/" title="Home"
+            >Ben Kutil<span class="hide">- Product and Growth leader</span></a
+          >
+        </h1>
+        <p>{{ siteData.description }}</p>
         {%- else -%}
-          <p>
-            <a href="/" title="Home">Ben Kutil</a>
-          </p>
-          <h1>{{title}}</h1>
-          {%- if description -%}
-            <p>{{description}}</p>
-          {%- endif -%}
-        {%- endif -%}
+        <p>
+          <a href="/" title="Home">Ben Kutil</a>
+        </p>
+        <h1>{{title}}</h1>
+        {%- if description -%}
+        <p>{{description}}</p>
+        {%- endif -%} {%- endif -%}
       </header>
     </div>
     {{ content | safe }}
     <footer>
-      <p>Subscribe via RSS to <a href="{{ "/feed.xml" | absoluteUrl(siteData.url) }}">all content</a>, 
-        <a href="{{ "feeds/posts.xml" | absoluteUrl(siteData.url) }}">posts</a>, or
-        <a href="{{ "feeds/notes.xml" | absoluteUrl(siteData.url) }}">notes</a>.
+      <p>
+        Subscribe via RSS to
+        <a href="{{ '/feed.xml' | absoluteUrl(siteData.url) }}">all content</a>,
+        <a href="{{ 'feeds/posts.xml' | absoluteUrl(siteData.url) }}">posts</a>, or
+        <a href="{{ 'feeds/notes.xml' | absoluteUrl(siteData.url) }}">notes</a>.
       </p>
-      <p><a href="https://github.com/benkutil" rel="me">Ben on Github</a>
+      <p><a href="https://github.com/benkutil" rel="me">Ben on Github</a></p>
     </footer>
   </body>
 </html>
