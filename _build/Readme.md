@@ -81,7 +81,7 @@ ELEVENTY_ENV=production npx @11ty/eleventy
    └── Static files copied
 
 3. Production only: HTML minification
-   └── html-minifier transform runs
+   └── html-minifier-terser transform runs
 
 4. eleventy.after event (production only)
    └── fingerprint-assets.js runs

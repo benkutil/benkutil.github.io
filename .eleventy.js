@@ -2,7 +2,7 @@ require('dotenv').config();
 const Webmentions = require("eleventy-plugin-webmentions");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
-const htmlmin = require("html-minifier");
+const htmlmin = require("html-minifier-terser");
 const outdent = require("outdent");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
