@@ -23,7 +23,7 @@ Processes CSS files using PostCSS with autoprefixer and cssnano.
 **Production Mode:**
 - Minifies CSS with cssnano
 - Adds vendor prefixes with autoprefixer
-- Reduces file size by ~98% (745 lines → 1 line)
+- Reduces file size by ~78% (51KB → 11KB)
 
 **Usage:**
 ```bash
@@ -91,14 +91,14 @@ ELEVENTY_ENV=production npx @11ty/eleventy
 
 ## Configuration Files
 
-### `postcss.config.js` (root)
+### `_build/process-css.js`
+PostCSS configuration is embedded directly in the build script:
 ```javascript
-module.exports = {
-  plugins: [
-    require('autoprefixer'),
-    require('cssnano')({ preset: 'default' })
-  ]
-};
+// Process with PostCSS
+const result = await postcss([
+  autoprefixer,
+  cssnano({ preset: 'default' })
+]).process(css, { from: inputPath, to: outputPath });
 ```
 
 ### `.eleventy.js` Integration
