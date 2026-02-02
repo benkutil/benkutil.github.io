@@ -1,0 +1,8 @@
+node_modules
+_site
+package-lock.json
+.env
+_webmentioncache
+# RSS/XML feeds should not be formatted as HTML
+src/feed*.njk
+src/sitemap.njk

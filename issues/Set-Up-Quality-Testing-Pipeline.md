@@ -26,4 +26,5 @@
    - [ ] Ensure Visual Regression Testing is optional but supported.
 
 ---
+
 This issue ensures the repository improves developer experience and code quality, making it easier to maintain and evolve.
