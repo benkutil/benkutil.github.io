@@ -11,6 +11,7 @@ const markdownItAttrs = require("markdown-it-attrs");
 const pluginTOC = require("eleventy-plugin-toc");
 const pluginFilters = require("./_config/filters.js");
 const pluginShortCodes = require("./_config/shortcode.js");
+const processCSS = require("./_build/process-css.js");
 
 /** Maps a config of attribute-value pairs to an HTML string
  * representing those same attribute-value pairs.
@@ -141,9 +142,14 @@ module.exports = function (eleventyConfig) {
         });
     });
 
-    // Pass through Tufte CSS and fonts
-    eleventyConfig.addPassthroughCopy("src/css");
+    // Pass through fonts (CSS is processed separately)
     eleventyConfig.addPassthroughCopy("src/et-book");
+    eleventyConfig.addPassthroughCopy("src/media/favicons");
+    
+    // Process CSS with PostCSS
+    eleventyConfig.on('eleventy.before', async () => {
+        await processCSS();
+    });
 
     // run these configs in production only
     if (process.env.ELEVENTY_ENV === 'production') {
