@@ -12,6 +12,7 @@ const pluginTOC = require("eleventy-plugin-toc");
 const pluginFilters = require("./_config/filters.js");
 const pluginShortCodes = require("./_config/shortcode.js");
 const processCSS = require("./_build/process-css.js");
+const { fingerprintAssets } = require("./_build/fingerprint-assets.js");
 
 /** Maps a config of attribute-value pairs to an HTML string
  * representing those same attribute-value pairs.
@@ -32,7 +33,7 @@ const imageShortcode = async (
     alt,
     className = undefined,
     widths = [400, 800, 1280],
-    formats = ['webp', 'jpeg'],
+    formats = ['avif', 'webp', 'jpeg'],
     sizes = '100vw'
 ) => {
     const imageMetadata = await Image(src, {
@@ -40,6 +41,17 @@ const imageShortcode = async (
         formats: [...formats, null],
         outputDir: '_site/media/images',
         urlPath: '/media/images',
+        sharpAvifOptions: {
+            quality: 80,
+            effort: 4 // Balance between compression and build speed
+        },
+        sharpWebpOptions: {
+            quality: 85
+        },
+        sharpJpegOptions: {
+            quality: 85,
+            progressive: true
+        }
     });
     const sourceHtmlString = Object.values(imageMetadata)
         // Map each format to the source HTML markup
@@ -168,7 +180,11 @@ module.exports = function (eleventyConfig) {
 
             return content;
         });
-
+        
+        // Fingerprint assets after build completes
+        eleventyConfig.on('eleventy.after', async () => {
+            await fingerprintAssets();
+        });
     }
 
     // Directory changes
