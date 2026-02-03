@@ -2,7 +2,7 @@ require("dotenv").config();
 const Webmentions = require("eleventy-plugin-webmentions");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
-const htmlmin = require("html-minifier");
+const htmlmin = require("html-minifier-terser");
 const outdent = require("outdent");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -11,6 +11,8 @@ const markdownItAttrs = require("markdown-it-attrs");
 const pluginTOC = require("eleventy-plugin-toc");
 const pluginFilters = require("./_config/filters.js");
 const pluginShortCodes = require("./_config/shortcode.js");
+const processCSS = require("./_build/process-css.js");
+const { fingerprintAssets } = require("./_build/fingerprint-assets.js");
 
 /** Maps a config of attribute-value pairs to an HTML string
  * representing those same attribute-value pairs.
@@ -31,7 +33,7 @@ const imageShortcode = async (
   alt,
   className = undefined,
   widths = [400, 800, 1280],
-  formats = ["webp", "jpeg"],
+  formats = ["avif", "webp", "jpeg"],
   sizes = "100vw"
 ) => {
   const imageMetadata = await Image(src, {
@@ -39,23 +41,27 @@ const imageShortcode = async (
     formats: [...formats, null],
     outputDir: "_site/media/images",
     urlPath: "/media/images",
+    sharpAvifOptions: {
+      quality: 80,
+      effort: 4,
+    },
+    sharpWebpOptions: {
+      quality: 85,
+    },
+    sharpJpegOptions: {
+      quality: 85,
+      progressive: true,
+    },
   });
-  const sourceHtmlString = Object.values(imageMetadata)
-    // Map each format to the source HTML markup
-    .map((images) => {
-      // The first entry is representative of all the others
-      // since they each have the same shape
-      const { sourceType } = images[0];
 
-      // Use our util from earlier to make our lives easier
+  const sourceHtmlString = Object.values(imageMetadata)
+    .map((images) => {
+      const { sourceType } = images[0];
       const sourceAttributes = stringifyAttributes({
         type: sourceType,
-        // srcset needs to be a comma-separated attribute
         srcset: images.map((image) => image.srcset).join(", "),
         sizes,
       });
-
-      // Return one <source> per format
       return `<source ${sourceAttributes}>`;
     })
     .join("\n");
@@ -91,12 +97,20 @@ module.exports = function (eleventyConfig) {
   // 11ty plugins
   eleventyConfig.addPlugin(pluginRss);
 
-  // Only add Webmentions if token is provided
-  if (process.env.WEBMENTIONS_TOKEN) {
+  // Only add Webmentions if token is provided (CI usually won't have it)
+  const webmentionsToken = process.env.WEBMENTIONS_TOKEN;
+  const hasWebmentionsToken =
+    typeof webmentionsToken === "string" && webmentionsToken.trim().length > 0;
+
+  if (hasWebmentionsToken) {
     eleventyConfig.addPlugin(Webmentions, {
       domain: "benkutil.com",
-      token: process.env.WEBMENTIONS_TOKEN,
+      token: webmentionsToken,
     });
+  } else {
+    eleventyConfig.addGlobalData("webmentions", []);
+    eleventyConfig.addFilter("webmentionsForPage", () => []);
+    eleventyConfig.addFilter("webmentionCountForPage", () => 0);
   }
 
   eleventyConfig.addPlugin(pluginNavigation);
@@ -141,16 +155,19 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  // Pass through Tufte CSS and fonts
-  eleventyConfig.addPassthroughCopy("src/css");
+  // Pass through fonts (CSS is processed separately)
   eleventyConfig.addPassthroughCopy("src/et-book");
+  eleventyConfig.addPassthroughCopy("src/media/favicons");
+
+  // Process CSS with PostCSS
+  eleventyConfig.on("eleventy.before", async () => {
+    await processCSS();
+  });
 
   // run these configs in production only
   if (process.env.ELEVENTY_ENV === "production") {
     eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-      // find html files
       if (outputPath && outputPath.endsWith(".html")) {
-        // configure html-minify
         let minified = htmlmin.minify(content, {
           useShortDoctype: true,
           removeComments: true,
@@ -161,6 +178,11 @@ module.exports = function (eleventyConfig) {
       }
 
       return content;
+    });
+
+    // Fingerprint assets after build completes
+    eleventyConfig.on("eleventy.after", async () => {
+      await fingerprintAssets();
     });
   }
 

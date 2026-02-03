@@ -29,6 +29,9 @@
     "url": "https://github.com/benkutil/benkutil.github.io/issues"
   },
   "homepage": "https://github.com/benkutil/benkutil.github.io#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0-beta.3",
     "@11ty/eleventy-img": "^3.0.0",
@@ -36,9 +39,11 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@eslint/js": "^9.39.2",
+    "autoprefixer": "^10.4.24",
+    "cssnano": "^7.1.2",
     "eleventy-plugin-webmentions": "^2.0.0",
     "eslint": "^9.39.2",
-    "html-minifier": "^4.0.0",
+    "html-minifier-terser": "^7.2.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "luxon": "^3.5.0",
@@ -46,6 +51,8 @@
     "markdown-it-attrs": "^4.3.1",
     "outdent": "^0.8.0",
     "pa11y-ci": "^4.0.1",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "prettier": "^3.8.1",
     "serve": "^14.2.5",
     "stylelint": "^17.1.0",
