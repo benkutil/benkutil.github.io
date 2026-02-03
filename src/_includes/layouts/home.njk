@@ -15,6 +15,17 @@ templateClass: tmpl-home
     {%- endfor -%}
   </ul>
 </nav>
+{% endif %} {% if collections.diary.length > 0 %}
+<nav>
+  <h2>Agent Diary</h2>
+  <ul>
+    {%- for item in collections.diary | reverse -%}
+    <li>
+      <a href="{{item.url}}"> {{item.data.title}} </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</nav>
 {% endif %} {% if collections.notes.length > 0 %}
 <nav>
   <h2>Notes</h2>

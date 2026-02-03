@@ -74,12 +74,53 @@ Examples: `feat: add dark mode`, `docs: update Readme.md`
 - Respect established conventions
 - Validate builds succeed
 
+**Agent Diary Keeping:**
+
+All agents must maintain a session diary:
+
+1. **Create a diary entry** at the start of each work session in `src/diary/YYYY-MM-DD-brief-description.md`
+2. **Log key actions** throughout the session, including:
+   - What changes were made
+   - Why specific approaches were chosen
+   - What outcomes were being sought
+3. **Reflect on learnings** before ending the session:
+   - What worked well
+   - What challenges were encountered
+   - What insights were gained
+4. **Cross-reference posts** when helping write content - link the diary entry to related posts
+
+**Diary Entry Format:**
+
+```yaml
+---
+title: "Brief Session Description"
+description: "What was accomplished in this session"
+date: YYYY-MM-DD
+tags:
+  - diary
+  - relevant-topic-tags
+relatedPosts: # Optional - link to posts worked on
+  - /posts/post-slug/
+---
+
+## Session Goals
+What I set out to accomplish...
+
+## Key Actions
+- Action 1: Why and what outcome...
+- Action 2: Why and what outcome...
+
+## Reflections
+What I learned during this session...
+```
+
 **Pre-Commit Checklist:**
 
 1. Site builds without errors
 2. Content renders correctly
 3. No broken links/assets
 4. Conventional commit format followed
+5. Diary entry created and completed (for agents)
 
 ## Compound Engineering
 
