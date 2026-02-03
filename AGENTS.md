@@ -91,7 +91,6 @@ Examples: `feat: add dark mode`, `docs: update Readme.md`
 The project includes specialized agents for specific tasks:
 
 - **Writing Agent** (`.github/agents/writing-agent.md`) - Content creation and editing following the site's writing style
-- **Content Collections Agent** (`.github/agents/content-collections-agent.md`) - Managing posts and notes collections, directory structure, and permalinks
 
 When working on tasks related to these domains, consult the appropriate agent documentation.
 
