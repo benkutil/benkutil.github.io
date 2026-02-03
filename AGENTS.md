@@ -4,10 +4,13 @@ Guidance for AI agents and human contributors working on this 11ty-based persona
 
 ## Project Structure
 
-- `src/` - Content (markdown, templates, posts)
+- `src/` - Content (markdown, templates, posts, notes)
+  - `src/posts/` - Long-form posts and essays
+  - `src/notes/` - Short notes and thoughts
 - `_config/` - Modular Eleventy configuration
 - `_site/` - Build output (not committed)
 - `.eleventy.js` - Main config
+- `docs/` - Documentation and guides
 
 ## Development
 
@@ -42,6 +45,7 @@ Examples: `feat: add dark mode`, `docs: update Readme.md`
 - Leverage existing 11ty plugins
 - Maintain semantic HTML
 - Follow established patterns
+- Organize content in appropriate collections (`posts` vs `notes`)
 
 **Don't:**
 
@@ -49,6 +53,7 @@ Examples: `feat: add dark mode`, `docs: update Readme.md`
 - Hardcode environment values
 - Break existing content
 - Add unjustified dependencies
+- Mix posts and notes in the same directory
 
 ## Collaboration
 
@@ -80,6 +85,29 @@ Examples: `feat: add dark mode`, `docs: update Readme.md`
 2. Content renders correctly
 3. No broken links/assets
 4. Conventional commit format followed
+
+## Specialized Agents
+
+The project includes specialized agents for specific tasks:
+
+- **Writing Agent** (`.github/agents/writing-agent.md`) - Content creation and editing following the site's writing style
+- **Content Collections Agent** (`.github/agents/content-collections-agent.md`) - Managing posts and notes collections, directory structure, and permalinks
+
+When working on tasks related to these domains, consult the appropriate agent documentation.
+
+## Content Management
+
+### Publishing Content
+
+See [Publishing Content Guide](docs/how-to/publishing-content.md) for detailed instructions on creating posts and notes.
+
+**Quick Reference:**
+
+- **Posts**: Long-form content in `src/posts/`, URL pattern `/posts/{slug}/`
+- **Notes**: Short thoughts in `src/notes/`, URL pattern `/notes/{slug}/`
+- Both use directory data files (`posts.json`, `notes.json`) for default configuration
+- Filenames use date prefix: `YYYY-MM-DD-title.md`
+- Permalinks are clean, without date prefixes
 
 ## Compound Engineering
 
