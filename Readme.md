@@ -60,6 +60,6 @@ See [`_build/Readme.md`](./_build/Readme.md) for detailed documentation.
 
 The asset pipeline delivers significant improvements:
 
-- **CSS:** 745 lines → 1 line, ~78% file size reduction
+- **CSS:** 832 lines → 1 line, ~24% file size reduction (14KB → 11KB)
 - **Images:** Modern AVIF format with WebP/JPEG fallbacks
 - **Caching:** Fingerprinted assets for efficient browser caching

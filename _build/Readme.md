@@ -25,7 +25,7 @@ Processes CSS files using PostCSS with autoprefixer and cssnano.
 
 - Minifies CSS with cssnano
 - Adds vendor prefixes with autoprefixer
-- Reduces file size by ~78% (51KB → 11KB)
+- Reduces file size by ~24% (14KB → 11KB)
 
 **Usage:**
 
@@ -63,9 +63,9 @@ ELEVENTY_ENV=production npx @11ty/eleventy
 
 ### CSS Optimization
 
-- **Before:** 745 lines, ~51KB unminified
+- **Before:** 832 lines, ~14KB unminified
 - **After:** 1 line, ~11KB minified
-- **Savings:** ~78% reduction in file size
+- **Savings:** ~24% reduction in file size
 
 ### Image Optimization
 
