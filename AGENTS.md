@@ -96,10 +96,11 @@ All agents must maintain a session diary:
 title: "Brief Session Description"
 description: "What was accomplished in this session"
 date: YYYY-MM-DD
+layout: layouts/content.njk
 tags:
   - diary
   - relevant-topic-tags
-relatedPosts: # Optional - link to posts worked on
+relatedPosts: # Optional - only include when working on specific posts
   - /posts/post-slug/
 ---
 
